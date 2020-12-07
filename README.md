@@ -21,17 +21,18 @@ Este es un repositorio con el objetivo de realizar todas las tareas y laboratori
 
 - El contenido de cada tarea se describe como sigue a continuación:
 
-    - Tarea 01:
-    - Tarea 02:
-    - Tarea 03:
-    - Tarea 04:
-    - Tarea 05:
-    - Tarea 06:
-    - Tarea 07:
-    - Tarea 08:
-    - Tarea 09:
-    - Tarea 10:
-    - Tarea 11:
-    - Tarea 12:
-    - Tarea 13:
-    - Tarea 14:
+    - Tarea 01: Comprende los laboratorios de Mod-1 y las tareas del MOC del módulo 1.
+    - Tarea 02: En esta tarea solo comprende los Laboratorios del Mod-2
+
+    - Tarea 03: Comprende los laboratorios de Mod-3 y las tareas del MOC del módulo 3.
+    - Tarea 04: Comprende los laboratorios de Mod-4 y las tareas del MOC del módulo 4.
+    - Tarea 05: Laboratorios de Mod-5 y las tareas del MOC del módulo 5.
+    - Tarea 06: Laboratorios de Mod-6 y las tareas del MOC del módulo 6.
+    - Tarea 07: Laboratorios de Mod-7 y las tareas del MOC del módulo 7.
+    - Tarea 08: Laboratorios de Mod-8 y las tareas del MOC del módulo 8.
+    - Tarea 09: Laboratorios de Mod-9 y las tareas del MOC del módulo 9.
+    - Tarea 10: Laboratorios de Mod-10 y las tareas del MOC del módulo 10.
+    - Tarea 11: Laboratorios de Mod-11 y las tareas del MOC del módulo 11.
+    - Tarea 12: Laboratorios de Mod-12 y las tareas del MOC del módulo 12.
+    - Tarea 13: Laboratorios de Mod-13 y las tareas del MOC del módulo 13.
+    - Tarea 14: Laboratorios de Mod-14 y las tareas del MOC del módulo 14.
