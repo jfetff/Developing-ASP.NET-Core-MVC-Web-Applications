@@ -1,0 +1,43 @@
+﻿<Window x:Class="DesignProject.PhotoGalleryView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesignProject"
+        mc:Ignorable="d"
+        Title="PhotoGalleryView" Height="600" Width="500" WindowStyle="None">
+    <Grid>
+        <Label Content="Adventure Works Photo Sharing" HorizontalAlignment="Left" Margin="29,28,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Canvas HorizontalAlignment="Left" Height="40" Margin="46,70,0,0" VerticalAlignment="Top" Width="400" Background="#FF96AFCF">
+            <Button Content="Home" Canvas.Left="19" Width="75" Canvas.Top="10" Background="#FF1F477D" Foreground="White"/>
+            <Button Content="Gallery" Canvas.Left="113" Width="75" Canvas.Top="10" Background="#FF1F477D" Foreground="White"/>
+            <Button Content="Add a Photo" Canvas.Left="209" Width="75" Canvas.Top="10" Background="#FF1F477D" Foreground="White"/>
+            <Button Content="Slideshow" Canvas.Left="307" Width="75" Canvas.Top="10" Background="#FF1F477D" Foreground="White"/>
+        </Canvas>
+        <Canvas HorizontalAlignment="Left" Height="190" Margin="77,144,0,0" VerticalAlignment="Top" Width="150" Background="#FF96AFCF">
+            <Label Content="Title" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="By: Owner" Canvas.Left="10" Canvas.Top="41"/>
+            <Image Height="100" Canvas.Left="10" Canvas.Top="70" Width="100" Source="photo.jpg"/>
+        </Canvas>
+        <Label Content="Created On: Date" HorizontalAlignment="Left" Margin="89,298,0,0" VerticalAlignment="Top"/>
+        <Canvas HorizontalAlignment="Left" Height="190" Margin="270,143,0,0" VerticalAlignment="Top" Width="150" Background="#FF96AFCF">
+            <Label Content="Title" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="By: Owner" Canvas.Left="10" Canvas.Top="41"/>
+            <Image Height="100" Canvas.Left="10" Canvas.Top="70" Width="100" Source="photo.jpg"/>
+        </Canvas>
+        <Label Content="Created On: Date" HorizontalAlignment="Left" Margin="282,297,0,0" VerticalAlignment="Top"/>
+        <Canvas HorizontalAlignment="Left" Height="190" Margin="77,364,0,0" VerticalAlignment="Top" Width="150" Background="#FF96AFCF">
+            <Label Content="Title" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="By: Owner" Canvas.Left="10" Canvas.Top="41"/>
+            <Image Height="100" Canvas.Left="10" Canvas.Top="70" Width="100" Source="photo.jpg"/>
+        </Canvas>
+        <Label Content="Created On: Date" HorizontalAlignment="Left" Margin="89,518,0,0" VerticalAlignment="Top"/>
+        <Canvas HorizontalAlignment="Left" Height="190" Margin="270,363,0,0" VerticalAlignment="Top" Width="150" Background="#FF96AFCF">
+            <Label Content="Title" Canvas.Left="10" Canvas.Top="10"/>
+            <Label Content="By: Owner" Canvas.Left="10" Canvas.Top="41"/>
+            <Image Height="100" Canvas.Left="10" Canvas.Top="70" Width="100" Source="photo.jpg"/>
+        </Canvas>
+        <Label Content="Created On: Date" HorizontalAlignment="Left" Margin="282,517,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
