@@ -1,0 +1,14 @@
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\bin\Debug\netcoreapp2.1\StaticFilesExample.deps.json
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\bin\Debug\netcoreapp2.1\StaticFilesExample.runtimeconfig.json
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\bin\Debug\netcoreapp2.1\StaticFilesExample.runtimeconfig.dev.json
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\bin\Debug\netcoreapp2.1\StaticFilesExample.dll
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\bin\Debug\netcoreapp2.1\StaticFilesExample.pdb
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.AssemblyInfoInputs.cache
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.AssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.csproj.CoreCompileInputs.cache
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.RazorAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.RazorAssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.RazorTargetAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.dll
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.pdb
+C:\20486D\Ejercicios\Mod-3\DEMO\StaticFilesExample\StaticFilesExample\obj\Debug\netcoreapp2.1\StaticFilesExample.genruntimeconfig.cache

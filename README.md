@@ -5,7 +5,7 @@ Este curso está programado para ser concluido a finales de diciembre de 2020.
 
 ## Que es lo que hacemos?
 
-Este es un repositorio con el objetivo de realizar todas las tareas y laboratorios correspondientes con el mismo curso homónimo. La ubicación del curso está:
+Este es un repositorio con el objetivo de realizar todas las tareas y laboratorios correspondientes con el mismo curso homónimo. La ubicación general de todo el curso está:
 - Para apoyar el curso [20486D: Developing ASP.NET Core MVC Applications](https://www.microsoft.com/learning/en-us/course.aspx?ID=20486)
 
 
