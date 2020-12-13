@@ -22,11 +22,11 @@ Fichero de Instrucciones: Instructions\20486D_MOD06_LAK.md
 
 # Laboratorio: Desarrollo de modelos
 
-### Lab Setup
+### Configuración del Lab
 
 Tiempo estimado: **60 minutos**
 
-### Preparation Steps
+### Pasos de Preparación
 
 Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://github.com/MicrosoftLearning/20486D-DevelopingASPNETMVCWebApplications/tree/master/Allfiles**). Contiene los segmentos de código para los laboratorios y demostraciones de este curso.
 
@@ -35,20 +35,20 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
 #### Tarea 1: Crear un nuevo modelo
 
-1. Ve a **[Raíz del Repositorio]\N-Todos los archivos\NMod06\N-Labfiles\N01_ButterfliesShop_begin**, y luego haz doble clic en **ButterfliesShop.sln**.
+1. Ve a **[Repository Root]\Allfiles\Mod06\Labfiles\01_ButterfliesShop_begin**, y luego haz doble clic en **ButterfliesShop.sln**.
 
     >**Nota**: Si aparece un cuadro de diálogo de **Aviso de Seguridad para la Tienda de Mariposas**, verifica que la casilla de verificación **Pregúntame por cada proyecto de esta solución** esté despejada, y luego haz clic en OK.
 
 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, expande **Models**, y luego haz clic en **Butterfly.cs**.
 
-3. 3. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
+3. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
   ```cs
-       usando tareas de sistema... de enhebrado;
-```
+       using System.Threading.Tasks;
+  ```
 4. Asegúrate de que el cursor está al final del espacio de nombres **System.Threading.Tasks**, presiona Enter, y luego escribe el siguiente código:
   ```cs
-       usando Microsoft.AspNetCore.Http;
-```
+       using Microsoft.AspNetCore.Http;
+  ```
 
 5. En el bloque de código **Butterfly.cs**, coloque el cursor después del segundo signo **{** (abra las abrazaderas), pulse Intro, y luego escriba el siguiente código:
   ```cs
@@ -62,37 +62,37 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
        public string ImageName { get; set; }
        public byte[] PhotoFile { get; set; }
        public string ImageMimeType { get; set; }
-```
+  ```
 
 6. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, haz clic con el botón derecho del ratón en **Models**, apunta a **Add**, y luego haz clic en **Class**.
 
 7. En el cuadro de diálogo **Agregar nuevo elemento - Tienda de mariposas**, en el cuadro **Nombre**, escriba **IndexViewModel**, y luego haga clic en **Agregar**.
 
-8. 8. En el bloque de código **IndexViewModel.cs**, coloque el cursor del ratón después del segundo signo **{** (abrazaderas), pulse Intro, y luego escriba el siguiente código:
+8. En el bloque de código **IndexViewModel.cs**, coloque el cursor del ratón después del segundo signo **{** (abrazaderas), pulse Intro, y luego escriba el siguiente código:
   ```cs
-       Lista pública<Mariposa> Mariposas { get; set; }
-```
+       public List<Butterfly> Butterflies { get; set; }
+  ```
 
 #### Tarea 2: Usar el modelo en una vista
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, expandir **Views**, y luego expandir **Butterfly**.
 
-2. 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Views**, en **Butterfly**, haga clic en **Index.cshtml**.
+2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Views**, en **Butterfly**, haga clic en **Index.cshtml**.
 
-3. 3. En la ventana **Index.cshtml** código, coloque el cursor al principio del documento, escriba el siguiente código y luego presione Enter.
+3. En la ventana **Index.cshtml** código, coloque el cursor al principio del documento, escriba el siguiente código y luego presione Enter.
   ```cs
        @model ButterfliesShop.Models.IndexViewModel
-```
+  ```
 
 4. En el elemento **BODY** de la ventana de códigos **Index.cshtml**, escriba el siguiente código:
-  "C".
+  ```cs
        <div class="container">
-           <h1 class="main-title">Tienda de Mariposas</h1>
-           <p class="into">Bienvenidos a nuestra tienda web, disfruten de una amplia variedad de mariposas</p>
-           <p class="into">Nuestras mariposas en la tienda</p>
-           <button type="button" onclick="location.href='@Url.Action("Create", "Butterfly")'">Añadir mariposas</button>
-       </div>       
-```
+           <h1 class="main-title">Butterflies Shop</h1>
+           <p class="into">Welcome to our Web Store, Enjoy a Wide Variety of Butterflies</p>
+           <p class="into">Our Butterflies in the Shop</p>
+           <button type="button" onclick="location.href='@Url.Action("Create", "Butterfly")'">Add Butterflies</button>
+       </div>      
+  ```
 5. Ponga el cursor al final del elemento **BOTÓN** que acaba de crear, pulse Intro, y luego escriba el siguiente código:
   ```cs
        <div class="img-container">
@@ -100,7 +100,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
           {
           }
        </div>      
-```
+  ```
 
 6. Ponga el cursor en el bloque de código **FOREACH**, presione Enter, y luego escriba el siguiente código:
 
@@ -111,41 +111,41 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
             <p>@item.Quantity</p>
             <p>@item.CreatedDate</p>
        </div>
-```
+  ```
 
 
 #### Tarea 3: Pasar el modelo del controlador a una vista
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, expandir **Controllers**, y luego hacer clic en **ButterflyController.cs**.
 
-2. 2. En la ventana de código **ButterflyController.cs**, localice el siguiente código:
+2. En la ventana de código **ButterflyController.cs**, localice el siguiente código:
   ```cs
-       usando Microsoft.AspNetCore.Mvc;
-```
+       using Microsoft.AspNetCore.Mvc;
+  ```
 3. Asegúrate de que el cursor está al final del espacio de nombres **Microsoft.AspNetCore.Mvc**, presiona Enter, y luego escribe el siguiente código:
   ```cs
-       usando System.IO;
-```
+       using System.IO;
+  ```
 
 4. Coloque el cursor al final del bloque de código del método **InitializeButterfliesData**, presione Enter dos veces, y luego escriba el siguiente código:
   ```cs
-       Índice público de IActionResultado()
+       public IActionResult Index()
        {
        }
-```
+  ```
 
 5. En el bloque de código de acción **Index**, escriba el siguiente código:
-  "C".
-       IndexViewModel indexViewModel = nuevo IndexViewModel();
+  ```cs
+       IndexViewModel indexViewModel = new IndexViewModel();
        indexViewModel.Butterflies = _data.ButterfliesList;
-       devuelve View(indexViewModel);
-```
+       return View(indexViewModel);
+  ```
 
 #### Tarea 4: Ejecutar la aplicación
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
-2. 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
@@ -155,51 +155,51 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Controllers**, haga clic en **ButterflyController.cs**.
 
-2. 2. Coloque el cursor al final del bloque de código de acción **GetImage**, presione Enter dos veces, y luego escriba el siguiente código:
+2. Coloque el cursor al final del bloque de código de acción **GetImage**, presione Enter dos veces, y luego escriba el siguiente código:
   ```cs
        [HttpGet]
-       IActionResultado público Crear()
+       public IActionResult Create()
        {
        }
-``` 
+  ``` 
 3. En el bloque de código de acción **Crear**, escriba el siguiente código:
-  "C".
-       Volver a la vista();
-```
+  ```cs
+       return View();
+  ```
 
 #### Tarea 6: Escribir una acción POST que acepte el modelo
 
 1. En la ventana de código **ButterflyController.cs**, asegúrese de que el cursor está al final del bloque de código de acción **Create** con el verbo **HTTP GET**, presione Enter, y luego escriba el siguiente código:
   ```cs
        [HttpPost]
-       IActionResultado público Crear (mariposa mariposa)
+       public IActionResult Create(Butterfly butterfly)
        {
        }
-```
+  ```
 
 2. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, escriba el siguiente código y luego presione Enter.
   ```cs
-       Mariposa última Mariposa = _datos.Lista de Mariposas.ÚltimaOrDefecto();
-       mariposa.CreadoFecha = FechaHora.Hoy;
+       Butterfly lastButterfly = _data.ButterfliesList.LastOrDefault();
+       butterfly.CreatedDate = DateTime.Today;
        if (butterfly.PhotoAvatar != null && butterfly.PhotoAvatar.Length > 0)
        {
-            mariposa.ImagenMímicaTipo = mariposa.FotoAvatar.ContenidoTipo;
-            butterfly.ImageName = Path.GetFileName(mariposa.FotoAvatar.FileName);
+            butterfly.ImageMimeType = butterfly.PhotoAvatar.ContentType;
+            butterfly.ImageName = Path.GetFileName(butterfly.PhotoAvatar.FileName);
             butterfly.Id = lastButterfly.Id + 1;
-            _butterfliesQuantityService.AddButterfliesQuantityData(mariposa);
-            usando (var memoryStream = new MemoryStream())
+            _butterfliesQuantityService.AddButterfliesQuantityData(butterfly);
+            using (var memoryStream = new MemoryStream())
             {
-                mariposa.FotoAvatar.CopiarEn(memoryStream);
-                mariposa.FotoArchivo = memoryStream.ToArray();
+                butterfly.PhotoAvatar.CopyTo(memoryStream);
+                butterfly.PhotoFile = memoryStream.ToArray();
             }
-            Añade "mariposa";
-            devuelve RedirectToAction("Índice");
+            _data.AddButterfly(butterfly);
+            return RedirectToAction("Index");
        }
-```
+  ```
 3. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, inmediatamente después del código que acabas de añadir, pulsa Intro, y luego escribe el siguiente código:
   ```cs
-       Volver a la vista (mariposa);
-```
+       return View(butterfly);
+  ```
 
 >**Resultados**: Después de completar este ejercicio, podrás crear un modelo, pasar el modelo de una acción a una vista y utilizar el modelo en la vista. 
 
@@ -209,125 +209,125 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Models**, haga clic en **Butterfly.cs**.
 
-2. 2. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
+2. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
   ```cs
-      usando Microsoft.AspNetCore.Http;
-```
+      using Microsoft.AspNetCore.Http;
+  ```
 3. Asegúrate de que el cursor está al final del espacio de nombres **Microsoft.AspNetCore.Http**, presiona Enter, y luego escribe el siguiente código:
   ```cs
-      usando System.ComponentModel.DataAnnotations;
-```
+      using System.ComponentModel.DataAnnotations;
+  ```
 
 4. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Id**, presione Enter dos veces, y luego escriba el siguiente código:
 
   ```cs
       [Display(Name = "Common Name:")]
-```
+  ```
 
 5. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **CommonName**, presione Enter dos veces, y luego escriba el siguiente código:
   ```cs
-      [Display(Nombre = "Familia de las mariposas:")]
-```
+      [Display(Name = "Butterfly Family:")]
+  ```
 
 6. En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **ButterflyFamily**, presiona Enter dos veces, y luego escribe el siguiente código:
   ```cs
-      [Display(Nombre = "Cantidad de mariposas:")]
-```
+      [Display(Name = "Butterflies Quantity:")]
+  ```
 
-7. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Cantidad**, presione Enter dos veces, y luego escriba el siguiente código:
-  "cs
-      [Visualización(Nombre = "Características:")]
-```
+7. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Quantity**, presione Enter dos veces, y luego escriba el siguiente código:
+  ```cs
+      [Display(Name = "Characteristics:")]
+  ```
 
-8. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Características**, presione Enter dos veces, y luego escriba el siguiente código:
-  "cs
+8. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Characteristics**, presione Enter dos veces, y luego escriba el siguiente código:
+  ```cs
       [DataType(DataType.DateTime)]
-      [Visualización(Nombre = "Actualizado el:")]
+      [Display(Name = "Updated on:")]
       [DisplayFormat(DataFormatString = "{0:dd/MM/yy}")]
-```
+  ```
 
 9. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **CreatedDate**, presione Enter dos veces, y luego escriba el siguiente código:
-  "cs
-      [Display(Nombre = "Imagen de las mariposas:")]
-```
+  ```cs
+      [Display(Name = "Butterflies Picture:")]
+  ```
 
 #### Tarea 2: Actualizar una acción para devolver FileContentResult
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Controllers**, haga clic en **ButterflyController.cs**.
 
-2. 2. En el bloque de código de acción **GetImage**, localiza el siguiente código:
+2. En el bloque de código de acción **GetImage**, localiza el siguiente código:
   ```cs
-       Mariposa solicitadaMariposa = _datos. Obtener Mariposa por Id;
-       si (requestedButterfly != null)
+       Butterfly requestedButterfly = _data.GetButterflyById(id);
+       if (requestedButterfly != null)
        {
-          ...y no hay vuelta atrás;
+          return null;
        }
-       más
+       else
        {
-          devuelve NotFound();
+          return NotFound();
        }
-```
+  ```
 
 3. En el bloque de código de declaración **IF**, seleccione el siguiente código:
-  "C".
-       ...y no hay vuelta atrás;
-```
+  ```cs
+       return null;
+  ```
 
 4. Reemplazar el código seleccionado por el siguiente código:
-  "C".
-       string webRootpath = _ambiente.WebRootPath;
-       string folderPath = "imágenes";
+  ```cs
+       string webRootpath = _environment.WebRootPath;
+       string folderPath = "\\images\\";
        string fullPath = webRootpath + folderPath + requestedButterfly.ImageName;
-       si (System.IO.File.Exists(fullPath))
+       if (System.IO.File.Exists(fullPath))
        {
-            FileStream fileOnDisk = nuevo FileStream(fullPath, FileMode.Open);
+            FileStream fileOnDisk = new FileStream(fullPath, FileMode.Open);
             byte[] fileBytes;
-            usando (BinaryReader br = nuevo BinaryReader(archivoEnDisco))
+            using (BinaryReader br = new BinaryReader(fileOnDisk))
             {
                 fileBytes = br.ReadBytes((int)fileOnDisk.Length);
             }
-            devuelve File(fileBytes, solicitado Butterfly.ImageMimeType);
+            return File(fileBytes, requestedButterfly.ImageMimeType);
        }
-       más
+       else
        {
-            si (solicitado Mariposa.FotoArchivo.Longitud > 0)
+            if (requestedButterfly.PhotoFile.Length > 0)
             {
-                devuelve File(requestedButterfly.PhotoFile, requestedButterfly.ImageMimeType);
+                return File(requestedButterfly.PhotoFile, requestedButterfly.ImageMimeType);
             }
-            más
+            else
             {
-                devuelve NotFound();
+                return NotFound();
             }
        }
-```
+  ```
 
 #### Tarea 3: Agregar ayudantes de exhibición
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Views**, en **Butterfly**, haga clic en **Index.cshtml**.
 
-2. 2. En la ventana **Index.cshtml** código, seleccione el siguiente código:
+2. En la ventana **Index.cshtml** código, seleccione el siguiente código:
   ```cs
        <p>@item.CommonName</p>
        <p>@item.ButterflyFamily</p>
        <p>@item.Quantity</p>
        <p>@item.CreatedDate</p>
-```
+  ```
 
 3. Reemplazar el código seleccionado por el siguiente código:
-  "C".
+  ```cs
        <h3 class="display-picture-title">
            "@Html.DisplayFor(modelItem => item.CommonName)"
        </h3>
        @if (item.ImageName != null)
        {     
        }
-```
+  ```
 4. En el bloque de código **IF**, escriba el siguiente código:
-  "C".
+  ```cs
        <div class="photo-display">
              <img class="photo-display-img" src="@Url.Action("GetImage", "Butterfly", new { Id = item.Id })" />
        </div>
-```
+  ```
 
 5. Ponga el cursor al final del bloque de código **IF**, pulse Intro, y luego escriba el siguiente código:
 
@@ -365,27 +365,27 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
                 @Html.DisplayFor(model => item.CreatedDate)
             </p>
        </div>
-```
+  ```
 
 
 #### Tarea 4: Añadir ayudantes de formulario
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Views**, en **Butterfly**, haga clic en **Create.cshtml**.
 
-2. 2. En la ventana **Create.cshtml** code, coloque el cursor al principio del documento, escriba el siguiente código y luego pulse Intro.
+2. En la ventana **Create.cshtml** code, coloque el cursor al principio del documento, escriba el siguiente código y luego pulse Intro.
   ```cs
-       Usando la tienda de mariposas. Modelos
+       @using ButterfliesShop.Models
        @model ButterfliesShop.Models.Butterfly
-```
+  ```
 
 3. En el elemento **BODY** de la ventana del código **Create.cshtml**, escriba el siguiente código:
-  "C".
+  ```cs
        <div class="container">
-           <h1 class="main-title">Añadir mariposas a la tienda</h1>
+           <h1 class="main-title">Add Butterflies to the Shop</h1>
            <form method="post" enctype="multipart/form-data" asp-action="Create">  
            </form>
        </div> 
-```
+  ```
 
 #### Tarea 5: Añadir ayudantes de edición
 
@@ -397,9 +397,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
         </div>
         <div class="form-field">
             <label asp-for="ButterflyFamily"></label>
-            <select asp-for="Familia de las mariposas" asp-items="Html.GetEnumSelectList<Family>()">
-                <opción selected="selected" value="">Select</opción>
-            </seleccionar>
+            <select asp-for="ButterflyFamily" asp-items="Html.GetEnumSelectList<Family>()">
+                <option selected="selected" value="">Select</option>
+            </select>
         </div>
         <div class="form-field">
             <label asp-for="Characteristics"></label>
@@ -407,7 +407,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
         </div>
         <div class="form-field">
             <label asp-for="Quantity"></label>
-            <input asp-for="Cantidad" />
+            <input asp-for="Quantity" />
         </div>
         <div class="form-field">
             <label asp-for="PhotoAvatar"></label>
@@ -416,29 +416,29 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
         <div class="form-field">
             <input type="submit" value="Submit" />
         </div>
-```
+  ```
 
 #### Tarea 6: Ejecutar la aplicación
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
-2. 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
-3. En Microsoft Edge, haz clic en **Agregar mariposas**.
+3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
-4. En la página **Agregar mariposas a la tienda**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección;._
+4. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._
 
-5. 5. En la página **Añadir mariposas a la tienda**, en la casilla **Familia de mariposas**, seleccione _&lt;Una familia de mariposas de su elección;._
+5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._
 
-6. En la página **Añadir mariposas a la tienda**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección;._
+6. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._
 
-7. 7. En la página **Añadir mariposas a la tienda**, en la casilla **Cantidad de mariposas**, escriba _&lt;Una cantidad de mariposas de su elección;._
+7. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba _&lt;Una Butterflies Quantity de su elección&gt;._
 
-8. En la página **Agregar mariposas a la tienda**, en la casilla **Foto de mariposas**, seleccione _&lt;Una foto de mariposa de su elección de [Raíz del repositorio]\N-Todos los archivos\NMod06\N-Labfiles de Imágenes**;_, y luego haga clic en **Enviar**.
+8. En la página **Add Butterflies to The Shop**, en la casilla **Foto de mariposas**, seleccione _&lt;Una foto de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;_, y luego haga clic en **Enviar**.
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
 
@@ -452,142 +452,142 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Models**, haga clic en **Butterfly.cs**.
 
-2. 2. En la ventana **Butterfly.cs** code, en el código de propiedad **CommonName**, coloca el cursor al final de la anotación de datos **Display**, pulsa Intro, y luego escribe el siguiente código:
+2. En la ventana **Butterfly.cs** code, en el código de propiedad **CommonName**, coloca el cursor al final de la anotación de datos **Display**, pulsa Intro, y luego escribe el siguiente código:
   ```cs
-      [Requerido(ErrorMessage = "Por favor, introduzca el nombre de la mariposa")]
-```
+      [Required(ErrorMessage = "Please enter the butterfly name")]
+  ```
 3. En la ventana del código **Butterfly.cs**, en el código de propiedad **ButterflyFamily**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
   ```cs
-      [Requerido(ErrorMessage = "Por favor, seleccione la familia de las mariposas")]
-```
+      [Required(ErrorMessage = "Please select the butterfly family")]
+  ```
 
-4. En la ventana del código **Butterfly.cs**, en el código de propiedad **Cantidad**, coloque el cursor al final de la anotación de datos **Display**, pulse Intro, y luego escriba el siguiente código:
-  "cs
-      [Requerido(ErrorMessage = "Por favor, seleccione la cantidad de mariposa")]
-```
+4. En la ventana del código **Butterfly.cs**, en el código de propiedad **Quantity**, coloque el cursor al final de la anotación de datos **Display**, pulse Intro, y luego escriba el siguiente código:
+  ```cs
+      [Required(ErrorMessage = "Please select the butterfly quantity")]
+  ```
 
-5. En la ventana del código **Butterfly.cs**, en el código de propiedad **Características**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
-  "cs
-      Requerido(ErrorMessage = "Por favor, escriba las características")]
+5. En la ventana del código **Butterfly.cs**, en el código de propiedad **Characteristics**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
+  ```cs
+      [Required(ErrorMessage = "Please type the characteristics")]
       [StringLength(50)]
-```
+  ```
 
-6. En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **Características**, y luego presiona Enter dos veces.
+6. En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **Characteristics**, y luego presiona Enter dos veces.
 
 7. En la ventana del código **Butterfly.cs**, en el código de propiedad **PhotoAvatar**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
   ```cs
-      Requerido (Mensaje de error = "Por favor, seleccione la foto de las mariposas")
-```
+      [Required(ErrorMessage = "Please select the butterflies picture")]
+  ```
 8.  En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **PhotoAvatar**, y luego presiona Enter.
 
 #### Tarea 2: Añadir ayudantes de validación a una vista
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Views**, en **Butterfly**, haga clic en **Create.cshtml**.
 
-2. 2. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
+2. En la ventana del código **Create.cshtml**, localiza el siguiente código:
+  ```cs
       <form method="post" enctype="multipart/form-data" asp-action="Create">
-```
+  ```
 3. Ponga el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <div asp-validation-summary="All"></div>
-```
+  ```
 
 4. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
+  ```cs
       <input asp-for="CommonName" />
-```
+  ```
 5. En la ventana del código **Create.cshtml**, coloque el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <span asp-validation-for="CommonName"></span>
-```
+  ```
 6. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
-      <select asp-for="Familia de las mariposas" asp-items="Html.GetEnumSelectList<Family>()">
-        <opción selected="selected" value="">Select</opción>
-      </seleccionar>
-```
+  ```cs
+      <select asp-for="ButterflyFamily" asp-items="Html.GetEnumSelectList<Family>()">
+        <option selected="selected" value="">Select</option>
+      </select>
+  ```
 7. En la ventana del código **Create.cshtml**, coloque el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <span asp-validation-for="ButterflyFamily"></span>
-```
+  ```
 8. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
+  ```cs
       <textarea asp-for="Characteristics"></textarea>
-```
+  ```
 9. En la ventana del código **Create.cshtml**, coloque el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <span asp-validation-for="Characteristics"></span>
-```
+  ```
 10. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
-       <input asp-for="Cantidad" />
-```
+  ```cs
+       <input asp-for="Quantity" />
+  ```
 11. En la ventana del código **Create.cshtml**, coloque el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <span asp-validation-for="Quantity"></span>
-```
+  ```
 
 12. En la ventana del código **Create.cshtml**, localiza el siguiente código:
-  "C
+  ```cs
        <input asp-for="PhotoAvatar" type="file" />
-```
+  ```
 13. En la ventana del código **Create.cshtml**, coloque el cursor al final del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
       <span asp-validation-for="PhotoAvatar"></span>
-```
+  ```
 
 #### Tarea 3: Usar la propiedad ModelState.IsValid en un controlador
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Controllers**, haga clic en **ButterflyController.cs**.
 
-2. 2. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, localiza el siguiente código:
+2. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, localiza el siguiente código:
   ```cs
        [HttpPost]
-       IActionResultado público Crear (mariposa mariposa)
+       public IActionResult Create(Butterfly butterfly)
        {
-```
+  ```
 3. Ponga el cursor después del signo **{** (abra las abrazaderas), pulse Intro, y luego escriba el siguiente código:
   ```cs
-       si (ModelState.IsValid)
+       if (ModelState.IsValid)
        {
-```
+  ```
 4. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, localiza el siguiente código:
-  "C".
-       Volver a la vista (mariposa);
-```
+  ```cs
+       return View(butterfly);
+  ```
 5. En el bloque de código de acción **Crear** creado con el verbo **HTTP POST**, inmediatamente después del código localizado, presione Enter, y luego escriba el siguiente código:
   ```cs
        }
-       Volver a la vista (mariposa);
-```
+       return View(butterfly);
+  ```
 
 #### Tarea 4: Ejecutar la aplicación
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
-2. 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
-3. En Microsoft Edge, haz clic en **Agregar mariposas**.
+3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
 
-4. En la página de **Añadir mariposas a la tienda**, deja todas las casillas en blanco, y luego haz clic en **Subir**.
+4. En la página de **Add Butterflies to The Shop**, deja todas las casillas en blanco, y luego haz clic en **Subir**.
 
       >**Nota**: La ventana del navegador muestra la vista **Create.cshtml** con mensajes de validación debajo de todas las casillas.
 
-5. En la página **Añadir mariposas a la tienda**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección;._.
+5. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._.
 
-6. 6. En la página **Añadir mariposas a la tienda**, en la casilla **Familia de mariposas**, seleccione _&lt;Una familia de mariposas de su elección;._.
+6. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._.
 
-7. 7. En la página **Añadir mariposas a la tienda**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección;._.
+7. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._.
 
-8. En la página **Añadir mariposas a la tienda**, en la casilla **Cantidad de mariposas**, escriba **5**.
+8. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **5**.
 
-9. 9. En la página **Agregar mariposas a la tienda**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\N-Todos los archivos\NMod06\N-LabfilesImages;,_ y luego haga clic en **Enviar**.
+9. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
 
@@ -597,117 +597,117 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
 1. En **Explorador de soluciones**, haga clic con el botón derecho en **Tienda de mariposas**, apunte a **Agregar**, y luego haga clic en **Nueva carpeta**.
 
-2. 2. En la casilla **Nueva Carpeta**, escribe **Validadores**, y luego pulsa Intro.
+2. En la casilla **Nueva Carpeta**, escribe **Validadores**, y luego pulsa Intro.
 
-3. 3. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, haz clic con el botón derecho del ratón en **Validators**, apunta a **Add**, y luego haz clic en **Class**.
+3. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, haz clic con el botón derecho del ratón en **Validators**, apunta a **Add**, y luego haz clic en **Class**.
 
 4. En el cuadro de diálogo **Agregar nuevo elemento - Tienda de mariposas**, en el cuadro **Nombre**, escriba **MaxButterflyQuantityValidation**, y luego haga clic en **Agregar**.
 
 5. En la ventana de código **MaxButterflyQuantityValidation.cs**, localiza el siguiente código:
   ```cs
-      usando tareas de sistema... de enhebrado;
-```
+      using System.Threading.Tasks;
+  ```
 6. Asegúrate de que el cursor está al final del espacio de nombres **System.Threading.Tasks**, presiona Enter, y luego escribe el siguiente código:
   ```cs
-      usando ButterfliesShop.Models;
-      usando los servicios de ButterfliesShop;
-      usando System.ComponentModel.DataAnnotations;
-```
+      using ButterfliesShop.Models;
+      using ButterfliesShop.Services;
+      using System.ComponentModel.DataAnnotations;
+  ```
 7. En la ventana del código **MaxButterflyQuantityValidation.cs**, localiza el siguiente código:
-  "Cs
-      clase pública MaxButterflyQuantityValidation
-```
+  ```cs
+      public class MaxButterflyQuantityValidation
+  ```
 8.  Añada el siguiente código a la línea de código existente.
-  "C
-      : Atributo de validación
-```
+  ```cs
+      : ValidationAttribute
+  ```
 9. En el bloque de código **MaxButterflyQuantityValidation.cs**, coloque el cursor después del segundo signo **{** (abrazaderas), pulse Intro, y luego escriba el siguiente código:
   ```cs
-      int. privada de máxima cantidad;
-      MaxButterflyQuantityValidation pública (int maxAmount)
+      private int _maxAmount;
+      public MaxButterflyQuantityValidation(int maxAmount)
       {
-         maxAmount = maxAmount;
+         _maxAmount = maxAmount;
       }
-```
+  ```
 
 10. Coloque el cursor al final del bloque de código **constructor**, presione Enter dos veces, escriba el siguiente código y luego presione Enter.
   ```cs
-      protected override ValidationResult IsValid(valor del objeto, ValidationContext validationContext)
+      protected override ValidationResult IsValid(object value, ValidationContext validationContext)
       {
       }
-```
+  ```
 
 11. En el bloque de código del método **IsValid**, presione Enter, y luego escriba el siguiente código:
   ```cs
       var service = (IButterfliesQuantityService)validationContext.GetService(typeof(IButterfliesQuantityService));
-      Mariposa mariposa = (Mariposa)validaciónContexto.ObjetoInstancia;
-      if (butterfly.ButterflyFamily!= null)
+      Butterfly butterfly = (Butterfly)validationContext.ObjectInstance;
+      if (butterfly.ButterflyFamily != null)
       {
-            int? cantidad = servicio.GetButterflyFamilyQuantity(mariposa.mariposaFamilia.Valor);
-            Cantidad int? = cantidad + mariposa.Cantidad;
-            si (sumQuantity > _maxAmount)
+            int? quantity = service.GetButterflyFamilyQuantity(butterfly.ButterflyFamily.Value);
+            int? sumQuantity = quantity + butterfly.Quantity;
+            if (sumQuantity > _maxAmount)
             {
-                devuelve el nuevo ValidationResult(string.Format("El límite de mariposas de la misma familia en la tienda es de {0} mariposas"). Actualmente hay {1}", _máxima cantidad, cantidad));
+                return new ValidationResult(string.Format("Limit of butterflies from the same family in the store is {0} butterflies. Currently there are {1}", _maxAmount, quantity));
             }
-            Devolver ValidationResultado.Éxito;
+            return ValidationResult.Success;
       }
-      Devolver ValidationResultado.Éxito;
-```
+      return ValidationResult.Success;
+  ```
 
 12. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, expandir **Models**, y luego hacer clic en **Butterfly.cs**.
 
 13. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
   ```cs
-       usando System.ComponentModel.DataAnnotations;
-```
+       using System.ComponentModel.DataAnnotations;
+  ```
 14. Asegúrate de que el cursor está al final del espacio de nombres **System.ComponentModel.DataAnnotations**, presiona Enter, y luego escribe el siguiente código:
   ```cs
-       usando la tienda de mariposas. Validadores;
-```
+       using ButterfliesShop.Validators;
+  ```
 15. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
-  "Cs
-      [Requerido(ErrorMessage = "Por favor, seleccione la cantidad de mariposa")]
-```
+  ```cs
+      [Required(ErrorMessage = "Please select the butterfly quantity")]
+  ```
 16.  Ponga el cursor debajo del código localizado, presione Enter, y luego escriba el siguiente código:
 
   ```cs
       [MaxButterflyQuantityValidation(50)]
-```
+  ```
 
 
 #### Tarea 6: Ejecutar la aplicación
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
-2. 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
-3. En Microsoft Edge, haz clic en **Agregar mariposas**.
+3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
-4. En la página **Agregar mariposas a la tienda**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección;._
+4. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._
 
-5. 5. En la página **Añadir mariposas a la tienda**, en la casilla **Familia de mariposas**, seleccione _&lt;Una familia de mariposas de su elección;._
+5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._
 
-6. En la página **Añadir mariposas a la tienda**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección;._
+6. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._
 
-7. En la página **Añadir mariposas a la tienda**, en la casilla **Cantidad de mariposas**, escriba **60**.
+7. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **60**.
 
-8. 8. En la página **Agregar mariposas a la tienda**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\N-Todos los archivos\NMod06\N-LabfilesImages;,_ y luego haga clic en **Enviar**.
+8. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
 
-      >**Nota**: La ventana del navegador muestra la vista **Create.cshtml** con un mensaje de validación personalizado debajo de la casilla **Cantidad de mariposas**.
+      >**Nota**: La ventana del navegador muestra la vista **Create.cshtml** con un mensaje de validación personalizado debajo de la casilla **Butterflies Quantity**.
 
-9. En la página **Añadir mariposas a la tienda**, en la casilla **Cantidad de mariposas**, escriba **2**.
+9. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **2**.
 
-10. 10. En la página **Agregar mariposas a la tienda**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\NAllFiles\Mod06\NLabfiles\NImages;,_ y luego haga clic en **Enviar**.
+10. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
 
 11. En Microsoft Edge, haga clic en **Cerrar**.
 
-12. 12. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Salir**.
+12. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Salir**.
 
 >**Resultados**: Al final de este ejercicio, has creado una aplicación **ButterfliesShop** en la que los usuarios pueden enviar a la tienda una variedad de mariposas.
 
