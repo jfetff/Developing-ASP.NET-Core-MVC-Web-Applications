@@ -1,17 +1,17 @@
-# Módulo 6: Desarrollando Modelos
+# Módulo 6: Desarrollo de Modelos
 
 Siempre cuando un camino comienza con  *[Repository Root]*, reemplacelo con el camino absoluto en el que el repositorio 20486 reside. Por ejemplo, si tu has cloneado o extraido el repositorio 20486 en la carpeta **C:\Users\John Doe\Downloads\20486**, cambiar la ruta de: **[Repository Root]\AllFiles\20486D\Mod01** a **C:\Users\John Doe\Downloads\20486\AllFiles\20486D\Mod01**.
 
-Fichero de Instrucciones: Instructions\20486D_MOD06_LAK.md
+Fichero de Instrucciones: Instructions\20486D_MOD05_LAK.md
 
 **Información:**
 
 1. **Nombres y apellidos:** José René Fuentes Cutz
 2. **Fecha:** 24 de Noviembre 2020.
-3. **Resumen del Ejercicio:** Este laboratorio consta de 4 ejercicio:
-- En el Primer ejercicio nos ayuda a  crear Controllers MVC que implementen acciones comunes para la clase de modelo **City** de la aplicación.
-- En el Segundo ejercicio nos ayuda a entender como podemos registrar nuevas rutas personalizadas en el canal de solicitud de Controllers de la aplicación..
-- En el Tercer ejercicio creamos una clase de filtro de acción que registre los detalles de las acciones, los Controllers y los parámetros en un archivo externo cada vez que se llame a una acción..
+3. **Resumen del Ejercicio:** Este laboratorio consta de 3 ejercicios:
+- En el Primer ejercicio nos ayuda a  crear un Módelo, pasar el módelo de una acción a una vista y a usar el módelo en la vista de la aplicación.
+- En el Segundo ejercicio nos ayuda a agregar anotaciones de datos al modelo de la clase **Butterfly** en la aplicación y agregar tag helpers a las vistas.
+- En el Tercer ejercicio creamos la aplicación **ButterfliesShop** en la cual los usuarios puede hacer peticiones para comprar variedades de Mariposas.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguno.
 
@@ -22,11 +22,11 @@ Fichero de Instrucciones: Instructions\20486D_MOD06_LAK.md
 
 # Laboratorio: Desarrollo de modelos
 
-### Configuración del Lab
+### Lab Setup
 
 Tiempo estimado: **60 minutos**
 
-### Pasos de Preparación
+### Preparation Steps
 
 Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://github.com/MicrosoftLearning/20486D-DevelopingASPNETMVCWebApplications/tree/master/Allfiles**). Contiene los segmentos de código para los laboratorios y demostraciones de este curso.
 
@@ -55,14 +55,17 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
        public int Id { get; set; }
        public string CommonName { get; set; }
        public Family? ButterflyFamily { get; set; }
-       public int? Cantidad { get; set; }
-       public string Características { get; set; }
+       public int? Quantity { get; set; }
+       public string Characteristics { get; set; }
        public DateTime CreatedDate { get; set; }
        public IFormFile PhotoAvatar { get; set; }
        public string ImageName { get; set; }
        public byte[] PhotoFile { get; set; }
        public string ImageMimeType { get; set; }
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-1.jpg "Visualizando el código agregado a la clase creada 'Butterfly.cs' !!!")
 
 6. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, haz clic con el botón derecho del ratón en **Models**, apunta a **Add**, y luego haz clic en **Class**.
 
@@ -72,6 +75,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
   ```cs
        public List<Butterfly> Butterflies { get; set; }
   ```
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-2.jpg "Visualizando el código de la clase creada 'IndexViewModel.cs' !!!")
 
 #### Tarea 2: Usar el modelo en una vista
 
@@ -91,7 +98,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
            <p class="into">Welcome to our Web Store, Enjoy a Wide Variety of Butterflies</p>
            <p class="into">Our Butterflies in the Shop</p>
            <button type="button" onclick="location.href='@Url.Action("Create", "Butterfly")'">Add Butterflies</button>
-       </div>      
+       </div>       
   ```
 5. Ponga el cursor al final del elemento **BOTÓN** que acaba de crear, pulse Intro, y luego escriba el siguiente código:
   ```cs
@@ -112,7 +119,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
             <p>@item.CreatedDate</p>
        </div>
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-3.jpg "Visualizando el código de la Vista creada 'Index.cshtml' !!!")
 
 #### Tarea 3: Pasar el modelo del controlador a una vista
 
@@ -140,6 +149,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
        indexViewModel.Butterflies = _data.ButterfliesList;
        return View(indexViewModel);
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-4.jpg "Visualizando el código que se ha agregado en la clase 'ButterflyController.cs' !!!")
 
 #### Tarea 4: Ejecutar la aplicación
 
@@ -148,6 +160,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-5.jpg "Visualizando la página de inicio de la aplicación !!!")
 
 3. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -166,6 +182,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
   ```cs
        return View();
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-6.jpg "Visualizando el código agregado al método 'Get Action' de la clase 'ButterflyController.cs' en la aplicación !!!")
 
 #### Tarea 6: Escribir una acción POST que acepte el modelo
 
@@ -200,6 +219,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
   ```cs
        return View(butterfly);
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Visualizando el código agregado al método 'Http Post' de la clase 'ButterflyController.cs' en la aplicación !!!")
+
 
 >**Resultados**: Después de completar este ejercicio, podrás crear un modelo, pasar el modelo de una acción a una vista y utilizar el modelo en la vista. 
 
@@ -234,12 +257,12 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
       [Display(Name = "Butterflies Quantity:")]
   ```
 
-7. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Quantity**, presione Enter dos veces, y luego escriba el siguiente código:
+7. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Cantidad**, presione Enter dos veces, y luego escriba el siguiente código:
   ```cs
       [Display(Name = "Characteristics:")]
   ```
 
-8. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Characteristics**, presione Enter dos veces, y luego escriba el siguiente código:
+8. En la ventana del código **Butterfly.cs**, coloque el cursor al final del código de propiedad **Características**, presione Enter dos veces, y luego escriba el siguiente código:
   ```cs
       [DataType(DataType.DateTime)]
       [Display(Name = "Updated on:")]
@@ -250,6 +273,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
   ```cs
       [Display(Name = "Butterflies Picture:")]
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Visualizando el código agregado para las anotaciones de datos al modelo 'Butterfly.cs' en la aplicación !!!")
 
 #### Tarea 2: Actualizar una acción para devolver FileContentResult
 
@@ -300,6 +326,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
             }
        }
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Visualizando el código agregado para crear una acción y devolver un contenido de un archivo en la aplicación !!!")
 
 #### Tarea 3: Agregar ayudantes de exhibición
 
@@ -366,7 +395,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
             </p>
        </div>
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-10.jpg "Visualizando el código agregado para crear las ayudas de visualizacion en la vista  **Index.cshtml** de la aplicación !!!")
 
 #### Tarea 4: Añadir ayudantes de formulario
 
@@ -384,8 +415,11 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
            <h1 class="main-title">Add Butterflies to the Shop</h1>
            <form method="post" enctype="multipart/form-data" asp-action="Create">  
            </form>
-       </div> 
+       </div>
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Visualizando el código agregado para las ayudas de los formularios en la vista  **Create.cshtml** de la aplicación !!!")
 
 #### Tarea 5: Añadir ayudantes de edición
 
@@ -418,29 +452,45 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
         </div>
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Visualizando el código agregado para las ayudas de los formularios en la vista  **Create.cshtml** de la aplicación !!!")
+
 #### Tarea 6: Ejecutar la aplicación
 
 1. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
 2. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
-    >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Visualizando el resultado de la acción **Index** dentro del controlador **Butterfly** de la aplicación !!!")
+
+  > **Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
 3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Visualizando la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly** de la aplicación !!!")
+
 4. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._
 
-5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._
+5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una familia de mariposas de su elección&gt;._
 
-6. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._
+6. En la página **Add Butterflies to The Shop**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección&gt;._
 
-7. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba _&lt;Una Butterflies Quantity de su elección&gt;._
+7. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba _&lt;Una cantidad de mariposas de su elección&gt;._
 
-8. En la página **Add Butterflies to The Shop**, en la casilla **Foto de mariposas**, seleccione _&lt;Una foto de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;_, y luego haga clic en **Enviar**.
+8. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Picture**, seleccione _&lt;Una foto de mariposa de su elección de [Raíz del repositorio]\AllFiles\Mod06\Labfiles de Imágenes&gt;._, y luego haga clic en **Enviar**.
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "Verificando que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal. de la aplicación !!!")
 
 9. En Microsoft Edge, haga clic en **Cerrar**.
 
@@ -461,24 +511,28 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
       [Required(ErrorMessage = "Please select the butterfly family")]
   ```
 
-4. En la ventana del código **Butterfly.cs**, en el código de propiedad **Quantity**, coloque el cursor al final de la anotación de datos **Display**, pulse Intro, y luego escriba el siguiente código:
+4. En la ventana del código **Butterfly.cs**, en el código de propiedad **Cantidad**, coloque el cursor al final de la anotación de datos **Display**, pulse Intro, y luego escriba el siguiente código:
   ```cs
       [Required(ErrorMessage = "Please select the butterfly quantity")]
   ```
 
-5. En la ventana del código **Butterfly.cs**, en el código de propiedad **Characteristics**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
+5. En la ventana del código **Butterfly.cs**, en el código de propiedad **Características**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
   ```cs
       [Required(ErrorMessage = "Please type the characteristics")]
       [StringLength(50)]
   ```
 
-6. En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **Characteristics**, y luego presiona Enter dos veces.
+6. En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **Características**, y luego presiona Enter dos veces.
 
 7. En la ventana del código **Butterfly.cs**, en el código de propiedad **PhotoAvatar**, coloque el cursor al final de la anotación de datos **Display**, presione Enter, y luego escriba el siguiente código:
   ```cs
       [Required(ErrorMessage = "Please select the butterflies picture")]
   ```
 8.  En la ventana del código **Butterfly.cs**, coloca el cursor al final del código de propiedad **PhotoAvatar**, y luego presiona Enter.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Visualizando el código agregado a la clase 'Butterfly.cs' para agregar validación con anotaciones de datos a un modelo de la aplicación !!!")
 
 #### Tarea 2: Añadir ayudantes de validación a una vista
 
@@ -537,6 +591,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
       <span asp-validation-for="PhotoAvatar"></span>
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Visualizando el código agregado para la validación de los helper a la vista 'Create.cshtml' en la aplicación !!!")
+
 #### Tarea 3: Usar la propiedad ModelState.IsValid en un controlador
 
 1. En la ventana **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, en **Controllers**, haga clic en **ButterflyController.cs**.
@@ -561,6 +619,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
        }
        return View(butterfly);
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-18.jpg "Visualizando el código agregado para la validación de los helper a la vista 'Create.cshtml' en la aplicación !!!")
 
 #### Tarea 4: Ejecutar la aplicación
 
@@ -570,26 +631,39 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Visualizando el resultado de la acción **Index** dentro del controlador **Butterfly** en la aplicación !!!")
+
 3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
-
 4. En la página de **Add Butterflies to The Shop**, deja todas las casillas en blanco, y luego haz clic en **Subir**.
 
       >**Nota**: La ventana del navegador muestra la vista **Create.cshtml** con mensajes de validación debajo de todas las casillas.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Visualizando el resultado de la acción **Index** dentro del controlador **Butterfly** en la aplicación !!!")
 
 5. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._.
 
-6. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._.
+6. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una familia de mariposas de su elección&gt;._.
 
-7. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._.
+7. En la página **Add Butterflies to The Shop**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección&gt;._.
 
 8. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **5**.
 
-9. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
+9. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\AllFiles\Mod06\LabfilesImages;,_ y luego haga clic en **Enviar**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Visualizando que la última validación es efectiva en el resultado de agregar una mariposa en la aplicación !!!")
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Visualizando que las mariposas agregas han sido agregadas correctamente  en la aplicación !!!")
 
 10. En Microsoft Edge, haga clic en **Cerrar**.
 
@@ -654,6 +728,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
       return ValidationResult.Success;
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Visualizando el código agregado para mostrar la validación personalizada de la clase creada '/Validators/MaxButterflyQuantityValidation.cs' en la aplicación !!!")
+
 12. En la ventana de **ButterfliesShop - Microsoft Visual Studio**, en **Solution Explorer**, expandir **Models**, y luego hacer clic en **Butterfly.cs**.
 
 13. En la ventana del código **Butterfly.cs**, localiza el siguiente código:
@@ -673,7 +751,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
   ```cs
       [MaxButterflyQuantityValidation(50)]
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-24.jpg "Visualizando el código agregado para mostrar la validación personalizada de la clase creada '/Models/Butterfly.cs' en la aplicación !!!")
 
 #### Tarea 6: Ejecutar la aplicación
 
@@ -683,27 +763,40 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub (**https://gith
 
     >**Nota**: El navegador muestra el resultado de la acción **Index** dentro del controlador **Butterfly**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-26.jpg "Visualizando el código agregado para mostrar la validación personalizada de la clase creada '/Models/Butterfly.cs' en la aplicación !!!")
+
 3. En Microsoft Edge, haz clic en **Add Butterflies**.
  
     >**Nota**: El navegador muestra la acción **Crear** con el resultado del verbo **HTTP GET** dentro del Controlador **Butterfly**.
 
 4. En la página **Add Butterflies to The Shop**, en la casilla **Nombre común**, escriba _&lt;Un nombre común de mariposa de su elección&gt;._
 
-5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una Butterfly Family de su elección&gt;._
+5. En la página **Add Butterflies to The Shop**, en la casilla **Butterfly Family**, seleccione _&lt;Una familia de mariposas de su elección&gt;._
 
-6. En la página **Add Butterflies to The Shop**, en la casilla **Characteristics**, escriba _&lt;Una característica de mariposa de su elección&gt;._
+6. En la página **Add Butterflies to The Shop**, en la casilla **Características**, escriba _&lt;Una característica de mariposa de su elección&gt;._
 
 7. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **60**.
 
-8. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
+8. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
 
-      >**Nota**: La ventana del navegador muestra la vista **Create.cshtml** con un mensaje de validación personalizado debajo de la casilla **Butterflies Quantity**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-25.jpg "Visualizando el código agregado para mostrar la validación personalizada de la clase creada '/Models/Butterfly.cs' en la aplicación !!!")
+
+  > **Nota**: La ventana del navegador muestra la vista **Create.cshtml** con un mensaje de validación personalizado debajo de la casilla **Butterflies Quantity**.
 
 9. En la página **Add Butterflies to The Shop**, en la casilla **Butterflies Quantity**, escriba **2**.
 
-10. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Repository Root]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
+10. En la página **Add Butterflies to The Shop**, en la casilla **Cuadro de mariposas**, seleccione _&lt;Una imagen de mariposa de su elección de [Raíz del repositorio]\AllFiles\Mod06\Labfiles\Images&gt;,_ y luego haga clic en **Enviar**.
 
       >**Nota**: Verifica que los detalles de la mariposa enviada son válidos y que una nueva mariposa fue añadida a la página principal.
+
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-27.jpg "Visualizando la verificación que la cantidad es correcta y que la nueva mariposa se ha agregado correctamente en la aplicación !!!")
 
 11. En Microsoft Edge, haga clic en **Cerrar**.
 
