@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title <link type="text/css" rel="stylesheet" href="~/css/style-layout-example.css" />
+    </title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to the University</h1>
+        @RenderBody()
+    </div>
+    @RenderSection("footer", false)
+</body>
+</html>
