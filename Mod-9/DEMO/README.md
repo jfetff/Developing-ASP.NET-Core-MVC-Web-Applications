@@ -56,7 +56,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
   ```
 >**Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-1.jpg "Mostrando los resultados del 'npm install' en la aplicación !!!")
 
@@ -70,7 +70,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
 10. En el cuadro **Nueva Carpeta**, escriba **Shared**, y luego presione Enter.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-2.jpg "Mostrando como creamos la carpeta 'Shared' en la aplicación !!!")
 
@@ -78,7 +78,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
 12. En el cuadro de diálogo **Agregar nuevo elemento - BootstrapExample**, haga clic en **Web**, en el panel de resultados, haga clic en **Razor Layout**, y luego haga clic en **Agregar**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-3.jpg "Mostrando la creación de la vista '_Layout.cshtml' en la aplicación !!!")
 
@@ -160,7 +160,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
        </div>
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-4.jpg "Mostrando el código agregado en la vista '_Layout.cshtml' en la aplicación !!!")
 
@@ -178,7 +178,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
 26. En el cuadro de diálogo **Agregar vista MVC**, asegúrese de que la casilla de verificación **Crear como una vista parcial** está desactivada y la casilla de verificación **Utilizar una página de diseño** está seleccionada y, a continuación, haga clic en **Agregar**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-5.jpg "Mostrando la creación de la vista Razor 'Index.cshtml' en la aplicación !!!")
 
@@ -219,7 +219,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
        </div>
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-6.jpg "Mostrando el código agregado a la vista Razor 'Index.cshtml' en la aplicación !!!")
 
@@ -229,7 +229,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
 32. En el cuadro de diálogo **Agregar nuevo elemento - Ejemplo de arranque**, en el cuadro **Nombre**, escriba **_Alerta**, y luego haga clic en **Agregar**. 
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-7.jpg "Mostrando como agregamos la vista Razor '_Alerta.cshtml' en la aplicación !!!")
 
@@ -271,7 +271,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
        </button>
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-8.jpg "Mostrando el código agregado a la vista Razor '_Alerta.cshtml' en la aplicación !!!")
 
@@ -279,19 +279,19 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
 37. En la ventana **BootstrapExample - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Start Without Debugging**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-9.jpg "Mostrando la página inicial de la aplicación !!!")
 
 38. En la página **Home**, haga clic en **Launch Modal Example**, y luego haga clic en **Close**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-10.jpg "Mostrando la ventana emergente de la página inicial de la aplicación !!!")
 
 39. En la barra de menú, haga clic en **Géneros**, y luego en **Drama**. 
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-11.jpg "Mostrando la ventana de la página 'Drama' de la aplicación !!!")
 
@@ -299,7 +299,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
     > **Nota**: Examinar la alerta que aparece.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-12.jpg "Mostrando la respuesta de la ventana de la página 'Drama' al dar 'yes' de la aplicación !!!")
 
@@ -311,13 +311,13 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
 
     > **Nota**: Examinar la alerta que aparece.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-13.jpg "Mostrando la página 'Science Fiction' de la aplicación !!!")
 
 44. Para cerrar la alerta, presione el botón de cierre **X**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-14.jpg "Cerrando la aplicación desde la página 'Science Fiction' de la aplicación !!!")
 
@@ -357,7 +357,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
   ```
  > **Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-15.jpg "Resultado de la ejecución del comando 'npm install' de la aplicación !!!")
 
@@ -373,7 +373,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 11. En el cuadro de lista **Localización de herramientas externas**, seleccione **$(PATH)**, presione el botón de la flecha hacia arriba hasta que **$(PATH)** esté en la parte superior de la lista, y luego haga clic en **OK**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-16.jpg "Mostrando como hacemos que el 'Path' en la Administración de Paquetes este de primero como herramientas externas de la aplicación !!!")
 
@@ -381,7 +381,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
     > **Nota**: El navegador muestra una página que no está diseñada por un CSS.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-17.jpg "Mostrando la página inicial sin ningún estilo en la aplicación !!!")
 
@@ -393,7 +393,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
     > **Nota**: Los paquetes **gulp** y **gulp-sass** aparecen en la sección **devDependencias**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-18.jpg "Mostrando el contenido del archivo 'package.json' de la aplicación !!!")
 
@@ -407,7 +407,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 19. En el cuadro **Nueva Carpeta**, escriba **Estilos**, y luego presione Enter.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-19.jpg "Mostrando la carpeta 'Styles' recién creada en la aplicación !!!")
 
@@ -419,7 +419,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 23. En el cuadro de diálogo **Agregar nuevo elemento - GulpExample**, en el cuadro **Nombre**, escriba **main**, y luego haga clic en **Agregar**. 
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-20.jpg "Mostrando la creación del archivo 'Styles/main.scss' recién creada en la aplicación !!!")
 
@@ -473,7 +473,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        }
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-21.jpg "Mostrando el código agregado en el archivo 'Styles/main.scss' recién creado en la aplicación !!!")
 
@@ -483,7 +483,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 29. En el cuadro de diálogo **Agregar nuevo elemento - GulpExample**, en el cuadro **Nombre**, escriba **gulpfile.js**, y luego haga clic en **Agregar**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-22.jpg "Mostrando el archivo 'gulp.js' recién creado en la aplicación !!!")
 
@@ -500,7 +500,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        });
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-23.jpg "Mostrando el código agregado al archivo 'gulp.js' recién creado en la aplicación !!!")
 
@@ -510,19 +510,19 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
     > **Nota**: Si la **tarea** no aparece en la lista de **Tareas**, haga clic en **Actualizar**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-24.jpg "Mostrando como ejecutar el explorador de tareas 'Task Runner' de la aplicación !!!")
 
 33. En el panel **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **sass**, y luego haga clic en **Run**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-25.jpg "Mostrando el panel de ejecución para el explorador de tareas 'Task Runner' de la aplicación !!!")
 
     > **Nota**: 34. En el Explorador de soluciones, en **wwwwroot**, se ha añadido una nueva carpeta llamada **css** que contiene un archivo CSS llamado **main.css**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-26.jpg "Mostrando el resultado de ejecución para el explorador de tareas 'Task Runner' de la aplicación !!!")
 
@@ -538,7 +538,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        <link type="text/css" href="~/css/main.css" rel="stylesheet" />
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-27.jpg "Agregando el vínculo de estilo en la página 'Index.cshtml' en la aplicación !!!")
 
@@ -548,7 +548,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
     > **Nota**: El navegador muestra una página que está diseñada usando CSS.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-28.jpg "Mostrando la página inicial de la aplicación con los estilos aplicados en la página 'Index.cshtml' en la aplicación !!!")
 
@@ -588,7 +588,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
   ```
   >  **Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-29.jpg "Mostrando el resultado de la ejecución del comando 'npm install' en la aplicación !!!")
 
@@ -611,7 +611,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 13. En el cuadro de diálogo **Agregar vista MVC**, asegúrese de que las casillas de verificación **Crear como vista parcial** y **Utilizar una página de diseño** están desactivadas y, a continuación, haga clic en **Agregar**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-5.jpg " Mostrando como agregamos una vista Razor en la aplicación !!!")
 
@@ -703,7 +703,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        <script src="~/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   ```
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-30.jpg "Mostrando el código agregado a la vista 'Index.cshtml' en la aplicación !!!")
 
@@ -713,7 +713,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
       >**Nota**: El navegador muestra una página que está diseñada utilizando el sistema de **Bootstrap grid system**.
 
-- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+- La representación visual del código del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-31.jpg "Mostrando la aplicación con los nuevos estilos agregados !!!")
 
