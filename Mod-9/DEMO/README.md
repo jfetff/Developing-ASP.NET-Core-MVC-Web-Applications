@@ -48,7 +48,7 @@ Asegúrese de haber clonado el directorio **20486D** de GitHub. Contiene los seg
        cd {copia de la ruta de la carpeta}
   ```
 
- > **Nota**: Si la **{pista de la carpeta copiada}** es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{disco}:* antes de escribir el comando **cd** *{pista de la carpeta copiada}*.
+ > **Nota**: Si la **{Ruta de la carpeta copiada}** es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{disco}:* antes de escribir el comando **cd** *{Ruta de la carpeta copiada}*.
 
 6. En el **Administrador: Command Prompt**, escriba el siguiente comando y, a continuación, pulse Intro.
   ```cs
@@ -349,7 +349,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        cd {copia de la ruta de la carpeta}
   ```
 
- > **Nota**: Si la *{pista de la carpeta copiada}* es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{pista de disco}:* antes de escribir el comando **cd** *{pista de la carpeta copiada}*.
+ > **Nota**: Si la *{Ruta de la carpeta copiada}* es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{pista de disco}:* antes de escribir el comando **cd** *{Ruta de la carpeta copiada}*.
 
 6. En el **Administrador: Command Prompt**, escriba el siguiente comando y, a continuación, pulse Intro.
   ```cs
@@ -580,7 +580,7 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
        cd {copied folder path}
   ```
 
-   > **Nota**: Si la *{pista de la carpeta copiada}* es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{pista de disco}:* antes de escribir el comando **cd** *{pista de la carpeta copiada}*.
+   > **Nota**: Si la *{Ruta de la carpeta copiada}* es diferente de la unidad de disco en la que se encuentra el símbolo del sistema, deberá escribir *{pista de disco}:* antes de escribir el comando **cd** *{Ruta de la carpeta copiada}*.
 
 6. En el **Administrador: Command Prompt**, escriba el siguiente comando y, a continuación, pulse Intro.
   ```cs
