@@ -1,6 +1,5 @@
 # Módulo 10: Prueba y resolución de problemas
 
-# Laboratorio: Cifrado del informe de calificaciones
 
 Fichero de Instrucciones: Instructions\20483C_MOD10_DEMO.md
 
