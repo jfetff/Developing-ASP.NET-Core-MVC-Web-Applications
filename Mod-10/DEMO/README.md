@@ -8,8 +8,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
 3. **Resumen del Modulo 10:** Este módulo consta de dos ejercicios:
-    -  En el primer ejercio nos ayuda a entender como usar la metodología del ASP.NET Identity.
-    - En el ejercicio 2 la práctica nos ayuda a entender como autorizar el acceso a aciones del controlador.
+    - En el primer ejercio haremos pruebas de aplicaciones MVC.
+    - En el ejercicio 2 implementamos estrategias para la implementación del Manedo de errores.
+    - En el tercer ejericio aprendemos como registrar aplicaciones MVC.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
