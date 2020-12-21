@@ -2,7 +2,7 @@
 
 # Laboratorio: Cifrado del informe de calificaciones
 
-Fichero de Instrucciones: Instructions\20483C_MOD10_DEMO.md
+Fichero de Instrucciones: Instructions\20486D_MOD10_DEMO.md
 
 Entregar el url de GitHub con la solución y un readme con las siguiente información:
 
