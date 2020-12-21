@@ -2,13 +2,13 @@
 
 Siempre cuando un camino comienza con  *[Repository Root]*, reemplacelo con el camino absoluto en el que el repositorio 20486 reside. Por ejemplo, si tu has cloneado o extraido el repositorio 20486 en la carpeta **C:\Users\John Doe\Downloads\20486**, cambiar la ruta de: **[Repository Root]\AllFiles\20486D\Mod01** a **C:\Users\John Doe\Downloads\20486\AllFiles\20486D\Mod01**.
 
-Fichero de Instrucciones: Instructions\20486D_MOD05_LAK.md
+Fichero de Instrucciones: Instructions\20486D_MOD09_LAK.md
 
 **Información:**
 
-1. **Nombres y apellidos:** José René Fuentes Cutz
+1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
-3. **Resumen del Ejercicio:** Este laboratorio consta de 4 ejercicio:
+3. **Resumen del Ejercicio:** Este laboratorio consta de 3 ejercicios:
 - En el Primer ejercicio usamos gulp para copiar, empaquetar y minificar archivos JavaScript, y añadir tareas de vigilancia.
 - En el Segundo ejercicio nos ayuda a crear los archivos Sass y añadir tareas gulp para compilarlos, agruparlos y minarlos.
 - En el Tercer ejercicio creamos una aplicación para la compañía de helados en la que los usuarios pueden ver los detalles de los helados, y también comprar algunos.
@@ -21,7 +21,7 @@ Fichero de Instrucciones: Instructions\20486D_MOD05_LAK.md
 
 # Laboratorio: Desarrollo del lado del cliente
 
-### Lab Setup
+### Configuración del Lab
 
 Tiempo estimado: **60 minutos**
 
@@ -55,6 +55,10 @@ Tiempo estimado: **60 minutos**
   ```
 >**Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-1.jpg "Resultado de la ejecución del comando 'npm install' en la aplicación !!!")
+
 7. Cierre la ventana.
 
 8. En el Explorador de Archivos, navega a **[Repository Root]\Allfiles\Mod09\Labfiles\01_IceCreamCompany_begin**, y luego haz doble clic en **IceCreamCompany.sln**.
@@ -67,11 +71,19 @@ Tiempo estimado: **60 minutos**
 
 11. En el cuadro de lista **Ubicaciones de herramientas externas**, seleccione **$(PATH)**, presione el botón de la flecha hacia arriba hasta que **$(PATH)** esté en la parte superior de la lista, y luego presione **OK**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-2.jpg "Mostrando la Administración de paquetes Web y como hacemos que el '$PATH' sea la primera opción en la aplicación !!!")
+
 12. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Solution Explorer, haga clic en **package.json**.
 
 13. Examinar la ventana de código **package.json**.
 
       >**Nota**: Hay dependencias en los paquetes **gulp**, **gulp-concat**, **gulp-cssmin**, **gulp-sass**, **gulp-uglify** que aparecen en la sección **devDependencias** y los paquetes **bootstrap**, **hoek**, **jquery**, **lodash**, **popper.js** que aparecen en la sección **Dependencias**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-3.jpg "Mostrando el contenido del archivo de configuración de la aplicación 'package.json'  !!!")
 
 #### Tarea 2: Escribir una tarea para copiar un archivo JavaScript
 
@@ -80,6 +92,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Add New Item - IceCreamCompany**, apunte a **Web**, y luego en el panel de resultados, apunte a **JavaScript File**.
 
 3. En el cuadro de diálogo **Add New Item - IceCreamCompany**, en el cuadro **Name**, escriba **gulpfile**, y luego haga clic en **Add**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-4.jpg "Mostrando como agregamos el achivo JavaScript de la aplicación 'gulpfile.js'  !!!")
 
 4. En la ventana de código **gulpfile.js**, escriba el siguiente código:
 
@@ -99,7 +115,9 @@ Tiempo estimado: **60 minutos**
                 .pipe(gulp.dest(paths.destinationjsFolder));
        });
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-5.jpg "Mostrando el código agregado en el achivo JavaScript de la aplicación 'gulpfile.js'  !!!")
 
 #### Tarea 3: Ejecutar la tarea
 
@@ -107,11 +125,23 @@ Tiempo estimado: **60 minutos**
 
 2. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho en **gulpfile.js**, y luego haga clic en **Task Runner Explorer**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-6.jpg "Mostrando el achivo JavaScript agregado en la aplicación 'gulpfile.js'  !!!")
+
       >**Nota**: Si la lista de **Tareas** no contiene una tarea llamada **copia-js-archivo**, haga clic en **Actualizar**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Mostrando la ejecución del achivo JavaScript agregado en la aplicación 'copy-js-file.js'  !!!")
 
 3. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **copy-js-file**, y luego haga clic en **Run**.
 
     >**Nota**: En Solution Explorer, en **wwwwroot**, se ha añadido una nueva carpeta llamada **scripts** con un archivo JavaScript llamado **jquery.js**
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Mostrando que el archivo 'jquery.js' ha sido creado en la carpeta 'scripts' en la aplicación  !!!")
 
 #### Tarea 4: Escribir una tarea para minificar un archivo JavaScript
 
@@ -211,6 +241,9 @@ Tiempo estimado: **60 minutos**
 
 3. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho en **min-vendor:js**, y luego haga clic en **Run**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Mostrando la ejecución del achivo JavaScript agregado en la aplicación 'mini-vendor.js'  !!!")
       >**Nota**: En Solution Explorer, en **wwwwroot**, en **scripts**, se ha añadido un nuevo archivo llamado **vendor.min.js**. Fíjese que este archivo es una versión minificada del archivo **jquery.js**.
 
 4. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Explorador de soluciones, expanda **Scripts**, y luego haga clic en **payment-calc.js**.
@@ -219,7 +252,14 @@ Tiempo estimado: **60 minutos**
 
 5. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho **min:js**, y luego haga clic en **Run**.
 
-      >**Nota**: En el Solution Explorer, en **wwwwroot**, en **scripts**, se ha añadido un nuevo archivo llamado **script.min.js**.  
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-10.jpg "Mostrando la ejecución del achivo JavaScript agregado en la aplicación 'min.js'  !!!")
+
+  > **Nota**: En el Solution Explorer, en **wwwwroot**, en **scripts**, se ha añadido un nuevo archivo llamado **script.min.js**.  
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Mostrando que el archivo 'script.min.js' ha sido creado en la carpeta 'scripts' en la aplicación  !!!")
 
 6. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Solution Explorer, bajo **wwwwroot**, bajo **scripts**, haga clic en **script.min.js**.
 
@@ -227,6 +267,9 @@ Tiempo estimado: **60 minutos**
 
 7. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **js-watcher**, y despues hacer clic en **Run**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Mostrando que el archivo 'jquery.js' ha sido creado en la carpeta 'scripts' en la aplicación  !!!")
 
 8. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Solution Explorer, en **Scripts**, haga clic en **payment-calc.js**.
 
@@ -240,6 +283,7 @@ Tiempo estimado: **60 minutos**
        $('.form-control')
   ```
 
+
 11. En la ventana de **IceCreamCompany - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save payment-calc.js**.
 
 12. En el cuadro de diálogo **Microsoft Visual Studio**, haga clic en **Sí a todo**.
@@ -247,6 +291,9 @@ Tiempo estimado: **60 minutos**
 13. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Solution Explorer, en **wwwwroot**, en **scripts**, haga clic en **script.min.js**.
 
       >**Nota**: En el archivo **script.min.js**, la cadena **form-control-merror** fue reemplazada por **form-control**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Mostrando que el archivo 'payment-calc.js' ha cambiado en su contexto  !!!")
 
 >**Resultados**: En este ejercicio, usaste gulp para copiar, empaquetar y minificar archivos JavaScript, y añadir tareas de vigilancia.
 
@@ -258,9 +305,17 @@ Tiempo estimado: **60 minutos**
 
 2. En el cuadro **Nueva Carpeta**, escriba **Estilos**, y luego presione Enter.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando que hemos creado la carpeto 'Styles' en la aplicación  !!!")
+
 3. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho del ratón en **Estilos**, apunte a **Agregar**, y luego haga clic en **Nuevo elemento**.
 
 4. En el cuadro de diálogo **Add New Item - IceCreamCompany**, en el cuadro de búsqueda, escriba **scss**, y luego presione Enter.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "Creando un archivo de estilo 'main.scss' en la aplicación  !!!")
 
 5. En el cuadro de diálogo **Agregar nuevo ítem - Compañía de Helados**, en el cuadro de búsqueda, escriba **SCSS Hoja de Estilo (SASS)**.
 
@@ -431,6 +486,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Mostrando el código que se ha agregado en el archivo 'main.scss' en la aplicación  !!!")
+
 #### Tarea 2: Añadir tareas de trago para manejar los archivos de Sass 
 
 1. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el Explorador de Soluciones, haga clic en **gulpfile.js**.
@@ -494,6 +553,7 @@ Tiempo estimado: **60 minutos**
        });
   ```
 
+
 #### Tarea 3: Ejecutar las tareas
 
 1. En la ventana de **IceCreamCompany - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
@@ -504,11 +564,23 @@ Tiempo estimado: **60 minutos**
 
 3. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho **min:scss**, y luego haga clic en **Run**.
 
-      >**Nota**: En el Solution Explorer, en **wwwwroot**, en **css**, se ha añadido un nuevo archivo css llamado **main.min.css**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Mostrando la ejecución del archivo 'min.scss' en la aplicación  !!!")
+
+  > **Nota**: En el Solution Explorer, en **wwwwroot**, en **css**, se ha añadido un nuevo archivo css llamado **main.min.css**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-18.jpg "Mostrando que el archivo 'main.min.css' ha sido agregado en la aplicación  !!!")
 
 4. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **sass-watcher**, y luego haga clic en **Run**.
 
-      >**Nota**: A partir de ahora cada vez que cambies el archivo **main.scss**, el archivo **main.min.css** se cambiará automáticamente.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Mostrando que la ejecución del archivo 'sass-watcher' en la aplicación  !!!")
+
+  > **Nota**: A partir de ahora cada vez que cambies el archivo **main.scss**, el archivo **main.min.css** se cambiará automáticamente.
 
 >**Resultados**: En este ejercicio, creaste los archivos Sass y añadiste tareas gulp para compilarlos, agruparlos y minarlos.
 
@@ -571,7 +643,6 @@ Tiempo estimado: **60 minutos**
       });
   ```
 
-
 #### Tarea 2: Ejecutar las tareas
 
 1. En la ventana de **IceCreamCompany - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
@@ -582,9 +653,21 @@ Tiempo estimado: **60 minutos**
 
 3. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **min-vendor:css**, y luego haga clic en **Run**.
 
-      >**Nota**: En el Solution Explorer, en **wwwwroot**, en **css**, se ha añadido un nuevo archivo css llamado **vendor.min.css**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Mostrando que la ejecución del archivo 'min-vendor:css' en la aplicación  !!!")
+
+  > **Nota**: En el Solution Explorer, en **wwwwroot**, en **css**, se ha añadido un nuevo archivo css llamado **vendor.min.css**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Mostrando que el achivo 'vendor.min.css' ha sido agregado en la aplicación  !!!")
 
 4. En **Task Runner Explorer**, en **Tasks**, haga clic con el botón derecho del ratón en **min-vendor:js**, y luego haga clic en **Run**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Mostrando que la ejecución del archivo 'min-vendor:css' en la aplicación  !!!")
 
 5. En el cuadro de diálogo **Microsoft Visual Studio**, haga clic en **Sí**.
 
@@ -653,7 +736,11 @@ Tiempo estimado: **60 minutos**
 
 10. En el cuadro de diálogo **Agregar vista MVC**, asegúrese de que la casilla de verificación **Crear como una vista parcial** está desactivada y la casilla de verificación **Utilizar una página de diseño** está seleccionada y, a continuación, haga clic en **Agregar**.
 
-11. En la ventana de código **Comprar.cshtml**, coloque el cursor al principio del documento, escriba el siguiente código y, a continuación, pulse Intro.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Mostrando como agregamos la vista Razor 'Buy.cshtml' en la aplicación  !!!")
+
+11. En la ventana de código **Buy.cshtml**, coloque el cursor al principio del documento, escriba el siguiente código y, a continuación, pulse Intro.
   ```cs
        @model IceCreamCompany.Models.Customer
   ```
@@ -752,12 +839,19 @@ Tiempo estimado: **60 minutos**
            </div>
        </div>
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-24.jpg "Mostrando el código que ha sido agregado en la vista 'Buy.cshtml' en la aplicación  !!!")
 
 #### Tarea 4: Ejecutar la aplicación
 
 1. En la ventana de **IceCreamCompany - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
 2. En la ventana **IceCreamCompany - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-25.jpg "Mostrando el inicio de la aplicación  !!!")
 
 3. En **Microsoft Edge**, haga clic en **Comprar Helado**.
  
@@ -775,7 +869,15 @@ Tiempo estimado: **60 minutos**
 
 10. En la página **Comprar Helado**, en la casilla **Número de teléfono**, escriba _&lt;Un número de teléfono de su elección&gt;._ y luego haga clic en **Hacer una compra**.
 
-11. 12. En la página **Gracias por la compra,¡espera que disfrutes del helado!**, en la barra de menú, pulsa **Casa**, y examina el contenido del navegador.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-26.jpg "Mostrando el llenado del formulario para la compra de un helado en el inicio de la aplicación  !!!")
+
+11. 12. En la página **Gracias por la compra,¡espera que disfrutes del helado!**, en la barra de menú, pulsa **Home**, y examina el contenido del navegador.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-27.jpg "Mostrando el resultado de la compra de un helado en el inicio de la aplicación  !!!")
 
 12. En Microsoft Edge, haz clic en **Cerrar**.
 
