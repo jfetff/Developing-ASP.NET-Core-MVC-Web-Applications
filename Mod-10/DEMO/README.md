@@ -1,5 +1,6 @@
 # Módulo 10: Prueba y resolución de problemas
 
+# Laboratorio: Cifrado del informe de calificaciones
 
 Fichero de Instrucciones: Instructions\20483C_MOD10_DEMO.md
 
@@ -8,9 +9,8 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
 3. **Resumen del Modulo 10:** Este módulo consta de dos ejercicios:
-    - En el primer ejercio haremos pruebas de aplicaciones MVC.
-    - En el ejercicio 2 implementamos estrategias para la implementación del Manedo de errores.
-    - En el tercer ejericio aprendemos como registrar aplicaciones MVC.
+    -  En el primer ejercio nos ayuda a entender como usar la metodología del ASP.NET Identity.
+    - En el ejercicio 2 la práctica nos ayuda a entender como autorizar el acceso a aciones del controlador.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -264,27 +264,41 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
    > **Nota**: El navegador muestra una página de error del servidor interno.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-3a.jpg "Mostrando el error en el inicio de la aplicación !!!")
+
 4. En Microsoft Edge, haga clic en **Cerrar**.
 
-5. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Desarrollo**.
+5. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Development**.
 
 6. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
 7. En Microsoft Edge, localiza el siguiente texto:
+
   ```cs
 ErrorHandlingExample.Startup+<>c__DisplayClass1_0+<<Configure>b__0>d.MoveNext() in Startup.cs
 	+	38.  cnt.IncrementRequestPathCount(context.Request.GetDisplayUrl());
   ```
 
-8. En Microsoft Edge, haga clic en el signo **+** (más) cerca de **38**, y luego inspeccione el código.
+8. En Microsoft Edge, haga clic en el signo ** + ** (más) cerca de ** 38 **, y luego inspeccione el código.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Ampliando el error en la línea 38 inicio de la aplicación !!!")
 
 9. En Microsoft Edge, localiza el siguiente texto:
+
   ```cs
     ErrorHandlingExample.Services.Counter IncrementRequestPathCount(string requestPath) in Counter.cs
 	+ 19.            UrlCounter[requestPath]++;
   ```
 
 10. En Microsoft Edge, haz clic en el signo **+** (más) cerca de **19**, y luego inspecciona el código.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Ampliando el error en la línea 19 inicio de la aplicación !!!")
 
 11. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -306,6 +320,9 @@ ErrorHandlingExample.Startup+<>c__DisplayClass1_0+<<Configure>b__0>d.MoveNext() 
         UrlCounter.Add(requestPath, 1);
     }
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8a.jpg "Mostrando el código agregado a la clase 'Counter.cs' de la aplicación !!!")
 
 15. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
@@ -318,8 +335,15 @@ ErrorHandlingExample.Startup+<>c__DisplayClass1_0+<<Configure>b__0>d.MoveNext() 
     ErrorHandlingExample.Controllers.HomeController.GetDividedNumber(int id) in HomeController.cs
         +	32.  DivisionResult divisionResult = _numberCalculator.GetDividedNumbers(id);
    ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-10.jpg "Mostrando los errores que aparecen al ejecutar la aplicación !!!")
 
 19. En Microsoft Edge, haz clic en el signo **+** (más) cerca de **32**, y luego inspecciona el código.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Ampliando el error en la línea 32 inicio de la aplicación !!!")
 
 20. En Microsoft Edge, localiza el siguiente texto:
   ```cs
@@ -328,6 +352,10 @@ ErrorHandlingExample.Services.DivisionCalculator.GetDividedNumbers(int number) i
   ```
 
 21. En Microsoft Edge, haga clic en el signo **+** (más) cerca de **20**, y luego inspeccione el código.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Ampliando el error en la línea 20 inicio de la aplicación !!!")
 
 22. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -343,14 +371,26 @@ ErrorHandlingExample.Services.DivisionCalculator.GetDividedNumbers(int number) i
     for (int i = 1; i < (number / 2) + 1; i++)
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Mostrando el código agregado a la clase 'DivisionCalculator.cs' de la aplicación !!!")
+
 26. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
 27. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Producción**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando la ejecución de la aplicación y los números que se pueden dividir por 16 en la aplicación !!!")
 
 28. En la ventana **ErrorHandlingExample - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
 29. En Microsoft Edge, haz clic en **16**.
    > **Nota**: El navegador muestra los números por los que se puede dividir **16**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "Mostrando la ejecución de la aplicación y los números que se pueden dividir por 16en la aplicación !!!")
 
 30. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -397,6 +437,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
         }
     })
   ```
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12a.jpg "Mostrando el código agregado a la clase 'Program.cs' de la aplicación !!!")
 
 5. En el Explorador de Soluciones, expande **appsettings.json**, y luego haz clic en **appsettings.development.json**.
 
@@ -420,6 +463,10 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
       }
     }
   ```
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12b.jpg "Mostrando el código agregado al archivo de configuración 'appsettings.production.json' de la aplicación !!!")
 
 9. En el Explorador de soluciones, amplíe **Controladores**, y luego haga clic en **HomeController.cs**. 
 
@@ -473,15 +520,28 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
     }
   ```
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12c.jpg "Mostrando el código agregado a la clase 'HomeController.cs' de la aplicación !!!")
+
+
 18. En la ventana **LoggingExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
 19. En la ventana **Ejemplo de registro - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Producción**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Mostrando el inicio de la  aplicación !!!")
 
 20. En la ventana **Ejemplo de registro - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
 21. En Microsoft Edge, haz clic en **16**.
 
    > **Nota**: El navegador no muestra cuántas veces se ha visto el número **16**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando cuántas veces se ha visto el número **16** ne la aplicación !!!")
 
 22. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -490,6 +550,9 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
    > **Nota**: Inspecciona el rastro de la pila de **KeyNotFoundException**.
 
 24. En la ventana **miLog-XXXXXXXX - Bloc de notas**, haga clic en **Cerrar**.
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13a.jpg "Mostrando el archivo y el error registrado con la aplicación !!!")
 
 25. En el Explorador de soluciones, expandir **Servicios**, y luego hacer clic en **Contador.cs**. 
 
@@ -511,13 +574,22 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
         _logger.LogDebug($"The number {number} was added to the page display count dictionary.");
     }
   ```
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13b.jpg "Mostrando el código agregado a la clase 'Counter.cs' de la aplicación !!!")
+
 28. En la ventana **LoggingExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
-29. En la ventana **Ejemplo de registro - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Desarrollo**.
+29. En la ventana **Ejemplo de registro - Microsoft Visual Studio**, en la barra de herramientas, haga clic en la flecha junto al botón **Iniciar depuración**, y luego haga clic en **Development**.
 
 30. En la ventana **Ejemplo de registro - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
 31. En Microsoft Edge, haga clic en **16**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando el inicio y cuantas veces hemos hecho clic en el número '16' de la  aplicación !!!")
 
 32. En la ventana **LoggingExample - Microsoft Visual Studio**, en el menú **View**, haga clic en **Output**.
 
@@ -538,11 +610,19 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
    > **Nota**: El navegador muestra los números por los que se puede dividir **16**.
 
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando el inicio y cuantas veces hemos hecho clic en el número '16' de la  aplicación !!!")
+
 39. En Microsoft Edge, haz clic en **Cerrar**.
 
 40. En el Explorador de Archivos, navega a **[Repository Root]\Allfiles\Mod10\Democode\03_LoggingExample_begin\LoggingExample**, y luego haz doble clic en **myLog-XXXXXXXX.txt**.
 
    > **Nota**: Presiona **Ctrl + F**, y luego localiza la siguiente frase **GetDividedNumber - Success**.
+
+- La representación visual del codigo del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Mostrando el archivo generado por la aplicación y registrado en el archivo 'myLog-20201204.txt' de la  aplicación !!!")
 
 41. En la ventana **myLog-XXXXXXXX - Notepad**, presione **Cerrar**.
 

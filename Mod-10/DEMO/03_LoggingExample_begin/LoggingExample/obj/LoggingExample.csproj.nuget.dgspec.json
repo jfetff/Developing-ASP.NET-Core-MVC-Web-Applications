@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\20486D\\Ejercicios\\Mod-10\\Demo\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj": {}
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-10\\DEMO\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj": {}
   },
   "projects": {
-    "C:\\20486D\\Ejercicios\\Mod-10\\Demo\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj": {
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-10\\DEMO\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-10\\Demo\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj",
+        "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-10\\DEMO\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj",
         "projectName": "LoggingExample",
-        "projectPath": "C:\\20486D\\Ejercicios\\Mod-10\\Demo\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj",
+        "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-10\\DEMO\\03_LoggingExample_begin\\LoggingExample\\LoggingExample.csproj",
         "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-        "outputPath": "C:\\20486D\\Ejercicios\\Mod-10\\Demo\\03_LoggingExample_begin\\LoggingExample\\obj\\",
+        "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-10\\DEMO\\03_LoggingExample_begin\\LoggingExample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -75,7 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
