@@ -8,7 +8,7 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
-3. **Resumen del Modulo 11:** Los ejercicios se dividen entre Laboratorios y MOC Demo que contienen ejercicios propios.
+3. **Resumen del Modulo 10:** Los ejercicios se dividen entre Laboratorios y MOC Demo que contienen ejercicios propios.
 En el directorio raíz de cada módulo existen dos carpetas que contienen los resumenes por separados: 
 	- Módulo correspondiendo los ejercicios para cada módulo con sus resumenes correspondientes.
 	- DEMO correspondiendo los ejercicios DEMO para cada módulo con sus resumenes correspondientes.
