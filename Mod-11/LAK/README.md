@@ -75,7 +75,7 @@ Tiempo estimado: **60 minutos**
 
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-![alt text](./Images/Fig-00a.jpg " !!!")
+![alt text](./Images/Fig-00a.jpg "Mostrando el resultado de la ejecución el comando 'npm install' !!!")
 
 7. Cierre la ventana.
 
@@ -104,6 +104,10 @@ Tiempo estimado: **60 minutos**
       : IdentityUser
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-1a.jpg "Mostrando el código agregado en la clase 'User.cs' en la aplicación !!!")
+
 14. En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, expanda **Datos**, y luego haga clic en **LibraryContext.cs**.
 
 15. En la ventana del código **LibraryContext.cs**, localice el siguiente código:
@@ -124,6 +128,9 @@ Tiempo estimado: **60 minutos**
   ```cs
      public class LibraryContext : IdentityDbContext<User>
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-2.jpg "Mostrando el código agregado en la clase 'LibraryContext.cs' en la aplicación !!!")
 
 #### Tarea 2: Habilitar el uso de la identidad
 
@@ -162,6 +169,10 @@ Tiempo estimado: **60 minutos**
        app.UseAuthentication();
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-3.jpg "Mostrando el código agregado en la clase 'Startup.cs' en la aplicación !!!")
+
 #### Tarea 3: Añadir el signo en la lógica
 
 1. En la ventana **Library - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho del ratón en **Controllers**, apunte a **Agregar**, y luego haga clic en **Controller**.
@@ -169,6 +180,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller MVC - Vaciar**, y luego haga clic en **Agregar**.
 
 3. En el cuadro de diálogo **Añadir Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **AccountController** y, a continuación, haga clic en **Añadir**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-4.jpg "Mostrando como agregamos el controlador con nombre de la clase 'AccountController.cs' en la aplicación !!!")
 
 4. En la ventana de código **AccountController.cs**, localice el siguiente código:
   ```cs
@@ -231,7 +246,6 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
-
 10. En la ventana del código **AccountController.cs**, asegúrese de que el cursor esté al final del bloque de código de acción **LoginPost**, pulse dos veces Intro y luego escriba el siguiente código:
   ```cs
        public async Task<IActionResult> Logout()
@@ -240,6 +254,9 @@ Tiempo estimado: **60 minutos**
            return RedirectToAction("Index", "Library");
        }
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-5.jpg "Mostrando el código agregado en la clase 'AccountController.cs' en la aplicación !!!")
 
 #### Tarea 4: Añadir la lógica de registro de usuarios
 
@@ -295,7 +312,7 @@ Tiempo estimado: **60 minutos**
 
 #### Tarea 5: Recuperar datos de la propiedad Identidad
 
-1.  En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, expandir **Vistas**, expandir **Library**, y luego hacer clic en **Libro de Préstamo.cshtml**.
+1.  En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, expandir **Vistas**, expandir **Library**, y luego hacer clic en **LendingBook.cshtml**.
 
 2. En la ventana del código **LendingBook.cshtml**, localice el siguiente código:
   ```cs
@@ -307,7 +324,12 @@ Tiempo estimado: **60 minutos**
   ```cs
        <h1 class="title">Hello @User.Identity.Name - Lending Book Information</h1>
   ```
-4. En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, en **Vistas**, expandir **Compartido**, y luego hacer clic en **_Disposición.cshtml**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-6.jpg "Mostrando el código agregado en la vista 'LendingBook.cshtml' en la aplicación !!!")
+
+4. En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, en **Vistas**, expandir **Compartido**, y luego hacer clic en **_Layout.cshtml**.
 
 5. En la ventana de código **_Layout.cshtml**, localice el siguiente código:
   ```cs
@@ -338,6 +360,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Mostrando el código agregado en la vista '_Layout.cshtml' en la aplicación !!!")
+
 #### Tarea 6: Ejecutar la aplicación
 
 1. En la ventana de **Library - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
@@ -347,6 +373,10 @@ Tiempo estimado: **60 minutos**
 3. En la barra de menú, haga clic en **Nuestros libros**.
 
     >**Nota**: La página de **Nuestros Libros** es sólo para usuarios autorizados; por lo tanto, se redirigió a la página de inicio de sesión.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Mostrando el inicio de la aplicación !!!")
 
 4. En la página de **Inicio de sesión**, haga clic en **Registro**.
 
@@ -362,15 +392,27 @@ Tiempo estimado: **60 minutos**
 
 10. En la página **Registrarse**, en el cuadro **Contraseña**, escriba **123qwe!@#QWE**, y luego haga clic en **Registrarse**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Mostrando el formulario del inicio para el registro de la aplicación !!!")
+
 11. En la barra de menú, haga clic en **Nuestros libros**.
 
       >**Nota**: Examine la página; se le ha autorizado a entrar en la página de **Nuestros Libros**, y los datos de su nombre de usuario se han recuperado de la propiedad Identidad.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-10.jpg "Mostrando el resultado de los libros después del registro de la aplicación !!!")
 
 12. En la página **Nuestros Libros**, seleccione un libro de su elección, y luego haga clic en **Prestar un Libro**.
 
 13. Haga clic en **Prestar un libro**.
 
       >**Nota**: El libro que prestó ya no está disponible.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Mostrando el resultado de registrarse y prestar un libro de la aplicación !!!")
 
 14.  En Microsoft Edge, haga clic en **Cerrar**.
 
@@ -443,7 +485,12 @@ Tiempo estimado: **60 minutos**
 11. Coloque el cursor antes del código localizado, presione la tecla de flecha hacia arriba y luego escriba el siguiente código:
   ```cs
        [Authorize]
-  ``` 
+  ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Mostrando el código agregado en la clase 'LibraryController.cs' de la aplicación !!!")
+
 #### Tarea 2: Añadir autenticación de políticas basada en funciones
 
 1. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, expande **ViewModels**, y luego haz clic en **RegisterViewModel.cs**.
@@ -461,6 +508,9 @@ Tiempo estimado: **60 minutos**
        [Required(ErrorMessage = "Please select a role")]
        public string RoleName { get; set; }
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Mostrando el código agregado en la clase 'RegisterViewModel.cs' de la aplicación !!!")
 
 4. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **AccountController.cs**.
 
@@ -526,6 +576,9 @@ Tiempo estimado: **60 minutos**
             }
         }
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Mostrando el código agregado en la clase 'AccountController.cs' de la aplicación !!!")
 
 9. En la ventana **Library - Microsoft Visual Studio**, en el Explorador de Soluciones, en **Vistas**, expandir **Cuenta**, y luego hacer clic en **Registro.cshtml**.
 
@@ -553,6 +606,9 @@ Tiempo estimado: **60 minutos**
            </div>
        </div>
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "Mostrando el código agregado en la clase 'Register.cshmtl' de la aplicación !!!")
 
 12. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **LibrarianController.cs**.
 
@@ -575,6 +631,9 @@ Tiempo estimado: **60 minutos**
   ```cs
        [Authorize(Roles = "Administrator")]
   ``` 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15a.jpg "Mostrando el código agregado en la clase 'LibrarianController.cs' de la aplicación !!!")
 
 #### Tarea 3: Añadir autenticación de políticas basada en reclamaciones
 
@@ -602,6 +661,10 @@ Tiempo estimado: **60 minutos**
            options.AddPolicy("RequireEmail", policy => policy.RequireClaim(ClaimTypes.Email));
        });
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15b.jpg "Mostrando el código agregado en la clase 'Startup.cs' de la aplicación !!!")
 
 6. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **AccountController.cs**.
 
@@ -669,6 +732,12 @@ Tiempo estimado: **60 minutos**
             }
         }
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15c.jpg "Mostrando el código agregado en la clase 'AccountController.cs' de la aplicación !!!")
+
+
 11. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **LibrarianController.cs**.
 
 12. En la ventana de código **LibrarianController.cs**, localice el siguiente código:
@@ -680,6 +749,9 @@ Tiempo estimado: **60 minutos**
   ```cs
        [Authorize(Policy = "RequireEmail")]
   ``` 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Mostrando el código agregado en la clase 'LibrarianController.cshmtl' de la aplicación !!!")
 
 #### Tarea 4: Ejecutar la aplicación
 
@@ -705,9 +777,17 @@ Tiempo estimado: **60 minutos**
 
 11. En la página **Registrarse**, en la lista **Nombre de la función**, seleccione **Administrador**, y luego haga clic en **Registrarse**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Mostrando el registro de un trabajador en el formulario de la aplicación !!!")
+
 12. En la barra de menú, haga clic en **Portal del Trabajador**.
 
       >**Nota**: Examine la página; usted ha sido autorizado a entrar en la página **Portal del Trabajador**, porque usted es un administrador.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Mostrando el resultado del registro del trabajador en el formulario de la aplicación !!!")
 
 13. En la página **Añadir Libro a la Library**, haga clic en **Añadir Libro a la Library**.
 
@@ -721,10 +801,17 @@ Tiempo estimado: **60 minutos**
 
 18. En la página **Agregar Libro a la Library**, en la casilla **Foto**, importa una imagen de **[Raíz del Repositorio]} Allfiles {Mod11}Labfiles\N-Image\Book.jpg**, y luego haz clic en **Agregar un Libro**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Mostrando el formulario para el agregar un libro llenado el formulario de la aplicación !!!")
+
 19. Haz clic en **Volver a nuestros libros**.
 
       >**Nota**: El libro que has añadido está en la lista de libros de la Library.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Mostrando el resultado del registro de haber agregado un libro en la aplicación !!!")
 20. En la barra de menú, haga clic en **Salir**.
 
 21. En la barra de menú, haga clic en **Conexión**.
@@ -745,10 +832,18 @@ Tiempo estimado: **60 minutos**
 
 29. En la página **Registrarse**, en la lista **Nombre de la función**, seleccione **Miembro**, y luego haga clic en **Registrarse**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
-30. En Microsoft Edge, en la barra de direcciones, escriba **http://localhost:[port]/Library/Índice**, y luego presione Enter.
+![alt text](./Images/Fig-23.jpg "Mostrando el formulario para el agregar un libro llenado el formulario de la aplicación !!!")
+
+30. En Microsoft Edge, en la barra de direcciones, escriba **http://localhost:[port]/Library/Index**, y luego presione Enter.
 
       >**Nota**: Se le redirige a la página **acceso denegado**; sólo los administradores pueden ver la página. También tenga en cuenta que la barra de menú no tiene una pestaña de navegación para el **Portal de Trabajadores**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Mostrando el acceso denegado y usando la URL 'http://localhost:61160/Library/Index.html' !!!")
+
 
 31.  En Microsoft Edge, haga clic en **Cerrar**.
 
@@ -768,12 +863,20 @@ Tiempo estimado: **60 minutos**
 
 5. En el cuadro de diálogo **Añadir Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **Controller doméstico** y, a continuación, haga clic en **Añadir**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-24.jpg "Mostrando la creación del controlador 'HomeController.cs' en la aplicación !!!")
+
 6. En la ventana de código **HomeController.cs**, haga clic con el botón derecho del ratón en el siguiente código y, a continuación, haga clic en **Agregar vista**.
   ```cs
     public IActionResult Index()
   ```
 
-7. En el cuadro de diálogo **Añadir vista de MVC**, asegúrate de que el valor en el cuadro **Nombre de la vista** es **Índice**.
+7. En el cuadro de diálogo **Añadir vista de MVC**, asegúrate de que el valor en el cuadro **Nombre de la vista** es **Index**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-25.jpg "Mostrando la creación de la vista 'Index.cshtml' en la aplicación !!!")
 
 8. En el cuadro de diálogo **Agregar vista MVC**, asegúrese de que la plantilla **Vacío (sin modelo)** esté seleccionada.
 
@@ -832,6 +935,11 @@ Tiempo estimado: **60 minutos**
   ```cs
        [ValidateAntiForgeryToken]
   ``` 
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-28.jpg "Mostrando el código agregado para la validación del 'CRSF' en el método 'RegisterPost' de la aplicación !!!")
+
 4. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **LibrarianController.cs**.
 
 5. En el bloque de código de acción **AddBookPost**, localice el siguiente código:
@@ -844,6 +952,10 @@ Tiempo estimado: **60 minutos**
   ``` 
 7. En la ventana **Library - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **LibraryController.cs**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-29.jpg "Mostrando el código agregado para la validación del 'CRSF' en el método 'AddBookPost' de la aplicación !!!")
+
 8. En el bloque de código de acción **LendingBookPost**, localice el siguiente código:
 
   ```cs
@@ -854,6 +966,9 @@ Tiempo estimado: **60 minutos**
   ```cs
        [ValidateAntiForgeryToken]
   ``` 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-30.jpg "Mostrando el código agregado para la validación del 'CRSF' en el método 'LendingBookPost' de la aplicación !!!")
 
 #### Tarea 4: Ejecutar la aplicación - Ahora el ataque no es posible
 
@@ -867,11 +982,27 @@ Tiempo estimado: **60 minutos**
 
 5. En el Explorador de soluciones, haga clic con el botón derecho del ratón en **CrossSiteRequestForgeryAttack**, apunte a **Debug**, y luego haga clic en **Start new instance**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-32.jpg "Mostrando el inicio del modo 'DEbug' de la aplicación !!!")
+
 6. En la página **Cross-Site Request Forgery Attack**, apunte a **Attack**.
 
-      >**Nota**: Un error HTTP 400 es lanzado.
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-26.jpg "Mostrando la página para crear un ataque de 'Cross-Site Request Forgery' en la aplicación !!!")
+
+  > **Nota**: Un error HTTP 400 es lanzado.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-31.jpg "Mostrando la página de inicio al fallar el 'CRSF' de la aplicación !!!")
 
 7.  En Microsoft Edge, haz clic en **Cerrar**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-27.jpg "Mostrando la página de inicio de la aplicación !!!")
 
     >**Nota**: Si aparece el cuadro de diálogo **¿Quieres cerrar todas las pestañas?**, haz clic en **Cerrar todas**.
 
