@@ -85,12 +85,12 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
    ```
 
 13. Asegúrese de que el cursor esté al final del espacio de nombres **Microsoft.Extensions.DependencyInjection**, presione Entrar y luego escriba el código siguiente:
-      ```cs
+  ```cs
       using IdentityExample.Models;
    ```
 
 14. En la ventana de código **Startup.cs**, en el método **ConfigureServices**, coloque el cursor después del signo ** {** (llaves de apertura), presione Entrar, escriba el siguiente código y luego presione Entrar.
-      ```cs
+    ```cs
        services.AddDefaultIdentity<Student>(options =>
        {
            options.Password.RequireDigit = true;
@@ -102,7 +102,7 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
         .AddEntityFrameworkStores<StudentContext>();
     ```
 15. En la ventana de código **Startup.cs**, busque el siguiente código:
-      ```cs
+    ```cs
        app.UseStaticFiles();
     ```
 
@@ -111,14 +111,14 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
 ![alt text](./Images/Fig-1a.jpg "Mostrando el código agregado en la clase 'Startup.cs' de la aplicación !!!")
 
 16. Coloque el cursor al final del código ubicado, presione Entrar dos veces y luego escriba el siguiente código:
-      ```cs
+    ```cs
        app.UseAuthentication();
     ```
 17. En la ventana **IdentityExample - Microsoft Visual Studio**, en el Explorador de soluciones, expanda **Controllers** y luego haga clic en **StudentController.cs**.
 
 
 18. En la ventana de código **StudentController.cs**, seleccione el siguiente código:
-      ```cs
+    ```cs
        public IActionResult Index()
        {
           return View();
@@ -126,7 +126,7 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
     ```
 
 19. Reemplace el código seleccionado con el siguiente código:
-      ```cs
+    ```cs
        public IActionResult Index()
        {
            if (!this.User.Identity.IsAuthenticated)
@@ -148,7 +148,7 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
 22. En el cuadro de diálogo **Agregar Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **AccountController** y luego haga clic en **Agregar**.
 
 23. En la ventana de código **AccountController.cs**, busque el siguiente código:
-      ```cs
+    ```cs
        using Microsoft.AspNetCore.Mvc;
     ```
 24. Asegúrese de que el cursor esté al final del espacio de nombres **Microsoft.AspNetCore.Mvc**, presione Entrar y luego escriba el código siguiente:
@@ -269,15 +269,15 @@ Siempre que la ruta a un archivo comience con *[Raíz del repositorio]*, reempl�
 
 35. En la página de **Inicio de sesión**, haga clic en **Registro**.
 
-36. En la página **Registrarse**, en la casilla **Nombre**, escriba _&lt;Un nombre de pila de su elección;._
+36. En la página **Registrarse**, en la casilla **Nombre**, escriba _&lt;Un nombre de pila de su elección&gt&gt;._
 
-37. En la página **Registrarse**, en el cuadro **Apellido**, escriba _&lt;Un apellido de su elección;._
+37. En la página **Registrarse**, en el cuadro **Apellido**, escriba _&lt;Un apellido de su elección&gt&gt;._
 
-38. En la página **Registrarse**, en la casilla **Número de teléfono**, escriba _&lt;Un número de teléfono de su elección;._
+38. En la página **Registrarse**, en la casilla **Número de teléfono**, escriba _&lt;Un número de teléfono de su elección&gt&gt;._
 
-39. En la página **Registrarse**, en la casilla **Correo electrónico**, escriba _&lt;Una dirección de correo electrónico de su elección;._
+39. En la página **Registrarse**, en la casilla **Correo electrónico**, escriba _&lt;Una dirección de correo electrónico de su elección&gt&gt;._
 
-40. En la página **Registrarse**, en la casilla **Nombre de usuario**, escriba _&lt;Un nombre de usuario de su elección;._
+40. En la página **Registrarse**, en la casilla **Nombre de usuario**, escriba _&lt;Un nombre de usuario de su elección&gt&gt;._
 
 41. En la página **Registrarse**, en el cuadro **Contraseña**, escriba **123qwe!@#QWE**, y luego haga clic en **Registrarse**.
 
@@ -436,15 +436,15 @@ Asegúrate de que has clonado el directorio **20486D** de GitHub. Contiene los s
 
 25. En la página de **Entrar**, haga clic en **Registrarse**.
 
-26. En la página **Registrarse**, en la casilla **Nombre**, escriba _&lt;Un nombre de pila de su elección;._
+26. En la página **Registrarse**, en la casilla **Nombre**, escriba _&lt;Un nombre de pila de su elección&gt;._
 
-27. En la página **Registrarse**, en el cuadro **Apellido**, escriba _&lt;Un apellido de su elección;._
+27. En la página **Registrarse**, en el cuadro **Apellido**, escriba _&lt;Un apellido de su elección&gt;._
 
-28. En la página **Registrarse**, en el cuadro **Número de teléfono**, escriba _&lt;Un número de teléfono de su elección;._
+28. En la página **Registrarse**, en el cuadro **Número de teléfono**, escriba _&lt;Un número de teléfono de su elección&gt;._
 
-29. En la página **Registrarse**, en la casilla **Correo electrónico**, escriba _&lt;Una dirección de correo electrónico de su elección;._
+29. En la página **Registrarse**, en la casilla **Correo electrónico**, escriba _&lt;Una dirección de correo electrónico de su elección&gt;._
 
-30. En la página **Registrarse**, en la casilla **Nombre de usuario**, escriba _&lt;Un nombre de usuario de su elección;._
+30. En la página **Registrarse**, en la casilla **Nombre de usuario**, escriba _&lt;Un nombre de usuario de su elección&gt;._
 
 31. En la página **Registrarse**, en el cuadro **Contraseña**, escriba **123qwe!@#QWE**, y luego haga clic en **Registrarse**.
 
