@@ -1,0 +1,14 @@
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\bin\Debug\netcoreapp2.1\ServerSide.deps.json
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\bin\Debug\netcoreapp2.1\ServerSide.runtimeconfig.json
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\bin\Debug\netcoreapp2.1\ServerSide.runtimeconfig.dev.json
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\bin\Debug\netcoreapp2.1\ServerSide.dll
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\bin\Debug\netcoreapp2.1\ServerSide.pdb
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.AssemblyInfoInputs.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.AssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.csproj.CoreCompileInputs.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.RazorAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.RazorAssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.RazorTargetAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.dll
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.pdb
+C:\20486D\Ejercicios\Mod-13\DEMO\03_HttpClientExample_begin\ServerSide\obj\Debug\netcoreapp2.1\ServerSide.genruntimeconfig.cache

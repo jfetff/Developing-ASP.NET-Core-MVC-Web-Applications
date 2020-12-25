@@ -1,0 +1,15 @@
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\bin\Debug\netcoreapp2.1\WebApiExample.deps.json
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\bin\Debug\netcoreapp2.1\WebApiExample.runtimeconfig.json
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\bin\Debug\netcoreapp2.1\WebApiExample.runtimeconfig.dev.json
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\bin\Debug\netcoreapp2.1\WebApiExample.dll
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\bin\Debug\netcoreapp2.1\WebApiExample.pdb
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.csprojAssemblyReference.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.AssemblyInfoInputs.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.AssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.csproj.CoreCompileInputs.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.RazorAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.RazorAssemblyInfo.cs
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.RazorTargetAssemblyInfo.cache
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.dll
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.pdb
+C:\20486D\Ejercicios\Mod-13\DEMO\01_WebApiExample_begin\WebApiExample\obj\Debug\netcoreapp2.1\WebApiExample.genruntimeconfig.cache
