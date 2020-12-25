@@ -405,11 +405,15 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
 
 4. En Microsoft Edge, en la barra de direcciones, anote el número de puerto que aparece al final del URL **http://localhost:[port]**. Usará el número de puerto durante esta demostración.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-18a.jpg "Mostrando el puerto a usarse en este ejercicio de parte de la aplicación !!!")
+
 5. En Microsoft Edge, haga clic en **Cerrar**.
 
 #### Pasos de la demostración
 
-1. En el Explorador de Archivos, navega a **[Raíz del Repositorio]\Ntodos los archivos\NMod12\Democode\N03_SignalRExample_begin\N-señalRExample**, y luego copia la dirección en la barra de direcciones.
+1. En el Explorador de Archivos, navega a **[Repository Root]\Allfiles\Mod12\Democode\03_SignalRExample_begin\SignalRExample**, y luego copia la dirección en la barra de direcciones.
 
     >**Nota**: Si aparece un cuadro de diálogo de **Aviso de seguridad para SignalRExample**, verifica que la casilla de verificación **Pregúntame por cada proyecto de esta solución** está despejada, y luego haz clic en **OK**. 
 
@@ -432,9 +436,13 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
   ```
 >**Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Mostrando la ejecución del comando 'npm install' para la instalación de la librerías necesaria de la aplicación !!!")
+
 7. Cierre la ventana.
 
-8. En el Explorador de Archivos, navega a **[Raíz del Repositorio]\Ntodos los archivos\Mod12\Democode\N03_SignalRExample_begin**, y luego haz doble clic en **SignalRExample.sln**.
+8. En el Explorador de Archivos, navega a **[Repository Root]\Allfiles\Mod12\Democode\03_SignalRExample_begin**, y luego haz doble clic en **SignalRExample.sln**.
 
     >**Nota**: Si aparece un cuadro de diálogo de **Aviso de seguridad para SignalRExample**, verifica que la casilla de verificación **Ask me for each project in this solution** está despejada, y luego haz clic en **OK**. 
 
@@ -462,13 +470,17 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     });
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Mostrando el código agregado en la clase 'Startup.cs' de la aplicación !!!")
+
 14. En la ventana **SignalRExample - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho en **SignalRExample**, apunte a **Agregar**, y luego haga clic en **Nueva carpeta**.
 
-15. En el cuadro **Nueva Carpeta**, escriba **Hubes**, y luego presione Enter.
+15. En el cuadro **Nueva Carpeta**, escriba **Hubs**, y luego presione Enter.
 
 16. En la ventana **SignalRExample - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho del ratón en **Hubs**, apunte a **Agregar** y, a continuación, haga clic en **Clase**.
 
-17.	En el cuadro de diálogo **Agregar nuevo elemento - Muestra de señal**, en el cuadro **Nombre**, escriba **Cubo cuadrado**, y luego haga clic en **Agregar**.
+17.	En el cuadro de diálogo **Agregar nuevo elemento - Muestra de señal**, en el cuadro **Nombre**, escriba **SquaresHub**, y luego haga clic en **Agregar**.
 
 18. En la ventana del código **SquaresHub.cs**, localice el siguiente código:
   ```cs
@@ -512,6 +524,10 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Mostrando el código agregado en la clase 'SquaresHub.cs' de la aplicación !!!")
+
 24. En la ventana **SignalRExample - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic en **Startup.cs**.
     
 25. En la ventana del código **Startup.cs**, localice el siguiente código:
@@ -535,6 +551,10 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     routes.MapHub<SquaresHub>("/squareshub");
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21a.jpg "Mostrando el código agregado en la clase 'Startup.cs' de la aplicación !!!")
+
 29. En la ventana **SignalRExample - Microsoft Visual Studio**, en el Explorador de Soluciones, haga clic en **package.json**.
 
 30. En la ventana del código **package.json**, localice el siguiente código:
@@ -546,6 +566,10 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
   ```cs
     "@aspnet/signalr": "1.0.0",
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Mostrando el código agregado en el archivo de configuración 'package.json' de la aplicación !!!")
 
 32. En la ventana **SignalRExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
@@ -565,6 +589,10 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     <script src="~/node_modules/@@aspnet/signalr/dist/browser/signalr.min.js"></script>
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22a.jpg "Mostrando el código agregado en la vista 'Index.cshtml' de la aplicación !!!")
+
 37. En la ventana **SignalRExample - Microsoft Visual Studio**, en el Explorador de Soluciones, expandir **wwwwroot**, expandir **js**, y luego hacer clic en **square-events.js**.
 
 38. En la ventana de código **square-events.js**, coloque el cursor al principio del documento y escriba el siguiente código:
@@ -581,8 +609,6 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     connection.start();
   ```
 
-
-
 39. En la ventana del código **square-events.js**, localice el siguiente código:
   ```cs
     $(btn).toggleClass('blue red');
@@ -593,10 +619,19 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     connection.invoke("SwapColor", x, y);
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Mostrando el código agregado en el archivo de JavaScript 'square-events.js' de la aplicación !!!")
+
 41. En la ventana **SignalRExample - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
 
 42. En la ventana **SignalRExample - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
     >**Nota**: El navegador muestra nueve cuadros azules.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-24.jpg "Mostrando el inicio de la aplicación con los 9 cuadros azules !!!")
+
 
 43. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Microsoft Edge**, y luego haga clic en **Nueva ventana**.
 
@@ -605,10 +640,19 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
 45. En Microsoft Edge, haga clic en uno de los cuadros.
     >**Nota**: En ambas ventanas de **Microsoft Edge**, el cuadrado en el que se ha hecho clic es rojo.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-25a.jpg "Mostrando los cuadros azules en los hemos hecho clic en el inicio de la aplicación !!!")
+
+
 46. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Borde de Microsoft** y luego haga clic en **Nueva ventana**.
 
 47. En Microsoft Edge, en la barra de direcciones, escriba **http://localhost:[port]**, y luego presione Enter.
     >**Nota**: El navegador muestra ocho cuadrados azules y un cuadrado rojo.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-25.jpg "Mostrando los cuadros en los hemos hecho clic en dos navegadores diferentes en la aplicación !!!")
 
 48.  Cierra todas las ventanas de **Microsoft Edge**.
 
