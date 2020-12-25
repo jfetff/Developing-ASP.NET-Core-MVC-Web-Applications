@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/fV5Q1HrH89emkYC7vCvlBJuc9z4UJL/9+TdvrTPedeYvr9isagb4jjYNmf7Mo+elPPu/LD5Ere9BpYNsPBC+w==",
+  "dgSpecHash": "Ow8zRyETTlu/LTYc+GVEmnA8dmhvcHCkKbANCmqFOYbV6kTAv3iftF6OhfunoYo0Qm/CZPy0cKPoLqeSEAq+qA==",
   "success": true,
-  "projectFilePath": "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
+  "projectFilePath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

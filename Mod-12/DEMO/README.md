@@ -209,6 +209,9 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
   ```cs
     app.UseSession();
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8a.jpg "Mostrando el código agregado en la clase 'Startup.cs' de la aplicación !!!")
 
 7. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, expanda **Controladores**, y luego haga clic en **HomeController.cs**.
 
@@ -258,7 +261,9 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     HttpContext.Session.SetInt32("Home", controllerVisitsNumber.Value);
     HttpContext.Session.SetInt32("Another", AnotherControllerVisitsNumber.Value);
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-8b.jpg "Mostrando el código agregado en la clase 'HomeController.cs' de la aplicación !!!")
 
 12. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, en **Controladores**, haga clic en **OtroControlador.cs**.
 
@@ -302,6 +307,10 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     HttpContext.Session.SetInt32("Another", controllerVisitsNumber.Value);
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8c.jpg "Mostrando el código agregado en la clase 'AnotherController.cs' de la aplicación !!!")
+
 17. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de Soluciones, expanda **Vistas**, y luego haga clic en **_ViewImports.cshtml**.
 
 18. En la ventana de código **_ViewImports.cshtml**, localice el siguiente código:
@@ -313,10 +322,14 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
   ```cs
     @using Microsoft.AspNetCore.Http
   ```
-    
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9a.jpg "Mostrando el código agregado en la vista '_ViewImports.cshtml' de la aplicación !!!")
+
 20. En la ventana **StateExample - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
 
-21. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, en **Vistas**, expandir **Casa**, y luego hacer clic en **Index.cshtml**.
+21. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, en **Vistas**, expandir **Home**, y luego hacer clic en **Index.cshtml**.
 
 22. En la ventana de código **Index.cshtml**, localice el siguiente código:
   ```cs
@@ -330,7 +343,11 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     <div>Number of times visited overall during this session: @Context.Session.GetInt32("Overall")</div>
   ```
 
-24. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, en **Vistas**, expandir **Otro**, y luego hacer clic en **Index.cshtml**.
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9b.jpg "Mostrando el código agregado en la vista 'Home/Index.cshtml' de la aplicación !!!")
+
+24. En la ventana **StateExample - Microsoft Visual Studio**, en el Explorador de soluciones, en **Vistas**, expandir **Another**, y luego hacer clic en **Index.cshtml**.
 
 25. En la ventana de código **Index.cshtml**, localice el siguiente código:
   ```cs
@@ -343,20 +360,27 @@ Ensure that you have cloned the **20486D** directory from GitHub. It contains th
     <div>Number of times that this controller was visited during this session: @Context.Session.GetInt32("Another")</div>
     <div>Number of times visited overall during this session: @Context.Session.GetInt32("Overall")</div>
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9c.jpg "Mostrando el código agregado en la vista 'Another/Index.cshtml' de la aplicación !!!")
 
 27.  En la ventana **StateExample - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
 
 28. En la ventana **StateExample - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
-29. En Microsoft Edge, haz clic en **Otro**.
+29. En Microsoft Edge, haz clic en **Another**.
 
 30. En Microsoft Edge, haz clic en **Home**.
 
-31. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Borde de Microsoft** y, a continuación, haga clic en **Nueva ventana InPrivate**.
+31. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Edge de Microsoft** y, a continuación, haga clic en **Nueva ventana InPrivate**.
 
 32. En Microsoft Edge, en la barra de direcciones, escriba **http://localhost:[port]**, y luego presione Enter.
 
 >**Nota**: Abrimos un nuevo navegador, por lo que se crea una nueva sesión para el nuevo navegador.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Mostrando el uso del controlador y el número de veces que ha sido visitado en la aplicación !!!")
 
 33. En la primera ventana de **Microsoft Edge**, haz clic en **Home**.
 

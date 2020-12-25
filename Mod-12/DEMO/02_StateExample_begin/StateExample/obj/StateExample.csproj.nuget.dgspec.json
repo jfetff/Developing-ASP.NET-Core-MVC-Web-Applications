@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj": {}
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj": {}
   },
   "projects": {
-    "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj": {
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
+        "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
         "projectName": "StateExample",
-        "projectPath": "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
+        "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\StateExample.csproj",
         "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-        "outputPath": "C:\\20486D\\Ejercicios\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\obj\\",
+        "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\DEMO\\02_StateExample_begin\\StateExample\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
