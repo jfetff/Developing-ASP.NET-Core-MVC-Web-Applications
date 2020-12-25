@@ -9,8 +9,9 @@ Entregar el url de GitHub con la solución y un readme con las siguiente informa
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
 3. **Resumen del Modulo 12:** Este módulo consta de dos ejercicios:
-    -  En el primer ejercio nos ayuda a entender como usar la metodología del ASP.NET Identity.
-    - En el ejercicio 2 la práctica nos ayuda a entender como autorizar el acceso a aciones del controlador.
+    - En el primer ejercio nos ayuda a examinar el contenido del navegador, puede ver que los productos en el contenido de la página **"Venta del día"** están en caché, ya que la hora que se muestra en los datos de los productos **Último recuperado en** es idéntica en ambas páginas de diferentes navegadores.
+    - En el ejercicio 2 la práctica nos ayuda a examinar el contenido del navegador. La barra de menú de la aplicación está en caché desde la hora que aparece en la barra de menú; la hora es la misma en ambas páginas de **Microsoft Edge**.
+    - En la tercera tarea creamos una tienda eléctrica en la que los usuarios puedan ver los detalles de los productos, pedir algunos también y chatear con los visitantes del sitio en línea.
 
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguna.
@@ -51,6 +52,10 @@ Tiempo estimado: **60 minutos**
   ```
 >**Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-1.jpg "Visualizando la ejecución del comando 'npm install' de la aplicación !!!")
+
 8. Cierre la ventana.
 
 9. En el Explorador de Archivos, navega a **[Repository Root]\Allfiles\Mod12\Labfiles\01_ElectricStore_begin**, y luego haz doble clic en **ElectricStore.sln**.
@@ -63,15 +68,27 @@ Tiempo estimado: **60 minutos**
 
 12. En la lista **Ubicaciones de herramientas externas**, seleccione **$(PATH)**, haga clic en el botón **Flecha arriba** hasta que **$(PATH)** esté en la parte superior de la lista, y luego haga clic en **OK**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-2.jpg "Visualizando la acción de mover el '$(PATH)' como primero en el grupo de la aplicación !!!")
+
 13. En la ventana **ElectricStore - Microsoft Visual Studio**, en Solution Explorer, haga clic en **package.json**.
 
 14. Examinar la ventana de código **package.json**.
 
       >**Nota**: Hay dependencias en los paquetes **jquery**, **jquery-validation**, **jquery-validation-unobtrusive**, **bootstrap** y **popper.js**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-3.jpg "Visualizando que en el archivo de configuración existan la dependencias necesarias en la aplicación !!!")
+
 15. En la ventana **ElectricStore - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Start Without Debugging**.
 
 16. En Microsoft Edge, en la barra de direcciones, anote el número de puerto que aparece al final del URL **http://localhost:[port]**. Usarás el número de puerto durante este laboratorio.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-4.jpg "Visualizando el inicio de la aplicación que muestra el puerto en el qe escucha !!!")
 
 17. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -92,6 +109,11 @@ Tiempo estimado: **60 minutos**
            @await Component.InvokeAsync("NavbarMenu")
        </cache>
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-5.jpg "Visualizando el código agregado en la vista '_Layout.cshtml' de la aplicación !!!")
+
 #### Tarea 2: Insertar los datos que serán almacenados en la memoria caché por el ayudante de la etiqueta de la memoria caché
 
 
@@ -100,6 +122,10 @@ Tiempo estimado: **60 minutos**
 3. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Solution Explorer, haz clic con el botón derecho del ratón en **ViewComponents**, apunta a **Add**, y luego haz clic en **Class**.
 
 4. En el cuadro de diálogo **Agregar nuevo elemento - Tienda Eléctrica**, en el cuadro **Nombre**, escriba **NavbarMenúVerComponentes**, y luego haga clic en **Agregar**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-6.jpg "Visualizando de la creación de la clase 'NavbarMenúVerComponentes.cs' de la aplicación !!!")
 
 5. En la ventana de código **NavbarMenuViewComponent.cs**, localice el siguiente código:
   ```cs
@@ -138,6 +164,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Visualizando el código agregado en la clase 'NavbarMenúVerComponentes.cs' de la aplicación !!!")
+
 10. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Solution Explorer, en **Views**, haga clic con el botón derecho **Compartido**, apunte a **Add**, y luego haga clic en **Nueva Carpeta**.
 
 11. En el cuadro **Nueva Carpeta**, escriba **Componentes**, y luego pulse Intro.
@@ -153,6 +183,10 @@ Tiempo estimado: **60 minutos**
 16. En el cuadro de diálogo **Agregar nuevo artículo - ElectricStore**, en el cuadro **Nombre**, escriba **MenúCategorías**, y luego haga clic en **Agregar**.
 
 17. En la ventana de código **MenuCategories.cshtml**, borra todo el contenido.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Visualizando de la creación de la Razor View 'MenuCategories.cshtml' en la aplicación !!!")
 
 18. En la ventana **MenuCategories.cshtml** code, coloque el cursor al principio del documento, y luego escriba el siguiente código:
 
@@ -186,6 +220,9 @@ Tiempo estimado: **60 minutos**
        </li>
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Visualizando del código agregado a la Razor View 'MenuCategories.cshtml' en la aplicación !!!")
 
 #### Tarea 3: Ejecutar la aplicación
 
@@ -201,9 +238,17 @@ Tiempo estimado: **60 minutos**
     
 5. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Borde de Microsoft** y luego haga clic en **Nueva ventana**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-10.jpg "Visualizando del inicio de la aplicación en dos pestañas diferentes para ver el cache de la aplicación !!!")
+
 6. En la tercera ventana de **Microsoft Edge**, en la barra de direcciones, escriba **http://localhost:[port]/products/index/1/RefreshCache**, y luego presione Enter.
 
     >**Nota**: La barra de menú de la aplicación está en caché desde la hora que aparece en la barra de menú; la hora no es la misma que las otras dos páginas de **Microsoft Edge** porque el **RefreshCache** de la ruta desencadena una recarga del componente de la vista.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Visualizando que al cambiar la dirección URL de la aplicación el cache de aplicación no se mantiene !!!")
 
 7. Cierra todas las ventanas de **Microsoft Edge**.
  
@@ -276,6 +321,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Visualizando el código que ha sido agregado al controlador 'ProductsController.cs' de la aplicación !!!")
+
 10. En la ventana **ElectricStore - Microsoft Visual Studio**, en Solution Explorer, en **Views**, expandir **Products**, y luego hacer clic en **Index.cshtml**.
 
 11. En la ventana **Index.cshtml** código, localiza el siguiente código:
@@ -323,6 +372,10 @@ Tiempo estimado: **60 minutos**
        </div>
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Visualizando el código que ha sido agregado a la vista 'Index.cshtml' de la aplicación !!!")
+
 #### Tarea 5: Ejecutar la aplicación
 
 1. En la ventana de **Electric Store - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
@@ -331,11 +384,19 @@ Tiempo estimado: **60 minutos**
 
     >**Nota**: Examinar los productos **Último recuperado en** datos.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Visualizando de los productos presentados en la aplicación !!!")
+
 3. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Microsoft Edge**, y luego haga clic en **Nueva ventana**.
 
 4. En la segunda ventana de **Microsoft Edge**, en la barra de direcciones, escriba **http://localhost:[port]**, y luego presione Enter.
 
     >**Nota**: Al examinar el contenido del navegador, puede ver que los productos en el contenido de la página **"Venta del día "** están en caché, ya que la hora que se muestra en los datos de los productos **Último recuperado en** es idéntica en ambas páginas **Microsoft Edge**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "Visualizando que los productos en el contenido de la página **"Venta del día "** están en caché de la aplicación !!!")
 
 5. Cierra todas las ventanas de **Microsoft Edge**.
 
@@ -370,6 +431,10 @@ Tiempo estimado: **60 minutos**
   ```cs
        app.UseSession();
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Visualizando el código que ha sido agregado en la clase 'Startup.cs' de la aplicación !!!")
 
 #### Tarea 2: Usar la sesión para almacenar valores
 
@@ -428,6 +493,10 @@ Tiempo estimado: **60 minutos**
         }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Visualizando el código que ha sido agregado en la clase 'ProductsController.cs' de la aplicación !!!")
+
 #### Tarea 3: Recuperar los valores de una sesión
 
 1. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **ProductsController.cs**.
@@ -464,6 +533,10 @@ Tiempo estimado: **60 minutos**
             return View();
         }
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Visualizando el código que ha sido agregado en la clase 'ProductsController.cs' de la aplicación !!!")
 
 4. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Solution Explorer, en **Controllers**, haga clic en **ShoppingCartController.cs**.
 
@@ -522,6 +595,10 @@ Tiempo estimado: **60 minutos**
       return View();
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-18.jpg "Visualizando el código que ha sido agregado en la clase 'ShoppingCartController.cs' de la aplicación !!!")
+
 #### Tarea 4: Ejecutar la aplicación
 
 1. En la ventana de **Electric Store - Microsoft Visual Studio**, en el menú **FILE**, haga clic en **Save All**.
@@ -546,6 +623,10 @@ Tiempo estimado: **60 minutos**
 
 10. En la página **Agregar productos a la lista de compras**, en el cuadro **Teléfono**, escriba _&lt;Un número de teléfono de su elección&gt;._ y luego haga clic en **Agregar a la lista de compras**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Visualizando el llenado del formulario para agregar productos a la lista de compras de la aplicación !!!")
+
 11. En la barra de menú, haz clic en **Mi Cesta de la compra**.
 
     >**Nota**: Examine el contenido del navegador. El navegador muestra el contenido del archivo **ShoppingCart.cshtml**, renderizado por **_Layout.cshtml**, y el contenido en caché son los productos que usted seleccionó en la página **"Agregar productos a la lista de compras "**.
@@ -560,6 +641,10 @@ Tiempo estimado: **60 minutos**
 
     >**Nota**: Examine el contenido del navegador. El producto que seleccionó en la segunda selección también aparece en la lista almacenada en caché de los productos que había seleccionado en el pasado.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Visualizando el contenido del navegador y de la cesta de la compra de la aplicación !!!")
+
 15. En la barra de tareas, haga clic con el botón derecho del ratón en el icono **Borde de Microsoft** y luego haga clic en **Nueva ventana**.
 
 16. En la segunda ventana de **Microsoft Edge**, en la barra de direcciones, escriba **http://localhost:[port]**, y luego presione Enter.
@@ -567,6 +652,10 @@ Tiempo estimado: **60 minutos**
 17. En la barra de menú, haz clic en **Mi Cesta de la compra**.
 
     >**Nota**: Examinar el contenido del navegador. La lista de productos no se muestra porque está vacía. La sesión se guarda sólo en el navegador original.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Visualizando el contenido del navegador y de la cesta de la compra de la aplicación !!!")
 
 18. Cierra todas las ventanas de **Microsoft Edge**.
 
@@ -578,7 +667,7 @@ Tiempo estimado: **60 minutos**
 
 1. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho en **ElectricStore**, apunte a **Add**, y luego haga clic en **New Folder**.
 
-2. En el cuadro **Nueva Carpeta**, escriba **Hubes**, y luego presione Enter.
+2. En el cuadro **Nueva Carpeta**, escriba **Hubs**, y luego presione Enter.
 
 3. En la ventana **Almacén Eléctrico - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic con el botón derecho del ratón en **Hubs**, señale a **Agregar**, y luego haga clic en **Clase**.
 
@@ -611,6 +700,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Visualizando el código agregado en la clase 'ChatHub.cs' de la aplicación !!!")
+
 #### Tarea 2: Configurar SignalR en la clase de inicio
 
 1. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Explorador de soluciones, haga clic en **Startup.cs**.
@@ -632,7 +725,6 @@ Tiempo estimado: **60 minutos**
            options.IdleTimeout = TimeSpan.FromSeconds(60);
        });
   ```
-
 
 5. Asegúrate de que el cursor esté al final del código localizado, pulsa Enter dos veces, y luego escribe el siguiente código:
   ```cs
@@ -690,6 +782,10 @@ Tiempo estimado: **60 minutos**
 
 7. En el cuadro de diálogo **Agregar vista MVC**, asegúrese de que la casilla de verificación **Crear como una vista parcial** está desactivada y la casilla de verificación **Utilizar una página de diseño** está seleccionada y, a continuación, haga clic en **Agregar**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Visualizando la creación de la vista Razor 'Chat.cshtml' de la aplicación !!!")
+
 8. En la ventana de código **Chat.cshtml**, seleccione el siguiente código:
   ```cs
        <h2>Chat</h2>
@@ -727,6 +823,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23b.jpg "Visualizando la agregación del archivo 'chat-hub.js' en la aplicación !!!")
+
 11. En la ventana **ElectricStore - Microsoft Visual Studio**, en Solution Explorer, en **Views**, expandir **ShoppingCart**, y luego hacer clic en **Index.cshtml**.
 
 12. En la ventana **Index.cshtml** código, localizó el siguiente código:
@@ -742,10 +842,15 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+
 13. Ponga el cursor al final del código localizado, presione Enter y luego escriba el siguiente código:
   ```cs
        <button type="button" id="btnChat" class="btn btn-success" onclick="location.href='@Url.Action("Chat", "ShoppingCart")'">Chat with Online Visitors</button>
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23c.jpg "Visualizando el código agregado en la vista 'ShoppingCart/Index.cshtml' en la aplicación !!!")
 
 #### Tarea 4: Escribir el código JavaScript para conectarse al servidor
 
@@ -756,6 +861,10 @@ Tiempo estimado: **60 minutos**
 3. En la ventana **ElectricStore - Microsoft Visual Studio**, en el Solution Explorer, en **wwwwroot**, haga clic con el botón derecho **js**, señale a **Add**, y luego haga clic en **Existing Item**.
 
 4. En el cuadro de diálogo **Add Existing Item - ElectricStore**, ve a **[Repository Root]\NAllfiles\Mod12\Labfiles\NElectricStoreJS**, selecciona el archivo **chat-hub.js**, y luego haz clic en **Add**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23d.jpg "Visualizando la agregación del archivo 'chat-hub.js' en la aplicación !!!")
 
 5. En la ventana de **ElectricStore - Microsoft Visual Studio**, en Solution Explorer, en **Views**, en **ShoppingCart**, haz clic en **Chat.cshtml**.
 
@@ -773,6 +882,10 @@ Tiempo estimado: **60 minutos**
            <script src="~/js/chat-hub.js"></script>
        }
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23a.jpg "Visualizando del código agregado de la vista 'Chat.cshtml' de la aplicación !!!")
 
 #### Tarea 5: Ejecutar la aplicación
 
@@ -792,13 +905,17 @@ Tiempo estimado: **60 minutos**
 
 9. En Microsoft Edge, en la casilla **Mensaje**, escriba _&lt;Un mensaje de su elección&gt;._ y luego presione **Enviar mensaje**.
 
-    >**Nota**: En ambas ventanas de **Borde de Microsoft**, aparece el mensaje.
+    >**Nota**: En ambas ventanas de **Edge de Microsoft**, aparece el mensaje.
 
 10. En la primera ventana de **Microsoft Edge**, en el cuadro **Nombre**, escriba _&lt;Un nombre de su elección&gt;._
 
 11. En la primera ventana **Edge de Microsoft**, en el cuadro **Mensaje**, escriba _&lt;Un mensaje de su elección&gt;._ y luego haga clic en **Enviar mensaje**.
 
     >**Nota**: En ambas ventanas de **Edge de Microsoft**, el mensaje aparece.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-24.jpg "Visualizando de los chats intercambiados por los usuarios en la aplicación !!!")
 
 12.  Cierre todas las ventanas de **Edge de Microsoft**.
 

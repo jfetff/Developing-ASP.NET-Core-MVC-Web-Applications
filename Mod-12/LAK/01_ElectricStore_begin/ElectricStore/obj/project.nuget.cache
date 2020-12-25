@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EY/xCLONdd3zxRoXOrCnK0oEaM8PtwfgsNqHYA6EaoGDQcSPRpD6a/i4f4jumBi7NXMvzf3tL2Ps0MGTvHncUA==",
+  "dgSpecHash": "9lJCoXnndAuFHTNT4js7p9WdpT60HNKEYzHKhKrXKAsglGDHj/yAHzwgit+R7XFYtQssHfR7FZRs/R4DMBiBsA==",
   "success": true,
-  "projectFilePath": "C:\\20486D\\Ejercicios\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
+  "projectFilePath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",

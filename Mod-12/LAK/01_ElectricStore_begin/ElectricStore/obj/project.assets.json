@@ -12998,11 +12998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
+      "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
       "projectName": "ElectricStore",
-      "projectPath": "C:\\20486D\\Ejercicios\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
+      "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\ElectricStore.csproj",
       "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-      "outputPath": "C:\\20486D\\Ejercicios\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\obj\\",
+      "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-12\\LAK\\01_ElectricStore_begin\\ElectricStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
