@@ -63,7 +63,7 @@ namespace AspNetCore
             WriteLiteral("        <div class=\"photo-index-card\">\n            <div class=\"image-wrapper\">\n                ");
             EndContext();
             BeginContext(381, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9d048078dac24ca588fc6fff80c7e6f3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "224a7e04556145bc80baec1364d31228", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

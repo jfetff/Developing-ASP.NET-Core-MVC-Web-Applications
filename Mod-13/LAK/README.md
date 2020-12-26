@@ -6,12 +6,12 @@ Fichero de Instrucciones: Instructions\20486D_MOD05_LAK.md
 
 **Información:**
 
-1. **Nombres y apellidos:** José René Fuentes Cutz
+1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
 3. **Resumen del Ejercicio:** Este laboratorio consta de 4 ejercicio:
 - En el Primer ejercicio nos ayuda a agregar controladorese a una aplicación WEB API, la cual es llamada por el navegador posteriormente.
-- En el Segundo ejercicio nos ayuda a entender como podemos registrar nuevas rutas personalizadas en el canal de solicitud de Controllers de la aplicación..
-- En el Tercer ejercicio creamos una clase de filtro de acción que registre los detalles de las acciones, los Controllers y los parámetros en un archivo externo cada vez que se llame a una acción..
+- En el Segundo ejercicio nos ayuda a llamar una WEB API  usando la clase HttpClient.
+- En el Tercer ejercicio habilitamos a los usuarios para ver las posibles posiciones de trabajo y hacemos posible que ellos apliquen por un trabajo definido.
 
 4. **Dificultad o problemas presentados y como se resolvieron:** Ninguno.
 

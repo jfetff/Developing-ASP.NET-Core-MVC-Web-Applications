@@ -1,9 +1,7 @@
 ﻿@using Client.Models
 @model Client.Models.JobApplication
 
-@{
-    ViewData["Title"] = "Create";
-}
+@{ ViewData["Title"] = "Create"; }
 
 <div class="row justify-content-center">
     <div class="col-5">
@@ -61,3 +59,9 @@
         </form>
     </div>
 </div>
+
+@section Scripts{
+    <script src="~/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/node_modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/wanted-ad-post.js"></script>
+}
