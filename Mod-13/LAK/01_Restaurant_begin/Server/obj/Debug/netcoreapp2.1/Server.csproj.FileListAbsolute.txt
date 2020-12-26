@@ -1,0 +1,15 @@
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\bin\Debug\netcoreapp2.1\Server.deps.json
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\bin\Debug\netcoreapp2.1\Server.runtimeconfig.json
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\bin\Debug\netcoreapp2.1\Server.runtimeconfig.dev.json
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\bin\Debug\netcoreapp2.1\Server.dll
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\bin\Debug\netcoreapp2.1\Server.pdb
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.csprojAssemblyReference.cache
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.AssemblyInfoInputs.cache
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.AssemblyInfo.cs
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.csproj.CoreCompileInputs.cache
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.RazorAssemblyInfo.cache
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.RazorAssemblyInfo.cs
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.RazorTargetAssemblyInfo.cache
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.dll
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.pdb
+C:\20486D\Developing-ASP.NET-Core-MVC-Web-Applications\Mod-13\LAK\01_Restaurant_begin\Server\obj\Debug\netcoreapp2.1\Server.genruntimeconfig.cache
