@@ -2,13 +2,13 @@
 
 Siempre cuando un camino comienza con  *[Repository Root]*, reemplacelo con el camino absoluto en el que el repositorio 20486 reside. Por ejemplo, si tu has cloneado o extraido el repositorio 20486 en la carpeta **C:\Users\John Doe\Downloads\20486**, cambiar la ruta de: **[Repository Root]\AllFiles\20486D\Mod01** a **C:\Users\John Doe\Downloads\20486\AllFiles\20486D\Mod01**.
 
-Fichero de Instrucciones: Instructions\20486D_MOD05_LAK.md
+Fichero de Instrucciones: Instructions\20486D_MOD13_LAK.md
 
 **Información:**
 
 1. **Nombres y apellidos:** José René Fuentes Cortez
 2. **Fecha:** 24 de Diciembre 2020.
-3. **Resumen del Ejercicio:** Este laboratorio consta de 4 ejercicio:
+3. **Resumen del Ejercicio:** Este laboratorio consta de 3 ejercicios:
 - En el Primer ejercicio nos ayuda a agregar controladorese a una aplicación WEB API, la cual es llamada por el navegador posteriormente.
 - En el Segundo ejercicio nos ayuda a llamar una WEB API  usando la clase HttpClient.
 - En el Tercer ejercicio habilitamos a los usuarios para ver las posibles posiciones de trabajo y hacemos posible que ellos apliquen por un trabajo definido.
@@ -52,6 +52,10 @@ Tiempo estimado: **60 minutos**
   ```
 >**Nota**: Si se muestran mensajes de advertencia en la línea de comandos, puede ignorarlos.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-1.jpg "Visualizando el resultado de ejecutar el comando 'npm install' de la aplicación !!!")
+
 8. Cierre la ventana.
 
 9. Navega a **[Repository Root]\Allfiles\Mod13\Labfiles\01_Restaurant_begin**, y luego abre el **Restaurant.sln**.
@@ -62,13 +66,17 @@ Tiempo estimado: **60 minutos**
 
 11. En Microsoft Edge, en la barra de direcciones, anote el número de puerto que aparece al final del URL **http://localhost:[port]**. Usarás el número de puerto durante este laboratorio.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-2.jpg "Visualizando el puerto donde va a escuchar la aplicación !!!")
+
 12. En Microsoft Edge, haz clic en **Cerrar**.
 
 ### Ejercicio 1: Agregar acciones y llamarlas usando Microsoft Edge
 
 #### Tarea 1: Añadir un Controller y una acción a una aplicación Web API
 
-1. Navega a **[Raíz del Repositorio]\Ntodos los archivos\NMod13\N-Labfiles\Ncomenzando**, y luego haz doble clic en **Restaurant.sln**.
+1. Navega a **[Repository Root]\Allfiles\Mod13\Labfiles\01_Restaurant_begin**, y luego haz doble clic en **Restaurant.sln**.
 
     >**Nota**: Si aparece un cuadro de diálogo de **Aviso de Seguridad para el Servidor**, verifique que la casilla de verificación **Pregúnteme por cada proyecto de esta solución** esté despejada, y luego haga clic en OK.
 
@@ -76,7 +84,15 @@ Tiempo estimado: **60 minutos**
 
 3. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller API - Vaciar**, y luego haga clic en **Agregar**.
 
-4. En el cuadro de diálogo **Agregar Controller de la API vacío**, en el cuadro **Nombre del Controller**, escriba **Controller de sucursales de restaurantes** y, a continuación, haga clic en **Agregar**.
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-3.jpg "Visualizando como agregamos un controlador en la aplicación !!!")
+
+4. En el cuadro de diálogo **Agregar Controller de la API vacío**, en el cuadro **Nombre del Controller**, escriba **RestaurantBranchesController** y, a continuación, haga clic en **Agregar**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-4.jpg "Visualizando como agregamos un controlador API en la aplicación !!!")
 
 5. En la ventana de código **RestaurantBranchesController.cs**, localice el siguiente código:
   ```cs
@@ -111,6 +127,10 @@ Tiempo estimado: **60 minutos**
        return branches.ToList();
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-5.jpg "Visualizando el código agregado en el controlador 'RestaurantBranchesController.cs' en la aplicación !!!")
+
 #### Tarea 2: Ejecutar la aplicación
 
 1. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
@@ -121,6 +141,10 @@ Tiempo estimado: **60 minutos**
 
     >**Nota**: El navegador muestra una lista de ramas en el formato JSON.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-6.jpg "Visualizando el resultado de ejecutar la aplicación donde se muestra la lista de branches en formato JSON !!!")
+
 4. En Microsoft Edge, haga clic en **Cerrar**.
 
 #### Tarea 3: Añadir un Controller y una acción que obtiene un parámetro
@@ -130,6 +154,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller API - Vaciar**, y luego haga clic en **Agregar**.
 
 3. En el cuadro de diálogo **Agregar Controller API vacío**, en el cuadro **Nombre del Controller**, escriba **ReservationController** y, a continuación, haga clic en **Agregar**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-7.jpg "Visualizando como agregamos el controlador API 'ReservationController.cs' en la aplicación !!!")
 
 4. En la ventana de código **ReservationController.cs**, localice el siguiente
 
@@ -170,6 +198,10 @@ Tiempo estimado: **60 minutos**
        return order
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-8.jpg "Visualizando el código agregado al controlador API 'ReservationController.cs' en la aplicación !!!")
+
 #### Tarea 4: Ejecutar la aplicación
 
 1. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
@@ -179,6 +211,10 @@ Tiempo estimado: **60 minutos**
 3. En **Microsoft Edge**, en la barra de direcciones, escriba **http://localhost:[port]/api/Reservation/1**, y luego presione Enter.
 
     >**Nota**: El navegador muestra una orden con id=1 en el formato JSON.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-9.jpg "Visualizando el resultado del navegador donde se muestra una reservación con id=1 en el formato JSON. en la aplicación !!!")
 
 4. En el Microsoft Edge, pulse **Cerrar**.
 
@@ -200,6 +236,10 @@ Tiempo estimado: **60 minutos**
        return CreatedAtAction(nameof(GetById), new { id = orderTable.Id }, orderTable);
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-10.jpg "Visualizando el código agregado controlador 'ReservationController' de la aplicación !!!")
+
 >**Resultados**: En este ejercicio, agregaste Controllers y acciones a una aplicación Web API, y los llamaste usando Microsoft Edge.
 
 ### Ejercicio 2: Llamar a una API Web usando código del lado del servidor
@@ -220,9 +260,17 @@ Tiempo estimado: **60 minutos**
 
 4. En la ventana **Restaurante - Microsoft Visual Studio**, en el Explorador de soluciones, en **Cliente**, haga clic con el botón derecho del ratón en **Controllers**, apunte a **Agregar**, y luego haga clic en **Controller**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-11.jpg "Visualizando como agregamos el controlador MVC de la aplicación !!!")
+
 5. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller MVC - Vaciar**, y luego haga clic en **Agregar**.
 
 6. En el cuadro de diálogo **Añadir Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **RestaurantBranchesController**, y luego haga clic en **Añadir**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-12.jpg "Visualizando como agregamos el controlador MVC 'RestaurantBranchController' de la aplicación !!!")
 
 7. En la ventana de código **RestaurantBranchesController.cs**, localice el siguiente código:
   ```cs
@@ -273,9 +321,20 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-13.jpg "Visualizando el código agregado al controlador MVC 'RestaurantBranchController.cs' de la aplicación !!!")
+
+
 13.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Explorador de Soluciones, en **Cliente**, expandir **Vistas**, expandir **RestaurantBranches**, y luego hacer clic en **Index.cshtml**.
 
      >**Nota**: Examinar el contenido del archivo.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-14.jpg "Examinado la vista  '/RestaurantBrances/Index.cshtml' para entender su objetvio de la aplicación !!!")
+
+
 
 #### Tarea 2: Ejecutar la aplicación
 
@@ -305,6 +364,10 @@ Tiempo estimado: **60 minutos**
        },
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-15.jpg "MOstrando el código que ha sido agregado  en el archivo js de configuración 'launchSettings.json' en la aplicación !!!")
+
 4. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
 
 5. En el Explorador de soluciones, haga clic con el botón derecho del ratón en **Servidor**, y luego haga clic en **Configurar como proyecto de inicio**. 
@@ -317,15 +380,27 @@ Tiempo estimado: **60 minutos**
 
     >**Nota**: El navegador muestra las sucursales del restaurante. 
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-16.jpg "Msstrando en el navegador las sucursales del restaurante en la aplicación !!!")
+
 9. En el borde de Microsoft, haga clic en **Cerrar**.
     
 #### Tarea 3: Llamar a un método de publicación de la API Web
 
 1. En la ventana **Restaurante - Microsoft Visual Studio**, en el Explorador de soluciones, en **Cliente**, haga clic con el botón derecho del ratón en **Controllers**, apunte a **Agregar**, y luego haga clic en **Controller**.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-17.jpg "Msstrando como agregamos un controlador MVC en blanco en la aplicación !!!")
+
 2. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller MVC - Vaciar**, y luego haga clic en **Agregar**.
 
 3. En el cuadro de diálogo **Añadir Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **ReservationController** y, a continuación, haga clic en **Añadir**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-18.jpg "Agregando los pasos para agregar un controlador MVC 'ReservationController' en la aplicación !!!")
 
 4. En la ventana de código **ReservationController.cs**, localice el siguiente código:
   ```cs
@@ -367,10 +442,17 @@ Tiempo estimado: **60 minutos**
        return View();
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-19.jpg "Visualizando como agregamos un controlador MVC 'ReservationController' en la aplicación !!!")
+
 10. En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, expandir **Reserva**, y luego hacer clic en **Crear.cshtml**.
 
     >**Nota**: Examinar el contenido del archivo.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-20.jpg "Visualizando como agregamos un controlador MVC 'ReservationController' en la aplicación !!!")
 
 11. En la ventana **Restaurante - Microsoft Visual Studio**, en Solution Explorer, en **Controllers** haga clic en **ReservationController.cs**.
 
@@ -415,6 +497,10 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-21.jpg "Visualizando como agregamos un controlador MVC 'ReservationController.cs' en la aplicación !!!")
+
 #### Tarea 4: Llamar a un método de obtención de la API Web con parámetro
 
 1. En la ventana de código **ReservationController.cs**, asegúrese de que el cursor esté al final del bloque de código de acción **PopulateRestaurantBranchesDropDownListAsync**, pulse dos veces Intro y luego escriba el siguiente código:
@@ -439,9 +525,13 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
-3.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, en **Reserva**, haga clic en **GraciasAsync.cshtml**.
+3.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, en **Reserva**, haga clic en **ThankYouAsync.cshtml**.
 
     >**Nota**: Examinar el contenido del archivo.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-22.jpg "Visualizando el código de la vista 'ThankYouAsync.cshtml' como agregamos un controlador MVC 'ReservationController.cs' en la aplicación !!!")
 
 #### Tarea 5: Ejecutar la aplicación
 
@@ -457,6 +547,11 @@ Tiempo estimado: **60 minutos**
 
 6. En la primera ventana de **Microsoft Edge**, en la barra de menú, haga clic en **Reserva**.
 
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-23.jpg "Visualizando el inicio de la Web en la aplicación !!!")
+
 7. En **Reservación**, en el cuadro **Sucursal de un restaurante**, seleccione _&lt;Una sucursal de un restaurante de su elección&gt;,_
 
 8. En **Reservación**, en la casilla **Nombre**, escriba _&lt;Un nombre de pila de su elección&gt;,_
@@ -468,6 +563,10 @@ Tiempo estimado: **60 minutos**
 11. En **Reservación**, en la casilla **Hora de la reservación**, elija _&lt;Una hora de la reservación de su elección&gt;,_
 
 12. En **Reservación**, en el cuadro **Huéspedes de la cena**, escriba _&lt;Un huésped de la cena de su elección;,_, y luego haga clic en **Hacer una reservación**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-24.jpg "Visualizando como llenamos el formulario de la web en la aplicación !!!")
 
 13. En Microsoft Edge, haz clic en **Cerrar**.
 
@@ -482,6 +581,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el panel de navegación, en **Instalado**, expanda **Centro ASP.NET**, y luego haga clic en **Web**.
 
 3. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el panel de resultados, haga clic en **Archivo JavaScript**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-26.jpg "Visualizando como agregamos un archivo de configuración tipo JavaScript en la aplicación !!!")
 
 4. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el cuadro **Nombre**, escriba **quiero agregar un cliente**, y luego haga clic en **Agregar**.
 
@@ -499,6 +602,10 @@ Tiempo estimado: **60 minutos**
           });
        });
   ```
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-26b.jpg "Visualizando el código agregado al archivo de JavaScript 'wanted-ad-get.js' en la aplicación !!!")
 
 6. En la ventana del código **wanted-ad-get.js**, localiza el siguiente código:
   ```cs
@@ -527,6 +634,9 @@ Tiempo estimado: **60 minutos**
         $('.photo-display-img').attr('src', '/images/white-plate.jpg');
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-27.jpg "Visualizando el código agregado en el JavaScript 'wanted-ad-get.js' de la aplicación !!!")
 
 8. En la ventana **Restaurante - Microsoft Visual Studio**, en el Explorador de Soluciones, en **Cliente**, en **Vistas**, expandir **WantedAd**, y luego hacer clic en **Index.cshtml**.
 
@@ -542,11 +652,19 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-28.jpg "Visualizando como agregamos el link de la vista 'Index.cshtml' de la aplicación !!!")
+
 #### Tarea 2: Ejecutar la aplicación
 
 1. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
 
 2. En el Explorador de soluciones, haga clic con el botón derecho del ratón en **Servidor**, y luego haga clic en **Configurar como proyecto de inicio**. 
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-29.jpg "Visualizando el código agregado en vale 'Index.cshtml' de la aplicación !!!")
 
 3. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
 
@@ -558,6 +676,10 @@ Tiempo estimado: **60 minutos**
 
     >**Nota**: El navegador muestra los trabajos que se requieren en un restaurante.
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-30.jpg "Visualizando en el navegador los trabajos que se exponen en un restaurante de la aplicación !!!")
+
 7. En Microsoft Edge, haz clic en **Cerrar**.
 
 #### Tarea 3: Llamar a un método de obtención de la API Web usando HttpClient
@@ -567,6 +689,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Agregar andamiaje**, haga clic en **Controller MVC - Vaciar**, y luego haga clic en **Agregar**.
 
 3. En el cuadro de diálogo **Añadir Controller MVC vacío**, en el cuadro **Nombre del Controller**, escriba **Controller de aplicaciones de trabajo** y, a continuación, haga clic en **Añadir**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-31.jpg "Visualizando como agregamos el controlador MVC en la aplicación !!!")
 
 4. En la ventana de código **JobApplicationController.cs**, localice el siguiente código:
   ```cs
@@ -586,6 +712,11 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-32.jpg "Visualizando como agregamos el controlador MVC 'JobApplicationController.cs' en la aplicación !!!")
+
+
 7. Reemplazar el código seleccionado por el siguiente código:
   ```cs
        IHttpClientFactory privado _httpClientFactory;
@@ -595,11 +726,11 @@ Tiempo estimado: **60 minutos**
              _httpClientFactory = httpClientFactory;
        }
   ```
-8. Asegúrate de que el cursor está al final del bloque de código de construcción **JobApplicationController**, presiona Enter dos veces, y luego escribe el siguiente código:
+8. Asegúrate de que el cursor está al final del bloque de código de construcción ****, presiona Enter dos veces, y luego escribe el siguiente código:
   ```cs
        [HttpGet]
        public async Task<IActionResult> Create()
-       {
+       {JobApplicationController
        }
   ```
 9. En el bloque de código de acción **Crear**, escriba el siguiente código:
@@ -608,9 +739,18 @@ Tiempo estimado: **60 minutos**
        return View();
   ```
 
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-33.jpg "Visualizando el código agregado al controlador MVC 'JobApplicationController.cs' de la aplicación !!!")
+
+
 10.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, expandir **JobApplication**, y luego hacer clic en **Create.cshtml**.
 
      >**Nota**: Examinar el contenido del archivo.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-34.jpg "Visualizando la vista 'Create.cshtml' de la aplicación !!!")
 
 11. En la ventana **Restaurante - Microsoft Visual Studio**, en Solution Explorer, en **Cliente**, en **Controllers** haga clic en **JobApplicationController.cs**.
 
@@ -633,6 +773,7 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+
 14. En la ventana de código **JobApplicationController.cs**, asegúrese de que el cursor esté al final del bloque de código de acción **PopulateEmployeeRequirementsDropDownListAsync**, pulse dos veces Intro y luego escriba el siguiente código:
   ```cs
        public IActionResult ThankYou()
@@ -643,11 +784,17 @@ Tiempo estimado: **60 minutos**
   ```cs
        return View();
   ```
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
+![alt text](./Images/Fig-35.jpg "Visualizando el código agregado 'JobApplicationController.cs' de la aplicación !!!")
 
-16.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, expandir **JobApplication**, y luego hacer clic en **Gracias.cshtml**.
+16.  En la ventana **Restaurante - Microsoft Visual Studio**, en el Solution Explorer, en **Cliente**, en **Vistas**, expandir **JobApplication**, y luego hacer clic en **ThankYou.cshtml**.
 
      >**Nota**: Examinar el contenido del archivo.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-36.jpg "Visualizando el contenido de la vista 'ThankYou.cshtml' de la aplicación !!!")
 
 #### Tarea 4: Llamar a un método de Web API Post usando jQuery
 
@@ -656,6 +803,10 @@ Tiempo estimado: **60 minutos**
 2. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el panel de navegación, en **Instalado**, amplíe **Centro ASP.NET**, y luego haga clic en **Web**.
 
 3. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el panel de resultados, haga clic en **Archivo JavaScript**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-37.jpg "Visualizando los pasos para agregar el archivo 'wanted-ad-post.js' de la aplicación !!!")
 
 4. En el cuadro de diálogo **Agregar nuevo elemento - Cliente**, en el cuadro **Nombre**, escriba **anuncio de correo**, y luego haga clic en **Agregar**.
 
@@ -691,6 +842,10 @@ Tiempo estimado: **60 minutos**
           });
        });
   ```
+  
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-38.jpg "Visualizando el código agregado al archico 'wanted-ad-post' de la aplicación !!!")
 
 6. En la ventana **Restaurante - Microsoft Visual Studio**, en Solution Explorer, en **Cliente**, en **Vistas**, en **Aplicación de trabajo**, haga clic en **Crear.cshtml**.
 
@@ -709,6 +864,11 @@ Tiempo estimado: **60 minutos**
        }
   ```
 
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-39.jpg "Visualizando el código agregado a la vista 'Create.cshtml' de la aplicación !!!")
+
 #### Tarea 5: Ejecutar la aplicación
 
 1. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Guardar todo**.
@@ -720,6 +880,10 @@ Tiempo estimado: **60 minutos**
 4. En el Explorador de soluciones, haga clic con el botón derecho del ratón en **Cliente**, y luego haga clic en **Configurar como proyecto de inicio**. 
 
 5. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **DEBUG**, haga clic en **Iniciar sin depuración**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-40.jpg "Visualizando como hemos llenado el formularion de la aplicación !!!")
 
 6. En la primera ventana **Microsoft Edge**, en la barra de menú, haga clic en **Submit Job Application**.
 
@@ -734,6 +898,10 @@ Tiempo estimado: **60 minutos**
 11. En **Submit Job Application**, en la casilla **Email**, escriba _&lt;Una dirección de correo electrónico de su elección&gt;,_
 
 12. En **Submit Job Application**, en la casilla **Address**, escriba _&lt;Una dirección de su elección&gt;,_ y luego haga clic en **Apply For a Job**.
+
+- La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
+
+![alt text](./Images/Fig-41.jpg "Visualizando el resultado después de llenar el formulario de la aplicación !!!")
 
 13. En Microsoft Edge, haga clic en **Cerrar**.
 
