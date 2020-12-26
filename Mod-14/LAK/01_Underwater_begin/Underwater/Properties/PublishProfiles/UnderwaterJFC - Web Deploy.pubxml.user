@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABxUR8bJm7kOxo7lDKt1ZWAAAAAACAAAAAAAQZgAAAAEAACAAAABRftcCHGRfiD78Vw2gn2gMMYb8ZpqYaYXq4h8AJibVygAAAAAOgAAAAAIAACAAAAA9p22b5JQkDeJ1k/pH/iPL9BqiBU2/Qb23UxSLl15e9oAAAADIsORz4mGL4e/UTjzaQjuqsXj9C4ZZxtD53DRFMhyxdrcLG6gaTV5tCBw7UNXjezELZqsdHS0UEzf5UPouNg7fWpJd7dTGpoBBo4F7d9c86CiyNovCawUk/FjBG2qfdCLMpbXBvT6q2sc/DuTKqWQiHsa273tZLdlQUd9LXGNK60AAAACub4LUD0J7CAGZQfrYP2MmfbCzt/jgLU03z8gznKU8+upik4EfdSjGLARlXF5nmXIi30yBx5kY+l8PEYr6EABY</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=tcp:underwaterjrfc.database.windows.net,1433%3bInitial Catalog=UnderwaterDB%3bUser Id=Underwateradmin%40underwaterjrfc.database.windows.net%3bPassword=p%40%40sw0rd%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Underwater.Data.UnderwaterContext">
+      <Value>Data Source=tcp:underwaterjrfc.database.windows.net,1433%3bInitial Catalog=UnderwaterDB%3bUser Id=Underwateradmin%40underwaterjrfc.database.windows.net%3bPassword=p%40%40sw0rd%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

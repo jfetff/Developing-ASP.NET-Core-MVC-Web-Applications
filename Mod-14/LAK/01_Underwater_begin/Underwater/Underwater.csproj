@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <UserSecretsId>1513ccb2-b1fd-449a-bf8e-ef131952ee38</UserSecretsId>
+  </PropertyGroup>
+	<ItemGroup>
+		<Content Include="node_modules\**" CopyToPublishDirectory="PreserveNewest" />
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+</Project>

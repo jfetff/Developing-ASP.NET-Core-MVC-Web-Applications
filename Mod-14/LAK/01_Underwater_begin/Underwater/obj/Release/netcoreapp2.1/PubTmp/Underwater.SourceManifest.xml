@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\20486D\Ejercicios\Mod-14\LAK\01_Underwater_begin\Underwater\obj\Release\netcoreapp2.1\PubTmp\Out\" />
+  <dbfullsql path="C:\20486D\Ejercicios\Mod-14\LAK\01_Underwater_begin\Underwater\obj\Release\netcoreapp2.1\PubTmp\EFSQLScripts\Underwater.Data.UnderwaterContext.sql" />
+</sitemanifest>

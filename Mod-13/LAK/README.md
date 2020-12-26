@@ -842,7 +842,7 @@ Tiempo estimado: **60 minutos**
           });
        });
   ```
-  
+
 - La representación visual de la resolución del ejercicio se muestra en la siguiente imagen:
 
 ![alt text](./Images/Fig-38.jpg "Visualizando el código agregado al archico 'wanted-ad-post' de la aplicación !!!")
@@ -909,14 +909,4 @@ Tiempo estimado: **60 minutos**
 14. En la ventana **Restaurante - Microsoft Visual Studio**, en el menú **Archivo**, haga clic en **Salir**.
 
 >**Resultados**: En este ejercicio, permitió a los usuarios ver los anuncios de búsqueda para encontrar un nuevo trabajo, y les permitió solicitar un empleo. 
-
-
-
-
-
-
-
-
-
-
 
