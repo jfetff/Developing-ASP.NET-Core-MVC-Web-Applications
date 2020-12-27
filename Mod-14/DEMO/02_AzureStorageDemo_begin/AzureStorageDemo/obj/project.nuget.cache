@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GRZ7r5xHhD/DLdV0Dg3PvCW+lvasarnMf/7ydl1RGS0iSlGmq36GF8knKKGaC6VtRus3rwn11MP9OwrthEVZuQ==",
+  "dgSpecHash": "6dxdv+77UicXlPPt+UfjbIy3EWRADqeFqIzyS9WvDcaofss9IAC/asQ3NrvlaicIvGWgoKpLG9DxXbNC7J2URA==",
   "success": true,
-  "projectFilePath": "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
+  "projectFilePath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<parameters>
-  <parameter name="IIS Web Application Name" description="" value="ZooSite20201215180916" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\01_ZooSite_end\\ZooSite\\obj\\Release\\netcoreapp2\.1\\PubTmp\\Out\\$" />
-  </parameter>
-</parameters>

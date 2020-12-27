@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj": {}
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj": {}
   },
   "projects": {
-    "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj": {
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
+        "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
         "projectName": "AzureStorageDemo",
-        "projectPath": "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
+        "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\AzureStorageDemo.csproj",
         "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-        "outputPath": "C:\\20486D\\Ejercicios\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\obj\\",
+        "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\DEMO\\02_AzureStorageDemo_begin\\AzureStorageDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
