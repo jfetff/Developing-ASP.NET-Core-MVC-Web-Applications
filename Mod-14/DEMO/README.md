@@ -468,10 +468,12 @@ y luego haga doble clic en **AzureStorageDemo.sln**.
 61. En Microsoft Edge, abre una nueva pestaña, escribe **http://portal.azure.com**, y luego presiona Enter.
 
 62. En el portal, en el menú de la izquierda, pulsa **Cuentas de almacenamiento**. 
-	
+
+- Mostrando que la foto ha sido subida en la aplicación:
+
+![alt text](./Images/Fig-37.jpg "Visualización de la foto subida en la aplicación !!!")
+
 63. En la ventana **Cuentas de almacenamiento**, haga clic en **blobdemo{unique name}**.
-
-
 
 64. En la ventana **blobdemo{unique name}**, debajo de **Servicio Blob**, haga clic en **Blobs**.
 
