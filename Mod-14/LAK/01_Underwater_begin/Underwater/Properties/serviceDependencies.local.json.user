@@ -1,9 +1,24 @@
 {
   "dependencies": {
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2020-12-28T00:35:25.8671638Z"
+    },
     "secrets1": {
       "restored": true,
       "restoreTime": "2020-12-18T17:41:21.6191468Z"
     }
   },
-  "parameters": {}
+  "parameters": {
+    "storage1.resourceGroupName": {
+      "Name": "storage1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "Mod-14_DEMOJRFC"
+    },
+    "storage1.subscriptionId": {
+      "Name": "storage1.subscriptionId",
+      "Type": "subscription",
+      "Value": "68a05681-942d-4ba3-ba37-96fcd6968e61"
+    }
+  }
 }

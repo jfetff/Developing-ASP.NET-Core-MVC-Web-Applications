@@ -2,6 +2,12 @@
   "dependencies": {
     "secrets1": {
       "type": "secrets.user"
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/blobdemomod14jrfc",
+      "type": "storage.azure",
+      "connectionId": "DefaultConnection",
+      "secretStore": "LocalSecretsFile"
     }
   }
 }

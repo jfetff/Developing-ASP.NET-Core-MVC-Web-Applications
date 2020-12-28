@@ -38,13 +38,8 @@ namespace Underwater
             services.AddMvc();
             services.AddAzureClients(builder =>
             {
-                builder.AddBlobServiceClient(Configuration["ConnectionStrings:DefaultConnection:blob"], preferMsi: true);
+                builder.AddBlobServiceClient(Configuration["ConnectionStrings:DefaultConnection:blob"], preferMsi: false);
                 builder.AddQueueServiceClient(Configuration["ConnectionStrings:DefaultConnection:queue"], preferMsi: true);
-            });
-            services.AddAzureClients(builder =>
-            {
-                builder.AddBlobServiceClient(Configuration["ConnectionStrings:DefaultConnection:blob:blob"], preferMsi: true);
-                builder.AddQueueServiceClient(Configuration["ConnectionStrings:DefaultConnection:blob:queue"], preferMsi: true);
             });
         }
 
@@ -61,7 +56,7 @@ namespace Underwater
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Aquarium", action = "Index" },
                     constraints: new { id = "[0-9]+" });
-            }); 
+            });
         }
     }
     internal static class StartupExtensions

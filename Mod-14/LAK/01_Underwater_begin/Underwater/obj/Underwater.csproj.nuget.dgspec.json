@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\20486D\\Ejercicios\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj": {}
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj": {}
   },
   "projects": {
-    "C:\\20486D\\Ejercicios\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj": {
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj",
+        "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj",
         "projectName": "Underwater",
-        "projectPath": "C:\\20486D\\Ejercicios\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj",
+        "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\Underwater.csproj",
         "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-        "outputPath": "C:\\20486D\\Ejercicios\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\obj\\",
+        "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-14\\LAK\\01_Underwater_begin\\Underwater\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,11 +44,59 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Azure.Storage.Files.Shares": {
+              "target": "Package",
+              "version": "[12.1.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.1, )",
               "autoReferenced": true
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.CommandLine": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
