@@ -21,6 +21,7 @@ Este es un repositorio con el objetivo de realizar todas las tareas y laboratori
 
 - El contenido de cada tarea se describe como sigue a continuación:
 
+    - EjerExam-ASP.NET-Core-MVC-Web-Applications: Los ejercicios para la preparación del examen de este módulo se encuentran aquí.
     - Tarea 01: Comprende los laboratorios de Mod-1 y las tareas del MOC del módulo 1.
     - Tarea 02: En esta tarea solo comprende los Laboratorios del Mod-2
 
