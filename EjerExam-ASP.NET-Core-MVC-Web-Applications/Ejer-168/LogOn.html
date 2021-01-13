@@ -1,0 +1,838 @@
+<!DOCTYPE HTML>
+
+
+<html lang="en">
+<head>
+
+	
+	<link rel="preconnect" href="https://apps.developermedia.com">
+	<link rel="preconnect" href="https://cdn1.developermedia.com">
+	<link rel="preconnect" href="https://cdn.ampproject.org">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://ajax.googleapis.com">
+	<link rel="preconnect" href="https://adservice.google.com">
+	<link rel="preconnect" href="https://www.googletagservices.com">
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://www.google.com">
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<link rel="preconnect" href="https://pagead2.googlesyndication.com">
+
+	<link rel="preconnect" href="https://codeproject.global.ssl.fastly.net">
+<title>Sign in - CodeProject</title><link type="text/css" rel="stylesheet" href="https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Css/Main.min.css?dt=2.8.20210105.2">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer ></script>
+<script type="text/javascript" src="https://www.recaptcha.net/recaptcha/api.js" defer ></script>
+<script type="text/javascript" src="https://codeproject.global.ssl.fastly.net/script/JS/standard.min.js?dt=2.8.20210105.2" defer ></script>
+<script type="text/javascript" src="/script/JS/PasswordStrength.min.js" defer ></script>
+<script type="text/javascript" src="/a.min.js?v=1.3" defer ></script>
+
+<meta http-equiv="content-language" content="en-US">
+<meta charset="UTF-8">
+<meta name="Description" content="Sign in - Free source code and tutorials for Software developers and Architects.; Updated: 23 Mar 2002">
+<meta name="Keywords" content="Free source code, tutorials">
+<meta name="Author" content="CodeProject">
+<meta name="Rating" content="General">
+<meta name="Revisit-After" content="1 days">
+<meta name="application-name" content="CodeProject">
+<meta name="google-translate-customization" content="d908bb7ce7aff658-4c2f3a504525c916-g629383f736781a8a-13">
+
+<link rel="dns-prefetch" href="//ajax.googleapis.com"> 
+
+
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - All Topics" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=1" />
+<link rel="alternate" type="application/rss+xml" title="CodeProject Latest articles - Artificial Intelligence" href="https://www.codeproject.com/WebServices/ArticleRSS.aspx?cat=31" />
+<link rel="alternate" type="application/rss+xml" title="CodeProject Lounge Postings" href="https://www.codeproject.com/webservices/LoungeRSS.aspx" />
+<meta name="robots" content="index, follow" />
+<link rel="search" type="application/opensearchdescription+xml" title="CodeProject" href="https://www.codeproject.com/info/OpenSearch.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-touch-icon.png"> 
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"> 
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"> 
+<link rel="manifest" href="/favicon/manifest.json"> 
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ff9900"><base target="_top" >
+
+
+<script type='text/javascript'>
+function defrm () { /* thanks twitter */
+    document.write = '';
+    window.top.location = window.self.location;
+    setTimeout(function() { document.body.innerHTML = ''; }, 0);
+    window.self.onload = function(evt) { document.body.innerHTML = ''; };
+}
+
+if (window.top !== window.self) {
+    try {
+        if (window.top.location.host) { /* will throw for all except chrome */ }
+        else { defrm(); /* chrome */ }
+    } catch (ex) { defrm(); /* everyone else */ }
+}
+
+// Specific case where a site is screwing with us.
+if (typeof(DemoUrl) !== 'undefined') {
+    document.write(unescape('%3Cme') + 'ta http' + '-equiv="re' + 'fresh con' +
+                           'tent="1;url=' + DemoUrl + unescape('"%3CE'));
+}
+</script>
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-1735123-1"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-1735123-1' , {'user_id': '7b249e23-a4f2-4aa7-bacf-3778637eeb18'});
+    </script>
+
+</head>
+
+<body class="chrome chrome87" >
+
+<a class="access-link" href="#Main"><img alt="Click here to Skip to main content" src="https://codeproject.global.ssl.fastly.net/images/t.gif" /></a>
+
+    <div class="page-background">
+
+	
+	<div id="ctl00_STM" class="site-top-menu fixed">
+		<div class="main-content">
+			
+
+<div class="container memberbar clearfix flex-container flex-extend">
+
+	<div id="ctl00_MemberBar_GenInfo" class="flex-item align-left">14,729,330 members</div>
+
+	<div class="flex-item">
+		
+	</div>
+
+	<div class="flex-item align-right">
+
+		
+
+		
+
+		
+
+			<script type="text/javascript">//<!--
+			function doSubmit(secure)
+			{
+				if (secure)
+					document.signinForm.action = "https://www.codeproject.com/script/Membership/LogOn.aspx?rp=%2fscript%2fMembership%2fLogOn.aspx%3frp%3d%252fKB%252faspnet%252f866143%252fWebApplication1.zip%26download%3dtrue"
+				else
+					document.signinForm.action = "https://www.codeproject.com/script/Membership/LogOn.aspx?rp=%2fscript%2fMembership%2fLogOn.aspx%3frp%3d%252fKB%252faspnet%252f866143%252fWebApplication1.zip%26download%3dtrue"
+				document.signinForm.submit();
+				return true;
+			}//-->
+			</script>
+
+			<a name="SignUp"></a>
+			<span class="member-signin tooltip openable">
+				<span><a href="https://www.codeproject.com/script/Membership/LogOn.aspx?rp=%2fscript%2fMembership%2fLogOn.aspx%3frp%3d%252fKB%252faspnet%252f866143%252fWebApplication1.zip%26download%3dtrue">Sign in</a>
+                    <img src="https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Img/login32.png"
+                        width="16px" height="16px" style="vertical-align:middle;"/>
+				</span>
+
+				<div class="tooltip-flyout">
+					<form name="signinForm" id="signinForm" action="https://www.codeproject.com/script/Membership/LogOn.aspx?rp=%2fscript%2fMembership%2fLogOn.aspx%3frp%3d%252fKB%252faspnet%252f866143%252fWebApplication1.zip%26download%3dtrue" method="post"
+						class="tight">
+
+						
+						<input id="FormName" name="FormName" value="MenuBarForm" type="hidden" />
+
+						<div>Email</div>
+						<div><input class="small-text" type="email" name="Email" id="Email" autocomplete="email" /></div>
+						<div>Password</div>
+						<div><input class="small-text" type="password" name="Password" id="Password" 
+							autocomplete="current-password" /></div>
+						<div class="action">
+                            <input id='joinBtn' type='button' class='create hidden' onclick='return Join();' value='Join' />
+                            <input type='hidden' name='fld_quicksign' value='true' />
+							<input type="submit" value="Sign in" class="signin" onclick="return doSubmit(false);" />
+						</div>
+
+						<div class="container">
+							
+							&nbsp;
+							<a id="ctl00_MemberBar_SendPassword" class="forgot float-right" href="/script/Membership/SendPassword.aspx?rp=/script/Membership/LogOn.aspx?rp=%2fKB%2faspnet%2f866143%2fWebApplication1.zip&amp;amp;download=true">Forgot your password?</a>
+						</div>
+					</form>
+
+					<hr class="divider-dark" />
+
+					Sign in with <a class="oauth" alt="Sign in using Github" title="Sign in using Github" href="/script/Membership/OAuthLogOn.aspx?auth=GitHub"><img src="/script/Membership/Images/octicons_github.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Facebook" title="Sign in using Facebook" href="/script/Membership/OAuthLogOn.aspx?auth=Facebook"><img src="/script/Membership/Images/facebook.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Google" title="Sign in using Google" href="/script/Membership/OAuthLogOn.aspx?auth=Google"><img src="/script/Membership/Images/google-plus.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Microsoft" title="Sign in using Microsoft" href="/script/Membership/OAuthLogOn.aspx?auth=Microsoft"><img src="/script/Membership/Images/microsoft.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+
+				</div>
+            </span>
+		
+	</div>
+</div>
+		</div>
+	</div>
+
+	
+	<div id="ctl00_SH" class="site-header fixed">
+		<div class="main-content">
+			<div class="logo"><a href="/"><img id="ctl00_Logo" tabindex="1" title="CodeProject" src="https://codeproject.global.ssl.fastly.net/App_Themes/CodeProject/Img/logo250x135.gif" alt="Home" style="height:135px;width:250px;border-width:0px;" /></a></div>
+			<div class="promo"><div class="msg-728x90" data-format="728x90" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="ros"  data-country='US' data-tags='pos_top'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=871171"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=871171"  width="728px" height="90px" target="_blank"/></a></noscript></div></div>
+		</div>
+	</div>
+
+	
+	<div id="ctl00_TPR" class="sub-headerbar clearfix fixed">
+	<div class="float-right">
+		
+
+<div class="searchbar">
+
+<form method="get" action="/search.aspx?sbo=kw" name="Search" class="tight">
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="search"><tr><td><input TabIndex="2" class="search " id="sb_tb" autocomplete="off" value="" name="q" /></td><td><input type="image" src="https://codeproject.global.ssl.fastly.net/images/search.gif" /></td></tr></table>
+
+<div class="hover-container">
+	<div id="SearchFilter" class="search-advanced popup small-text align-left">
+	<b>Search within:<br /></b>
+		
+		<input type="radio" id="sb_kw" name="sbo" value="kw" checked="checked"><label for="sb_kw">Articles</label><br>
+<input type="radio" id="sb_qa" name="sbo" value="qa"><label for="sb_qa">Quick Answers</label><br>
+<input type="radio" id="sb_fm" name="sbo" value="fm"><label for="sb_fm">Messages</label><br>
+
+
+		
+		
+
+		
+		
+	</div>
+</div>
+</form>
+
+</div>
+	</div>
+	<div class="float-left">
+		
+
+<div class="navbar clearfix">
+<ul class="navmenu openable">
+
+<li class="desktop-only"><a id="ctl00_TopNavBar_Home" href="https://www.codeproject.com">home</a>
+
+
+<li class="openable"><a id="ctl00_TopNavBar_Art" class="down" href="/script/Articles/Latest.aspx">articles</a>
+
+	<ul>
+		<li class="openable"><a id="ctl00_TopNavBar_ArtTopicList" class="fly" onmouseover="navBarMenu.ShowMap(this, &#39;ctl00_TopNavBar_MapFlyout&#39;);" href="/script/Content/SiteMap.aspx">Chapters and Sections<span class="has-submenu">&gt;</span></a><ul id="ctl00_TopNavBar_MapFlyout" class="taxonomy">
+			<li>
+				<div id="siteMap"></div>
+			</li>
+			</ul>
+		</li>
+		<li><a id="ctl00_TopNavBar_ArtLatestArts" class="fly" href="/script/Articles/Latest.aspx">Latest Articles</a></li>
+		<li><a id="ctl00_TopNavBar_ArtTop" class="fly" href="/script/Articles/TopArticles.aspx?ta_so=5">Top Articles</a></li>
+		<li><a id="ctl00_TopNavBar_ArtGuide" class="fly" href="/info/Submit.aspx">Posting/Update Guidelines</a></li>
+		<li><a id="ctl00_TopNavBar_ArtHelpForum" class="fly" href="/Forums/1641/Article-Writing">Article Help Forum</a></li>
+		<li><a id="ctl00_TopNavBar_ArtPostArticle" class="fly highlight1" href="/script/Articles/Submit.aspx">
+			<img src="https://codeproject.global.ssl.fastly.net/images/write13.png" width="13" height="13" /> Submit an article or tip
+			</a></li>
+        
+		<li><a id="ctl00_TopNavBar_ArtImportGitHub" class="fly highlight3" href="/script/Articles/ImportArticle.aspx">
+			<img src="https://codeproject.global.ssl.fastly.net/images/write13.png" width="13" height="13" /> Import GitHub Project
+			</a></li>
+        
+		<li><a id="ctl00_TopNavBar_ArtPostBlog" class="fly highlight2" href="/script/Articles/BlogFeed.aspx">
+			<img src="https://codeproject.global.ssl.fastly.net/images/write13.png" width="13" height="13" /> Import your Blog
+			</a></li>		
+        
+        <li class="last"></li>
+	</ul>
+
+</li>
+
+
+
+<li class="openable">
+<a id="ctl00_TopNavBar_Answers" href="/script/Answers/List.aspx?tab=active">
+    <span class="desktop-only tablet-only">quick answers</span><span class="mobile-only">Q&amp;A</span>
+</a>
+	<ul>
+		
+
+		<li><a id="ctl00_TopNavBar_QAAsk" class="fly highlight2" href="/Questions/ask.aspx"><img 
+			src="https://codeproject.global.ssl.fastly.net/images/write13.png" width="13" height="13" /> Ask a Question</a></li>
+
+		<li><a id="ctl00_TopNavBar_QAUnanswered" class="fly" href="/script/Answers/List.aspx?tab=unanswered">View Unanswered Questions</a></li>
+		<li><a id="ctl00_TopNavBar_QALatest" class="fly" href="/script/Answers/List.aspx?tab=active">View All Questions</a></li>
+        
+				<li><a id="ctl00_TopNavBar_QATR_ctl00_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=81" style="padding-left:30px">View C# questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl01_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=842" style="padding-left:30px">View VB.NET questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl02_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=93" style="padding-left:30px">View SQL questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl03_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=78" style="padding-left:30px">View C++ questions</a></li>
+			
+				<li><a id="ctl00_TopNavBar_QATR_ctl04_Tag" class="fly" href="/script/Answers/List.aspx?tab=active&amp;amp;alltags=true&amp;amp;tags=87" style="padding-left:30px">View Javascript questions</a></li>
+			
+    
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+
+<li class="openable"><a id="ctl00_TopNavBar_Forums" href="/script/Forums/List.aspx">
+        <span class="desktop-only tablet-only">discussions</span><span class="mobile-only">forums</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_MessageBoardsAll" class="fly" href="/script/Forums/List.aspx">All Message Boards...</a></li>
+		<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/1580997/Application-Lifecycle">Application Lifecycle<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/1533717/Running-a-Business">Running a Business</a></li>
+<li><a class="fly" href="/Forums/1533716/Sales-Marketing">Sales / Marketing</a></li>
+<li><a class="fly" href="/Forums/1651/Collaboration-Beta-Testing">Collaboration / Beta Testing</a></li>
+<li><a class="fly" href="/Forums/3304/Work-Issues">Work  Issues</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/369270/Design-and-Architecture">Design and Architecture</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/12076/ASP-NET">ASP.NET</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1580226/JavaScript">JavaScript</a>
+</li>
+<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/1647/C-Cplusplus-MFC">C / C++ / MFC<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/4486/ATL-WTL-STL">ATL /  WTL / STL</a></li>
+<li><a class="fly" href="/Forums/3785/Managed-Cplusplus-CLI">Managed C++/CLI</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1649/Csharp">C#</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1627782/Free-Tools">Free Tools</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1827460/Objective-C-and-Swift">Objective-C and Swift</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1725/Database">Database</a>
+</li>
+<li class="openable"><a class="fly" style="padding-left:30px" href="/Forums/186301/Hardware-Devices">Hardware &amp; Devices<span class="has-submenu">&gt;</span></a>
+<ul class="openable"><li><a class="fly" href="/Forums/1644/System-Admin">System Admin</a></li>
+</ul></li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1606152/Hosting-and-Servers">Hosting and Servers</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1643/Java">Java</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1942421/Linux-Programming">Linux Programming</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1650/NET-Core-and-Framework">.NET (Core and Framework)</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1848626/Android">Android</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1876716/iOS">iOS</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/13695/Mobile">Mobile</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1004257/Silverlight-WPF">Silverlight / WPF</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1646/Visual-Basic">Visual Basic</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1640/Web-Development">Web Development</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/suggestions.aspx">Site Bugs / Suggestions</a>
+</li>
+<li><a class="fly" style="padding-left:30px" href="/Forums/1652005/Spam-and-Abuse-Watch">Spam and Abuse Watch</a>
+</li>
+
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+<li class="openable"><a id="ctl00_TopNavBar_Features" href="/Feature/">
+      <span class="desktop-only tablet-only">features</span><span class="mobile-only">stuff</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_Comps" class="fly" href="/script/Contests/CurrentCompetitions.aspx?cmpTpId=3&amp;amp;awsac=true">Competitions</a></li>
+        
+		<li><a id="ctl00_TopNavBar_News" class="fly" href="/script/News/List.aspx">News</a></li>
+		<li><a id="ctl00_TopNavBar_Insider" class="fly" href="/Feature/Insider/">The Insider Newsletter</a></li>
+    	<li><a id="ctl00_TopNavBar_DailyBuild" class="fly" href="/Feature/DailyBuild">The Daily Build Newsletter</a></li>
+		<li><a id="ctl00_TopNavBar_Newsletters" class="fly" href="/script/Mailouts/Archive.aspx?mtpid=1">Newsletter archive</a></li>
+		<li><a id="ctl00_TopNavBar_Surveys" class="fly" href="/script/Surveys/List.aspx">Surveys</a></li>
+		<li><a id="ctl00_TopNavBar_Showcase" class="fly" href="/KB/showcase/">Product Showcase</a></li>
+        
+		<li><a id="ctl00_TopNavBar_Stuff" class="fly" href="/Info/Stuff.aspx">CodeProject Stuff</a></li>
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+<li  class="openable"><a id="ctl00_TopNavBar_Lounge" href="/Lounge.aspx">
+            <span class="desktop-only tablet-only">community</span><span class="mobile-only">lounge</span>
+</a>
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_WhosWho" class="fly" href="/script/Membership/Profiles.aspx">Who's Who</a></li>
+		<li><a id="ctl00_TopNavBar_MVPs" class="fly break" href="/script/Contests/Winners.aspx?obtid=1&amp;amp;cmpTpId=2&amp;amp;cid=0">Most Valuable Professionals</a></li>
+
+		<li><a id="ctl00_TopNavBar_LoungeLnk" class="fly highlight2" href="/Lounge.aspx">The Lounge  </a></li>
+		<li><a id="ctl00_TopNavBar_WhereAmILink" class="fly" href="/Forums/1939564/Where-I-am-Member-Photos">Where I Am: Member Photos</a></li>
+		<li><a id="ctl00_TopNavBar_InsiderLnk" class="fly" href="/Insider.aspx">The Insider News</a></li>
+		<li><a id="ctl00_TopNavBar_WeirdWonderful" class="fly" href="/Feature/WeirdAndWonderful.aspx">The Weird & The Wonderful</a></li>
+
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+
+<li class="openable" style="margin-left:20px"><a id="ctl00_TopNavBar_Help" href="/KB/FAQs/">
+    <span class="desktop-only tablet-only">help</span><span class="mobile-only">?</span>
+</a>
+
+
+	<ul>
+		<li><a id="ctl00_TopNavBar_HelpWhatIs" class="fly" href="/info/guide.aspx">What is 'CodeProject'?</a></li>
+		<li><a id="ctl00_TopNavBar_HelpGeneral" class="fly break" href="/KB/FAQs/">General FAQ</a></li>
+		<li><a id="ctl00_TopNavBar_HelpPostQuestion" class="fly break highlight2" href="/Questions/ask.aspx">Ask a Question</a></li>
+		<li><a id="ctl00_TopNavBar_HelpBugs" class="fly" href="/suggestions.aspx">Bugs and Suggestions</a></li>
+		<li><a id="ctl00_TopNavBar_HelpArticles" class="fly" href="/Forums/1641/Article-Writing">Article Help Forum</a></li>
+		
+		
+		
+		
+		<li><a id="ctl00_TopNavBar_HelpAboutUs" class="fly" href="/info/about.aspx">About Us</a></li>
+		<li class="last"></li>
+	</ul>
+
+</li>
+
+</ul>
+
+</div>
+	</div>
+	<div class="sub-headerbar-divider"></div>
+	</div>
+	
+
+	<div id="C" class="container-content-wrap fixed"> 
+	<div class="container-content">
+
+		<div class="container-breadcrumb">
+		
+		</div>
+
+		
+		
+		
+
+		<div id="ctl00_ContentPane" class="container-main">
+
+            
+			<div style="min-height:600px">
+
+				<a name="Main"></a>
+
+                
+				<h1>Sign in</h1>
+
+				
+				
+
+                
+				
+<div style="width:945px;margin:auto">
+	
+
+	<form name="aspnetForm" method="post" action="./LogOn.aspx?rp=%2fKB%2faspnet%2f866143%2fWebApplication1.zip&amp;download=true" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0105B7F5" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="XFt2LVp6hYOBxeFQzVH43puk7h0LaGjKZ8vtx+Y4iupp9VMz4PlMdQwPXAah8v9dhmlywst7OF2+Xqdl2Bx/deKbndpcbw8SmcxAFuB+fLCuWnebj9JOtkBYHUTiFTBDJ903Z/l8bL1VfAeSu+3yOYLUcU6b87Uxh4GjlN/Glcuizgf/gAW6o3laysJmif6Yr9V6D84bzTzun5T51v2nSWqPKigDqVTm4nHp6xWrPbKA9gp1cgYypv/rK9HowRMXAM2FqQ==" />
+</div>
+
+		<div id="ctl00_MC_DownloadExplanation" class="box">
+		<p><b>You must logon to download zip files.</b> To ensure that our limited resources are 
+        not abused we must ask that all readers wishing to download zip files log in first.
+		Please check the <a href="/KB/FAQs/MemberFAQ.aspx">FAQ</a> if you encounter 
+        problems.</p>
+		</div>
+
+		
+
+<div id="LogOnContainer">
+
+<table class="member-signin" cellspacing="0">
+<tr>
+	<td id="ctl00_MC_MemberLogOn_ExistHead" colspan="2"><h3>Existing Members</h3>
+		<div style="margin:-20px 0 10px" class="subdue">Sign in to your account</div>
+	</td>
+<td id="ctl00_MC_MemberLogOn_QuickSignHead" colspan="2"><h3 id="ctl00_MC_MemberLogOn_QuickTitle">New Membership</h3>
+		<div style="margin:-20px 0 10px" class="subdue">Download, Vote, Comment, Publish.</div>
+	</td>
+
+</tr>
+
+<tr valign="top">
+
+	
+	<td>
+
+		<table>
+		<tr>
+			<td class="align-middle align-right nowrap">Your Email &nbsp;</td>
+			<td><input name="ctl00$MC$MemberLogOn$CurrentEmail" id="ctl00_MC_MemberLogOn_CurrentEmail" class="small-text" type="email" autocomplete="email" style="width:175px;" /></td>
+		</tr>
+		<tr>
+			<td class="align-middle align-right nowrap">Password &nbsp;</td>
+			<td><input name="ctl00$MC$MemberLogOn$CurrentPassword" type="password" id="ctl00_MC_MemberLogOn_CurrentPassword" class="small-text" autocomplete="current-password" style="width:175px;" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" class="align-middle align-right nowrap">
+				<input type="submit" name="ctl00$MC$MemberLogOn$SignInButton" value="Sign in" id="ctl00_MC_MemberLogOn_SignInButton" class="signin" style="margin:0" />
+				<div><a id="ctl00_MC_MemberLogOn_SendPassword" class="forgot small-text" href="https://www.codeproject.com/script/Membership/SendPassword.aspx?rp=/KB/aspnet/866143/WebApplication1.zip">Forgot your password?</a></div>
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	<td width="70px">&nbsp;</td>
+
+	<td>
+
+		<table>
+		<tr>
+			<td class="align-middle align-right nowrap">Your Email &nbsp;</td>
+			<td class="align-right">
+				<input name="ctl00$MC$MemberLogOn$QuickEmail" id="ctl00_MC_MemberLogOn_QuickEmail" class="small-text" type="email" autocomplete="off" style="width:175px;" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<div id="NewEmailError" class="locked invisible small-text" style="margin-top:-10px">This
+				email is in use. Do you need your <a id="ctl00_MC_MemberLogOn_Password2" href="https://www.codeproject.com/script/Membership/SendPassword.aspx?rp=/KB/aspnet/866143/WebApplication1.zip">password</a>?</div>
+				
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="align-middle align-right nowrap subdue">
+				Optional Password &nbsp;
+				<input name="ctl00$MC$MemberLogOn$QuickPassword" type="password" id="ctl00_MC_MemberLogOn_QuickPassword" class="small-text" autocomplete="off" style="width:125px;" />
+                <div id="password-strength-quick" style="margin-top: -10px; padding-bottom: 10px;"></div>
+			</td>
+		</tr>
+        
+		<tr>
+			<td colspan="2" class="align-right small-text">
+				<input type="submit" name="ctl00$MC$MemberLogOn$SignUpButton" value="Join" id="ctl00_MC_MemberLogOn_SignUpButton" class="create" style="margin:0" />
+			</td>
+		</tr>
+		</table>
+
+	</td>
+	<td width="70px">&nbsp;</td>
+
+	
+</tr>
+
+<tr id="ctl00_MC_MemberLogOn_SocialLogin">
+	<td colspan="4">
+		<div style="margin-top:55px">
+			Or sign in using <a class="oauth" alt="Sign in using Github" title="Sign in using Github" href="/script/Membership/OAuthLogOn.aspx?auth=GitHub"><img src="/script/Membership/Images/octicons_github-lg.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Facebook" title="Sign in using Facebook" href="/script/Membership/OAuthLogOn.aspx?auth=Facebook"><img src="/script/Membership/Images/facebook-lg.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Google" title="Sign in using Google" href="/script/Membership/OAuthLogOn.aspx?auth=Google"><img src="/script/Membership/Images/google-plus-lg.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+<a class="oauth" alt="Sign in using Microsoft" title="Sign in using Microsoft" href="/script/Membership/OAuthLogOn.aspx?auth=Microsoft"><img src="/script/Membership/Images/microsoft-lg.png" style="vertical-align:middle;padding-right:3px;border:0;" /></a>
+
+		</div>
+	</td>
+</tr>
+
+
+</table>
+
+<div id="ctl00_MC_MemberLogOn_Choices" style="margin-top:-60px;width:275px;margin-left:335px;" class="small-text subdue">
+    <input id="ctl00_MC_MemberLogOn_TermsOfUse" type="checkbox" name="ctl00$MC$MemberLogOn$TermsOfUse" checked="checked" /><label for="ctl00_MC_MemberLogOn_TermsOfUse">I have read and agree to the <a target="_blank" href="/info/TermsOfUse.aspx">Terms of Service</a> and <a target="_blank" href="/info/privacy.aspx">Privacy Policy</a></label><br />
+    <span onchange="logonCtrlObject.OnNewslettersCheckChange(this);"><input id="ctl00_MC_MemberLogOn_AllNewsletters" type="checkbox" name="ctl00$MC$MemberLogOn$AllNewsletters" checked="checked" /><label for="ctl00_MC_MemberLogOn_AllNewsletters">Please subscribe me to the CodeProject newsletters</label></span>
+</div>
+
+</div>
+
+<script type="text/javascript">
+    function LogonCtrlObject()
+    {
+        var clickedOptin = false;
+
+        this.OnCountryChange = function (CASL, subscribing) {
+        }
+
+        this.OnNewslettersCheckChange = function (checkbox) {
+            clickedOptin = true;
+        }
+
+        this.OnCountrySelectionChange = function (dropdown) {
+            var CASLCountries = [ "Canada",];
+            if (dropdown.selectedIndex >= 0) {
+                var country = dropdown[dropdown.selectedIndex].text;
+
+                var useCASL = false;
+                for (i = 0; i < CASLCountries.length; i++) {
+                    if (CASLCountries[i] == country) {
+                        useCASL = true;
+                        break;
+                    }
+                }
+
+                if (!clickedOptin)
+                    $('#ctl00_MC_MemberLogOn_AllNewsletters').prop('checked', !useCASL);
+
+                logonCtrlObject.OnCountryChange(useCASL, $('#ctl00_MC_MemberLogOn_AllNewsletters').prop('checked'));
+            }
+        }
+    }
+
+    var logonCtrlObject = new LogonCtrlObject();
+</script>
+
+
+	</form>
+</div>
+
+
+                
+				
+
+				<br clear="all" />
+			</div>
+
+			<div class="theme1-background padded-top padded-bottom sticky-stop">
+				<div class="bottom-promo">
+					<div class="msg-728x90" data-format="728x90" data-type="ad" data-publisher="lqm.codeproject.site" data-zone="ros"  data-country='US' data-loadOnView='true'  data-tags='pos_bottom'><noscript><a href="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=871171"><img src="https://pubads.g.doubleclick.net/gampad/jump?iu=/6839/lqm.codeproject.site/ros&sz=728x90&c=871171"  width="728px" height="90px" target="_blank"/></a></noscript></div>
+				</div>
+			</div>
+
+			<div class="site-footer">
+			    <div class="align-left">
+				    <a id="ctl00_AdvertiseLink" href="http://developermedia.com/">Advertise </a><br>
+				    <a id="ctl00_PrivacyLink" href="/info/privacy.aspx">Privacy</a><br>
+   				    <a id="ctl00_CookiePolicyLink" href="/info/cookie.aspx">Cookies</a><br>
+                    <a id="ctl00_TermsOfUseLink" href="/info/TermsOfUse.aspx">Terms of Use</a><br>
+					Last Updated 23 Mar 2002
+			    </div>
+
+			    <div class="align-center">
+			        
+
+
+<div class="page-width">
+    Layout: <a id="ctl00_PageWidth_FixedT" title="Fixed width layout" rel="nofollow" class=" active" href="/script/Membership/LogOn.aspx?rp=%2fKB%2faspnet%2f866143%2fWebApplication1.zip&amp;amp;download=true&amp;amp;PageFlow=FixedWidth">fixed</a>
+    |
+    <a id="ctl00_PageWidth_FluidT" title="Fluid layout" rel="nofollow" href="/script/Membership/LogOn.aspx?rp=%2fKB%2faspnet%2f866143%2fWebApplication1.zip&amp;amp;download=true&amp;amp;PageFlow=Fluid">fluid</a>
+</div>
+
+
+				    
+			    </div>
+
+			    <div class="align-right">
+					Copyright &copy; <a href="mailto:webmaster@codeproject.com">CodeProject</a>, 1999-2021 <br />
+					All Rights Reserved.<br>
+                    <br>
+				    Web05
+				    2.8.20210105.2<br>
+                </div>
+			</div>
+
+			<br clear="all" />
+
+			
+
+	</div> 
+	</div> 
+	</div> 
+
+	<div id="ctl00_Address" class="tiny-text subdue align-center padded-top">
+	CodeProject,
+	20 Bay Street, 11th Floor Toronto, Ontario, Canada M5J 2N8
+	+1 (416) 849-8900
+	</div>
+
+</div>
+<div id="page-bottom"></div>
+
+
+
+<script type="text/javascript"> // IMMEDIATE script
+
+function Join() {
+                                     document.location.href = 'https://www.codeproject.com/script/Membership/Modify.aspx';
+                                     return false;
+                                  }
+
+var twfzmnzlgj = function(n){var t=!1;n=n||{};var r=n.RetrievalServiceUrl||"/script/content/webservices/RetrieveContent.aspx/GetContent",u=n.RetrievalServiceRetries||3,f=n.RetrievalServiceTimeout||5e3,e=function(){t||(t=!0,$(window).on("resize scroll",i),i())},i=function(){if(typeof DMAds=="undefined"){var n=$('[data-type="ad"]');n.each(function(){var n=$(this),u=n.attr("data-format")||"",f=n.attr("data-publisher")||"",e=n.attr("data-zone")||"",t=n.attr("data-loadonview"),i=n.attr("data-noadx"),h=n.attr("data-tags")||"",c=n.find("iframe").length!==0||n.find("img").length!==0,r=n.attr("data-processed");t=typeof t=="string"&&t.toLowerCase()==="true";i=typeof i=="string"&&i.toLowerCase()==="true";r=typeof r=="string"&&r.toLowerCase()==="true";r||c||t&&!s(this)||(o(n,u,f,e,i,h),n.attr("data-processed","true"))})}},o=function(n,t,i,e,o,s){var h=new $.Deferred,c=JSON.stringify({format:t,publisherCode:i,zone:e,noAdX:o,keywords:s});$.ajax({url:r,cache:!1,type:"POST",data:c,contentType:"application/json; charset=utf-8",dataType:"json",tryCount:0,retryLimit:u,timeout:f}).done(function(t){var i=t?t.d:null;h.resolve(i); i && i.html && n.html(i.html)}).fail(function(n,t){h.reject(t)})},s=function(n){var t,f,e,o;if(!h(n))return!1;var u=!1,i=0,r=0;try{t=n.getBoundingClientRect();typeof innerWidth=="number"?(i=window.innerWidth,r=window.innerHeight):document.documentElement&&(document.documentElement.clientWidth||document.documentElement.clientHeight)?(i=document.documentElement.clientWidth,r=document.documentElement.clientHeight):document.body&&(document.body.clientWidth||document.body.clientHeight)&&(i=document.body.clientWidth,r=document.body.clientHeight);f=-200;t.top===t.bottom&&(f+=n.height*-1);e=t.top>=0&&t.top-200<=r||t.top<=0&&t.top>=f;o=i>t.left&&t.right>=0;u=e&&o}catch(s){u=!0}return u},h=function(n){var t=!1,i;return n&&n.style.position!=="fixed"&&n.offsetParent?t=!0:n&&n.style.position==="fixed"&&(i=window.getComputedStyle(n),t=i&&i.display!=="none"),t&&c()},c=function(){var t=!0,n="";return typeof document.hidden!="undefined"?n="hidden":typeof document.mozHidden!="undefined"?n="mozHidden":typeof document.msHidden!="undefined"?n="msHidden":typeof document.webkitHidden!="undefined"&&(n="webkitHidden"),n!==null&&document[n]&&(t=!1),t};return{init:e}};
+document.addEventListener('DOMContentLoaded', function() {
+var n=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject("MSXML2.XMLHTTP"),t;n.onreadystatechange=function(){try{if(n.readyState==4)if(n.status==200){var t=document.createElement("script");t.type="text/javascript";t.innerHTML=n.responseText;document.getElementsByTagName("body")[0].appendChild(t)}else(new twfzmnzlgj).init()}catch(i){(new twfzmnzlgj).init()}};try{t='/a.min.js?v=1.3';n.open("GET",t,!0);n.send()}catch(i){(new twfzmnzlgj).init()}
+
+  $('div[data-type="ad"][data-showindicator="true"]').before('<div class="small-text muted hidden">Advertisement</div>');
+  setTimeout(function(){ 
+    $('div[data-type="ad"][data-showindicator="true"]').each(function( index ) {
+      if ($(this).height() > 0) {
+       $(this).prev().removeClass('hidden');
+      }
+    });
+  }, 2000);
+
+});
+
+var lasttime=new Date().getTime();
+function checkEmail(email) {
+  $.post('/script/Membership/Ajax/EmailExists.aspx?meml=' + escape(email),
+        function(data) {
+           if (data.toLowerCase() == 'true')
+             $('#NewEmailError').show();
+           else
+             $('#NewEmailError').hide();
+        });
+}
+</script>
+
+<script type="text/javascript"> // DEFERRED script
+
+document.addEventListener('DOMContentLoaded', function() {
+
+	$('#__EVENTVALIDATION').attr('autocomplete', 'off');
+	
+	$('#joinBtn').css('visibility', 'visible');
+	
+	var oSrchFlt = false, oSrchBox=false, srchBoxFoc=false;
+	var sbar     = $('#sb_tb');
+	var sfilter  = $('#SearchFilter');
+	
+	if (typeof(InitWatermark) !== 'undefined')
+	  InitWatermark('sb_tb', 'Search for articles, questions, tips');
+	if (sbar && sfilter) {
+	  sfilter.removeClass('popup'); sfilter.hide(); sfilter.removeClass('open');
+	  sbar.blur(function() {
+	    if (!oSrchFlt) { sfilter.hide(); sfilter.removeClass('open'); }
+	    srchBoxFoc = false;
+	  });
+	  sbar.focus(function() {
+	    oSrchFlt   = false;
+	    srchBoxFoc = true;
+	    sfilter.show();
+	    sfilter.addClass('open');
+	  });
+	  sbar.mouseleave(function()    { oSrchBox = false; });
+	  sbar.mouseover(function()     { oSrchBox = true; });
+	  sfilter.mouseleave(function() {
+	    oSrchFlt=false;
+	    if (!srchBoxFoc && !oSrchBox) { sfilter.hide(); sfilter.removeClass('open'); }
+	  });
+	  sfilter.mouseover(function()  { oSrchFlt = true; });
+	}
+	
+	$('#NewEmailError').hide();
+	var emailEle = $('#ctl00_MC_MemberLogOn_QuickEmail');
+	emailEle.blur(function() {
+	    var email = $.trim(emailEle.val());
+	    if (email.length > 0)
+	        checkEmail(email);
+	});
+	emailEle.keyup(function() {
+	    var email = $.trim(emailEle.val());
+	    var current=new Date().getTime();
+	    if (email.length > 0 && (current-lasttime) > 1000) {
+	        checkEmail(email);
+	        lasttime = current;
+	    }
+	});
+	
+	$('#ctl00_MC_MemberLogOn_QuickPassword').passStrengthify({
+	      minimum:    8,
+	      element:    $('#password-strength-quick'),
+	      rawEntropy: false,
+	      labels: {
+	        tooShort:         'Too short',
+	        passwordStrength: 'Strength'
+	      }
+	  });
+	  $('#ctl00_MC_MemberLogOn_ProPassword').passStrengthify({
+	      minimum:    8,
+	      element:    $('#password-strength-pro'),
+	      rawEntropy: false,
+	      labels: {
+	        tooShort:         'Too short',
+	        passwordStrength: 'Strength'
+	      }
+	  });
+	
+	$('.oauth').click(function () {
+	    $this = $(this);
+	    href = $this.attr('href');
+	    var myWindow = window.open(href, 'popup',
+	                              'width=800,height=600,location=0,menubar=0,resizeable=0,scrollbars=0,toolbar=0');
+	    myWindow.focus();
+	    var timer = setInterval(function () {
+	        if (myWindow.closed) {
+	            clearInterval(timer);
+	            // window.location.reload(); // May do a POST reload, shows a warning
+	            window.location = window.location; // force a GET reload
+	        }
+	    }, 200);
+	    return false;
+	});
+	
+	cookieconsent.initialise({
+	                                    enabled : true,
+	                                    cookie  : { domain: 'codeproject.com' },
+	                                    palette : {
+	                                        popup: { background: '#ff9900' },
+	                                        button: { background: '#f5d948' }
+	                                    },
+	                                    law :  {
+	                                        showForAllRegions : true, 
+	                                        countryCode : 'US' 
+	                                    },
+	                                    theme: 'edgeless',
+	                                    type : 'opt-in',
+	                                    content: {
+	                                        message: 'Like every other website we use cookies. By using our site you acknowledge that you have read and understand our <a href=\'/info/cookie.aspx\'>Cookie Policy</a>, <a href=\'/info/privacy.aspx\'>Privacy Policy</a>, and our <a href=\'/info/TermsOfUse.aspx\'>Terms of Service</a>.',
+	                                        href:    'https://www.codeproject.com/info/privacy.aspx',
+	                                        dismiss: 'Ask me later'
+	                                    },
+	                                    revokable:true,
+	                                    onStatusChange: function(status) {
+	                                        $.ajax({
+	                                		    dataType  : 'json',
+	                                            data: JSON.stringify({ allowCookies : this.hasConsented() }),
+	                                            url: '/script/membership/webservices/LoggedOnMemberservices.aspx/SetCookieConsent',
+	                                            cache: false,
+	                                            type: 'POST',
+	                                            contentType: 'application/json'
+	                                        })
+	                                        console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
+	                                        console.log(this.hasAnswered() ? 'has answered' : 'did not answer');
+	                                    },
+	                                });
+
+})
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
