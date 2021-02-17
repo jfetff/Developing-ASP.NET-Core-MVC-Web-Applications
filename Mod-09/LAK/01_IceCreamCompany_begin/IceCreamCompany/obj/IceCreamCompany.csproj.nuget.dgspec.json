@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj": {}
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj": {}
   },
   "projects": {
-    "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj": {
+    "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
+        "projectUniqueName": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
         "projectName": "IceCreamCompany",
-        "projectPath": "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
+        "projectPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
         "packagesPath": "C:\\Users\\jfetf\\.nuget\\packages\\",
-        "outputPath": "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\obj\\",
+        "outputPath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -109,7 +109,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }

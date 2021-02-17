@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NznFIYsHNu1QZbNaF+KiHyuzWLrVHCXAy4Ep8awGbogVClvXoLNM1cyq/RlhV6VsAdrrM9I856Vg/hg5yNmZhw==",
+  "dgSpecHash": "hyL0bwYYQlHFNABMPAvSZD/qJ+WI4sahaQS2VKMGCnqcqjYH0QwSsSSZGh3YVCVFPOTtEiXdvqM3IT+e7nq0kw==",
   "success": true,
-  "projectFilePath": "C:\\20486D\\Ejercicios\\Mod-9\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
+  "projectFilePath": "C:\\20486D\\Developing-ASP.NET-Core-MVC-Web-Applications\\Mod-09\\LAK\\01_IceCreamCompany_begin\\IceCreamCompany\\IceCreamCompany.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\jfetf\\.nuget\\packages\\microsoft.aspnetcore\\2.1.7\\microsoft.aspnetcore.2.1.7.nupkg.sha512",
